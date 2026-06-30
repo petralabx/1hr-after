@@ -1,0 +1,8 @@
+/* Canonical brand tokens — activate only inside .brand-1hr-after */
+.brand-1hr-after {
+  --1hr-ink: #1a1a1a;
+  --1hr-paper: #f5f2eb;
+  --1hr-accent: #3d2e24;
+  --1hr-muted: #6b6560;
+  --1hr-grid: rgba(26, 26, 26, 0.12);
+}

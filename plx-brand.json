@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "plx-brand/v1",
+  "repoKind": "marketing-brand",
+  "brand": {
+    "slug": "1hr-after",
+    "displayName": "1HR-After"
+  },
+  "designSystem": {
+    "adoptsPlxTokens": false,
+    "tokenPrefix": "--1hr-",
+    "boundaryClass": "brand-1hr-after",
+    "decidedBy": "vince",
+    "decidedAt": "2026-06-30",
+    "rationale": "Consumer-facing 1HR-After brand; own token layer; PLX-structure bundle."
+  },
+  "mc": {
+    "github": "Petra-Lab-X/1hr-after",
+    "registryId": "1hr-after"
+  },
+  "sharedBrandSpine": {
+    "wordmark": true,
+    "periodicMark": false,
+    "favicons": true
+  }
+}
