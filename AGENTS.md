@@ -6,6 +6,16 @@
 
 ## Cursor Cloud specific instructions
 
+### Operator preferences (durable)
+
+- **Always hyperlink `.md` files in answers.** Whenever a response references a
+  Markdown file, present it as an openable link so the operator can open it from
+  the agent window: a `<TextReference>` for uploaded artifacts under
+  `/opt/cursor/artifacts/`, or a Markdown link to the tracked file / PR on GitHub
+  for in-repo docs. Never mention a `.md` file by bare name without a link.
+
+### Repo notes
+
 This is a `marketing-brand` scaffold repo (`plx-brand.json` → `repoKind: marketing-brand`):
 design-system docs plus one governance validator. There is **no** web app, build step,
 package manager, or dependency file — nothing to `npm install` / `pip install`. The only
