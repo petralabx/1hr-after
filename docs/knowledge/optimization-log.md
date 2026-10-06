@@ -3,11 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-06
+> **Last updated:** 2026-10-06 (five-gap ship on live theme)
 
 <!-- AUTO-APPEND:ships:START -->
 
-_No ships yet._
+## 2026-10-06 — storefront + Admin — SEO/AEO five-gap ship
+
+- **Hypothesis:** Duplicate live PDPs and forced collection canonicals were splitting query→page signals.
+- **Change:** DRAFT + 301 four handles; collection SEO; theme canonicals / 0562 / FAQ heading / homepage preview URLs. See [`analyses/2026-10-06-seo-aeo-live-fixes.md`](analyses/2026-10-06-seo-aeo-live-fixes.md).
+- **Result:** WebFetch confirms old duplicate URLs land on canonical PDPs; frontpage title is no longer `ActiveCollection`; homepage shows ANTI CHAFE (not CHEF) live links. Rankings not promised.
+- **Source:** TASK-2388 live write on `1hourafter.myshopify.com`
 
 <!-- AUTO-APPEND:ships:END -->
 
@@ -23,3 +28,10 @@ _No ships yet._
 ```
 
 Meta results cite the campaign slug from [`../channels/meta-ads.md`](../channels/meta-ads.md).
+
+## 2026-10-06 — catalog — SEO/AEO baseline (no Shopify write)
+
+- **Hypothesis:** Duplicate live PDPs, empty collection SEO, and hardcoded FAQ ids are blocking query→page uniqueness more than copy tweaks.
+- **Change:** None on the store. Filed [`analyses/2026-10-06-seo-aeo-catalog-audit.md`](analyses/2026-10-06-seo-aeo-catalog-audit.md) with a fixed benchmark (four queries, en-US, WebSearch + Admin GraphQL).
+- **Result:** TBD until a follow-up task applies gap #1 and re-runs the same queries. Sampled visibility on 2026-10-06 is evidence, not a ranking.
+- **Source:** that analysis. Next ship should be one Admin/theme write, then the same benchmark.

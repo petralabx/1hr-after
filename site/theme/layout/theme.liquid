@@ -26,7 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="robots" content="noindex">
 {% endif %}
 
-  {% if handle contains 'test' %}
+  {% if handle == 'test' or handle == 'sample-pack' %}
 <meta name="robots" content="noindex">
 {% endif %}
 
@@ -82,30 +82,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="robots" content="noindex"> 
 {% endif %}
 
-{% if handle contains 'featured-collection' %}
-<link rel="canonical" href="https://1hourafter.com/collections/all">
-{% endif %}
-
-  <!-- {% if handle contains 'all' %}
-    <title>Best Natural Body Care Products for Athletes | 1HR-A</title>
-     <meta name="title" content="Best Natural Body Care Products for Athletes | 1HR-A">
- <meta name="description" content="Relax your sore muscles & nourish your skin after the workout with
-our natural body care products. Make your post-workout care a breeze with 1-Hour After.">
-{% endif %} -->
-
-  {% if template == 'blog' %}
-    <title>Blogs | 1Hour After</title>
-<meta name="description" content="Explore periodic insights into the process and perspective through 1Hour
-After Blogs. Stay informed with 1HR-A's latest blog for daily athletic body care needs.">
-  {%- endif -%}
-
-{% if handle contains 'single' %}
-<link rel="canonical" href="https://1hourafter.com/collections/all">
-{% endif %}
-
-{% if handle contains 'frontpage' %}
-<link rel="canonical" href="https://1hourafter.com/collections/all">
-{% endif %}
+  <!-- Collection canonicals use Shopify canonical_url (do not force /collections/all). -->
 
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
   <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>

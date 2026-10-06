@@ -24,6 +24,22 @@ This is separate from:
 
 ---
 
+## 2026-10-06 — Live SEO/AEO gap fixes (Shopify write)
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#12](https://github.com/petralabx/1hr-after/pull/12) (TASK-2388). Includes the TASK-2387 audit commits. CIP lands; agent cannot merge. Draft [#11](https://github.com/petralabx/1hr-after/pull/11) is the audit-only slice on the parent branch.
+- **Done:** Drafted four duplicate/thin products and 301'd them. Collection SEO + theme canonicals. Sampler/page meta. Live theme push `#122661372077` (0562 CDN, ANTI CHAFE, FAQ heading gate).
+- **Next:** CIP merge. Human Class B on `products.md`. `write_publications` if `sample-pack` should leave the sitemap. Do not invent SKUs.
+- **Watch:** App lacks `write_publications`. Theme Access REST Asset API 401s; CLI password works on `1hourafter.myshopify.com`. Do not call `1hours.myshopify.com`.
+
+## 2026-10-06 — Read-only SEO/AEO catalog audit (no Shopify write)
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#11](https://github.com/petralabx/1hr-after/pull/11) (TASK-2387)
+- **Done:** Queried live Admin (client-credentials, `1hourafter.myshopify.com` only). Sampled sitemaps/robots/`agents.md` plus WebFetch storefront. Filed [`knowledge/analyses/2026-10-06-seo-aeo-catalog-audit.md`](knowledge/analyses/2026-10-06-seo-aeo-catalog-audit.md). Proposed product table labeled in `products.md`; canonical Active table still empty.
+- **Next:** Human approves Class B roster. Later TASK: one Shopify write for the highest-leverage duplicate-PDP gap, then re-run the same benchmark. Do not merge this PR from the agent. Do not `theme push`.
+- **Watch:** This VM 429s HTML on `1hourafter.com` (robots/sitemaps succeeded). Never call Admin on `1hours.myshopify.com`. Do not invent SKUs. Class C still empty.
+
 ## 2026-10-06 — Pull live Shopify theme and audit (no Shopify write)
 
 - **Who:** Stephen Alton + Cursor cloud agent
