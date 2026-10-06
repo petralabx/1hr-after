@@ -27,7 +27,7 @@ This is separate from:
 ## 2026-10-06 — Archive gel, Organization, affiliate canonical, catalog hygiene
 
 - **Who:** Stephen Alton + Cursor cloud agent
-- **PR:** open with this commit (TASK-2459). CIP lands; agent cannot merge.
+- **PR:** [#14](https://github.com/petralabx/1hr-after/pull/14) (TASK-2459). CIP lands; agent cannot merge.
 - **Done:** Archived Recovery Body Gel (not deleted). Kept `/blogs/news`, deleted leftover `/blogs/test`. Kept `/pages/affiliate-signup` and 301'd the other two affiliate URLs. Theme Organization name `1Hour After` + Instagram `sameAs`. Published only brand-aligned Shop facts. Catalog vendor/type/title hygiene. FAQ JSON-LD not rewritten.
 - **Next:** Operator GSC recrawl of the 301 list. Class B on `products.md`. Gift-card / founding-year facts stay unpublished until confirmed.
 - **Watch:** App still lacks `write_publications` (`sample-pack` noindex only). Do not call `1hours.myshopify.com`. Do not invent SKUs.
