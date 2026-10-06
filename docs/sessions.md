@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-06 — Post-ship SEO/AEO website review (read-only)
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#13](https://github.com/petralabx/1hr-after/pull/13) (TASK-2389). CIP lands; agent cannot merge.
+- **Done:** Re-sampled live Admin + storefront + the same four WebSearch queries after [#12](https://github.com/petralabx/1hr-after/pull/12). Filed [`knowledge/analyses/2026-10-06-seo-aeo-post-ship-review.md`](knowledge/analyses/2026-10-06-seo-aeo-post-ship-review.md). No Shopify write.
+- **Next:** Human picks one: DRAFT leftover gel, or theme `sameAs` Instagram, or unpublish sample-pack/test blog. GSC recrawl of 301'd URLs. Class B on `products.md`.
+- **Watch:** App still lacks `write_publications`. Do not call `1hours.myshopify.com`. Do not invent SKUs or rewrite claims.
+
 ## 2026-10-06 — Live SEO/AEO gap fixes (Shopify write)
 
 - **Who:** Stephen Alton + Cursor cloud agent

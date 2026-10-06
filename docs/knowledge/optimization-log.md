@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-06 (five-gap ship on live theme)
+> **Last updated:** 2026-10-06 (post-ship re-measure of the five-gap ship)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-06 — storefront — post-ship re-measure (no write)
+
+- **Hypothesis:** After the five-gap 301s, search would drop the mismatched lotion URL.
+- **Change:** None on the store this round. Re-ran the same four queries. See [`analyses/2026-10-06-seo-aeo-post-ship-review.md`](analyses/2026-10-06-seo-aeo-post-ship-review.md).
+- **Result:** Storefront 301s still hold. WebSearch still returns `/products/post-workout-body-care-set` for the lotion query (index lag). Highest leftover on-site: leftover `recovery-body-gel` PDP. Rankings not promised.
+- **Source:** TASK-2389 read-only review
 
 ## 2026-10-06 — storefront + Admin — SEO/AEO five-gap ship
 

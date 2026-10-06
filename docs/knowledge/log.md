@@ -8,6 +8,11 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-06T20:45:00Z] audit | Post-ship SEO/AEO website review (no Shopify write)
+
+- Re-ran the same four-query benchmark + Admin GraphQL after PR #12. 301s still hold on the storefront; Google still lists `/products/post-workout-body-care-set`. Ranked leftovers: `recovery-body-gel` ($0 / OutOfStock / leftover vendor), sitemap `sample-pack` and `/blogs/test`, three affiliate pages, Organization `sameAs` = Shopify Instagram.
+- Filed [`analyses/2026-10-06-seo-aeo-post-ship-review.md`](analyses/2026-10-06-seo-aeo-post-ship-review.md). Class C untouched. No live writes.
+
 ## [2026-10-06T20:25:00Z] ship | Live SEO/AEO gap fixes on 1hourafter.myshopify.com
 
 - Drafted four duplicate/thin ACTIVE products and 301'd their handles. Collection SEO filled; `frontpage` retitled. Missing sampler/page meta filled. Theme `#122661372077` pushed (canonical overrides, 0562 CDN, FAQ heading gate, ANTI CHAFE links).
