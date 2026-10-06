@@ -25,16 +25,16 @@ Class B. Copied from Admin GraphQL on `1hourafter.myshopify.com`. **Do not treat
 | Observed SKU | Admin title | Handle | Status | Human decision |
 |---|---|---|---|---|
 | OH100 | ADAPTOGEN PROTEIN STRENGTHENING SHAMPOO | `adaptogen-protein-strengthening-shampoo` | ACTIVE | pending |
-| OH100-A | ADAPTOGEN PROTEIN STRENGTHENING SHAMPOO | `1hr-adaptogen-shampoo` | ACTIVE | pending (duplicate title) |
+| OH100-A | ADAPTOGEN PROTEIN STRENGTHENING SHAMPOO | `1hr-adaptogen-shampoo` | DRAFT (2026-10-06 live) | 301 → `adaptogen-protein-strengthening-shampoo` |
 | OH800-KIT | ANTI CHAFE GLIDE BALM | `anti-chafe-balm` | ACTIVE | pending |
 | OH300-FBA | COOLING MENTHOL BODY WASH | `cooling-menthol-body-wash` | ACTIVE | pending |
 | OHSP50 | Free 1Hour-After Athletic Sampler Pack | `free-1hour-after-athletic-sampler-pack` | ACTIVE | pending (SKU also on a draft) |
-| 2 | LAB/SS-001 | `lab-ss-001` | ACTIVE | pending (thin; likely unpublish) |
-| OH701-KIT | Muscle Recovery Balm | `post-workout-hair-care-kit` | ACTIVE | pending (handle/title mismatch) |
+| 2 | LAB/SS-001 | `lab-ss-001` | DRAFT (2026-10-06 live) | 301 → `/pages/lab-1hr` |
+| OH701-KIT | Muscle Recovery Balm | `post-workout-hair-care-kit` | DRAFT (2026-10-06 live) | 301 → `muscle-recovery-balm` |
 | — | Muscle Recovery Balm | `muscle-recovery-balm` | ACTIVE | pending (SKU blank in Admin) |
 | — | Recovery BodyGel | `recovery-body-gel` | ACTIVE | pending (SKU blank) |
 | OH600-FBA | REFUELING MAGNESIUM BODY LOTION | `muscle-recovery-magnesium-body-lotion` | ACTIVE | pending |
-| — | REFUELING MAGNESIUM BODY LOTION | `post-workout-body-care-set` | ACTIVE | pending (duplicate title) |
+| — | REFUELING MAGNESIUM BODY LOTION | `post-workout-body-care-set` | DRAFT (2026-10-06 live) | 301 → `muscle-recovery-magnesium-body-lotion` |
 | OH200 | Strengthening Protein Conditioner | `strengthening-protein-conditioner` | ACTIVE | pending |
 | OH700-KIT | The Marathon Pack | `marathon-pack` | ACTIVE | pending |
 | — | THE MARATHON RACE PACK | `marathon-race-pack` | ACTIVE | pending (SKU blank) |

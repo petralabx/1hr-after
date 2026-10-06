@@ -352,6 +352,9 @@
           <!-- End of Judge.me code -->
 <!--            <p class="save-txt"><strong>Save 20% By Pre-Ordering.</strong> Pre-Ordering may take up to 6 weeks to ship</p> -->
           {{ product.description }}
+          {% assign faq_ids = "7878684901549,7878684934317,7389948575917,7145590358189,6668255723693,6668255461549,6668255920301,7162482262189,8140422578349" | split: "," %}
+          {% assign faq_pid = product.id | append: "" %}
+          {% if faq_ids contains faq_pid %}
           <div class="set-prod" id="myfaq">
             <h2 data-mce-fragment="4">FAQ's(Frequently Asked Questions)
             </h2>
@@ -361,7 +364,8 @@
                 <div class="wk-product-faq" id='wk_product_faq'></div>
               </p>
             </div>
-          </div>       
+          </div>
+          {% endif %}       
 
         </div>
          

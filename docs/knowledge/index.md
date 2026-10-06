@@ -41,6 +41,7 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
+- [SEO/AEO live fixes](analyses/2026-10-06-seo-aeo-live-fixes.md) — filed 2026-10-06 as `ship` · Duplicate PDPs drafted + redirected; collection SEO; theme canonicals/0562/FAQ heading; live theme `#122661372077`
 - [SEO/AEO catalog audit](analyses/2026-10-06-seo-aeo-catalog-audit.md) — filed 2026-10-06 as `audit` · Read-only Admin + storefront sample; 14 ACTIVE products; duplicate PDPs and empty collection SEO ranked highest; no Shopify write
 - [Live Shopify theme audit](analyses/2026-10-06-live-shopify-theme-audit.md) — filed 2026-10-06 as `audit` · Published Debut `#122661372077` on 1hourafter.myshopify.com; SANDBOX not pulled; no Shopify write
 - [Karpathy wiki scaffold for 1HR-After](analyses/2026-10-06-karpathy-wiki-scaffold.md) — filed 2026-10-06 as `infra` · Three-layer wiki, Meta ads lane, and the facts this repo deliberately does not contain yet

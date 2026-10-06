@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-06T20:25:00Z] ship | Live SEO/AEO gap fixes on 1hourafter.myshopify.com
+
+- Drafted four duplicate/thin ACTIVE products and 301'd their handles. Collection SEO filled; `frontpage` retitled. Missing sampler/page meta filled. Theme `#122661372077` pushed (canonical overrides, 0562 CDN, FAQ heading gate, ANTI CHAFE links).
+- `write_publications` denied — `sample-pack` noindexed in Liquid instead of unpublished. MLVeda/Repair Remedy drafts not deleted.
+- Filed [`analyses/2026-10-06-seo-aeo-live-fixes.md`](analyses/2026-10-06-seo-aeo-live-fixes.md). Class C untouched. Agents do not merge.
+
 ## [2026-10-06T19:55:00Z] audit | Read-only SEO/AEO catalog audit (no Shopify write)
 
 - Admin GraphQL on `1hourafter.myshopify.com` (client-credentials; token prefix only). 35 products (14 ACTIVE), 6 collections, 10 pages, 51 articles, 39 redirects. `1hours.myshopify.com` was not called.

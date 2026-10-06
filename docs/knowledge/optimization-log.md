@@ -3,11 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-06 (baseline audit filed; no ship)
+> **Last updated:** 2026-10-06 (five-gap ship on live theme)
 
 <!-- AUTO-APPEND:ships:START -->
 
-_No ships yet._
+## 2026-10-06 — storefront + Admin — SEO/AEO five-gap ship
+
+- **Hypothesis:** Duplicate live PDPs and forced collection canonicals were splitting query→page signals.
+- **Change:** DRAFT + 301 four handles; collection SEO; theme canonicals / 0562 / FAQ heading / homepage preview URLs. See [`analyses/2026-10-06-seo-aeo-live-fixes.md`](analyses/2026-10-06-seo-aeo-live-fixes.md).
+- **Result:** WebFetch confirms old duplicate URLs land on canonical PDPs; frontpage title is no longer `ActiveCollection`; homepage shows ANTI CHAFE (not CHEF) live links. Rankings not promised.
+- **Source:** TASK-2388 live write on `1hourafter.myshopify.com`
 
 <!-- AUTO-APPEND:ships:END -->
 
