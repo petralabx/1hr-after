@@ -1,0 +1,41 @@
+{
+  "brand": "1hr-after",
+  "displayName": "1HR-After",
+  "active": true,
+  "tier": "primary",
+  "status": "scaffold",
+  "shopify": {
+    "status": "unconfigured",
+    "shopDomain": null,
+    "publicDomain": null,
+    "adminUrl": null,
+    "clientIdEnv": "ONEHR_AFTER_SHOPIFY_CLIENT_ID",
+    "clientSecretEnv": "ONEHR_AFTER_SHOPIFY_CLIENT_SECRET",
+    "apiVersion": null
+  },
+  "channels": {
+    "metaAds": {
+      "enabled": true,
+      "status": "scaffold",
+      "playbook": "docs/channels/meta-ads.md",
+      "copyArchive": "copy/ads/meta",
+      "adAccountId": null,
+      "pixelId": null,
+      "instagramAccountId": null,
+      "pageId": null
+    }
+  },
+  "seo": {
+    "primaryMarket": null,
+    "secondaryMarkets": [],
+    "primaryLanguage": "en",
+    "brandTagline": null,
+    "brandKeywords": []
+  },
+  "aeo": {
+    "trackPrompts": false,
+    "targetEngines": ["chatgpt", "perplexity", "claude", "gemini"],
+    "competitorBrands": []
+  },
+  "notes": "Steward snapshot only. Env var names are references; values stay in the secret store. Product facts belong in docs/knowledge/products.md after a human supplies them. Do not copy another brand's config."
+}

@@ -16,6 +16,63 @@ Before first edit or any PR_CREATE on `petralabx/1hr-after`:
 5. **Last commit → `mc_complete_task`** (summary + verificationCommands + rollback) **→ freeze**. CIP lands; agents never merge. Next slice = new branch from the integration branch.
 6. If Hub MCP and the HTTP fallback both fail: stop; CoS/CIP paste `prBodyLine`.
 
+## What this repo is
+
+Versioned brand home for **1HR-After**. The directory layout follows the Furgenics brand repo. Meta ads are an extra lane Furgenics does not have. The knowledge base follows Karpathy's LLM-wiki pattern (sources, wiki, schema) — see [`docs/wiki-schema.md`](docs/wiki-schema.md).
+
+- `docs/knowledge/` is the brand wiki (voice, ICP, products, competitors, FAQ, keywords, filed analyses).
+- `docs/sources/` is the immutable raw layer. Agents read it; they do not rewrite committed sources.
+- `docs/channels/meta-ads.md` is the Meta (Facebook and Instagram) playbook. Copy lives in `copy/ads/meta/`.
+- `copy/content-drafts/` is the organic page archive (markdown canonical, HTML paste-ready).
+- `site/` is reserved for the storefront theme. It is empty on purpose.
+- `data/config.json` is the steward snapshot (Shopify and Meta ids). Env var names only — never secret values.
+
+`docs/design-system/` is **out of scope for brand-ops work** — leave it alone unless a dedicated design-system task says otherwise.
+
+There is no `plx-aeo-steward` brand folder for 1HR-After. Until one exists, this repo is the wiki of record. Do not treat the Furgenics steward tree as upstream content.
+
+## Source-of-truth rules
+
+- `docs/knowledge/products.md` is the canonical roster. It is empty until a human adds SKUs. Do not invent rows from another brand.
+- `docs/knowledge/business-identity.md` is canonical for name, address, domain, and email.
+- **Class C pages are human-only:** `brand-voice.md`, `icp.md`, `business-identity.md`, `content-style-guide.md`, `docs/compliance/claims.md`.
+- Class B pages (products, competitors, keywords, market map, backlinks, Meta playbook) need human approval for semantic changes.
+- Meta ad copy stays `Draft` until `docs/compliance/claims.md` names the claim the ad makes.
+
+## Hard guardrails
+
+1. **Never put COGS, fees, margins, or other internal financials in this repo.**
+2. **No drug, disease, or treatment claims.** No proof claims ("clinically proven" and the like) until `docs/compliance/claims.md` allows that wording and cites evidence in `docs/sources/`.
+3. **Do not paste Furgenics or For & Against products, prices, voice, competitors, or theme files into this repo.**
+4. **API keys and secrets never enter this repo.** `data/config.json` may name env vars. Values stay in the secret store.
+5. Do not invent a Shopify domain, pixel id, or ad account id.
+6. Colors in components come from `docs/design-system/tokens.css` (`--1hr-` tokens). No raw hex in components.
+7. Every agent PR carries the Hub-minted `MC-Checkout: dsp_…` line (see the handshake above).
+
+## Workflow discipline
+
+- **Start of session:** read the latest entry in `docs/sessions.md`, then `docs/knowledge/index.md` if the task touches the brand.
+- New approved organic copy lands in `copy/content-drafts/`. Meta variants land in `copy/ads/meta/`.
+- Substantive answers get filed in `docs/knowledge/analyses/` with an index bullet and a `docs/knowledge/log.md` line. See `docs/wiki-schema.md`.
+- **End of session:** append a short entry to `docs/sessions.md` in the same PR.
+
+## Repo map
+
+| Path | What lives there |
+|---|---|
+| `docs/sessions.md` | Append-only session handoff |
+| `docs/wiki-schema.md` | Karpathy wiki schema (layers, operations, ownership) |
+| `docs/knowledge/` | Brand wiki. Start at `index.md` |
+| `docs/knowledge/analyses/` | Filed answers |
+| `docs/sources/` | Immutable raw sources |
+| `docs/channels/meta-ads.md` | Meta ads playbook |
+| `docs/compliance/claims.md` | Allowed claims (Class C, currently empty) |
+| `docs/design-system/` | Tokens. Do not modify for brand-ops tasks |
+| `copy/content-drafts/` | Organic page drafts |
+| `copy/ads/meta/` | Meta ad copy archive |
+| `site/` | Future theme. Placeholder only |
+| `data/config.json` | Shopify and Meta account snapshot |
+
 ## Cursor Cloud specific instructions
 
 ### Operator preferences (durable)
@@ -28,21 +85,19 @@ Before first edit or any PR_CREATE on `petralabx/1hr-after`:
 
 ### Repo notes
 
-This is a `marketing-brand` scaffold repo (`plx-brand.json` → `repoKind: marketing-brand`):
-design-system docs plus one governance validator. There is **no** web app, build step,
-package manager, or dependency file — nothing to `npm install` / `pip install`. The only
-runnable "application" is the stdlib-only Python validator.
+This is a `marketing-brand` repo (`plx-brand.json` → `repoKind: marketing-brand`):
+a Karpathy brand wiki, Meta ads lane, design-system docs, and one governance validator.
+There is **no** web app, build step, package manager, or dependency file — nothing to
+`npm install` / `pip install`. The only runnable check is the stdlib-only Python validator.
 
 - **Toolchain:** system `python3` (3.12) only. The validator uses `dict | None` unions, so it
   needs Python ≥ 3.10; no third-party packages.
-- **Run / validate the repo** (this is the core functionality):
+- **Run / validate the repo:**
   `python3 scripts/check-brand-repo-structure.py` (add `--repo-root <path>` to check another repo).
   Exit `0` = clean or no `plx-brand.json` (skip); exit `1` = structure violations printed to stdout.
-- **Pre-existing caveat:** on the committed `main`, this validator exits `1` with
-  `designSystem.tokenPrefix must look like --brand- (got '--1hr-')` — its regex `^--[a-z]...`
-  rejects the digit-leading `--1hr-` prefix declared in `plx-brand.json`/`tokens.css`. This is a
-  scaffold inconsistency, not an environment problem; leave it unless a task is explicitly to fix it.
-- **Lint/test/build:** none configured yet (see `CONTRIBUTING.md` §5 — "add when project has a
-  test suite"). CI is governance-only: `.github/workflows/plx-mc-compliance.yml` (skips unless the
+  For `brand.slug` `1hr-after` it also requires the wiki, Meta ads playbook, and copy archive.
+- **Token prefix:** `--1hr-` is valid. The prefix regex allows a leading digit.
+- **Lint/test/build:** the structure script is the check (see `CONTRIBUTING.md` §5). CI is
+  governance-only: `.github/workflows/plx-mc-compliance.yml` (skips unless the
   `PLX_MC_BASE_URL` secret is set) and `compliance-gate-drift.yml` (needs network to fetch the
   pinned PLX_MC generator).

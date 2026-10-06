@@ -13,3 +13,12 @@ Before first edit or any PR_CREATE on `petralabx/1hr-after`:
 4. **Stamp at PR open**: put the `MC-Checkout: dsp_…` line in the body at `gh pr create` time (the compliance gate reads the body on opened/synchronize/reopened only, not on edits). Never invent a `dsp_*`, never write `MC-Checkout: pending`, never `--no-verify`, never an empty commit or push to re-trigger CI. If the body must change after open, ask CIP to close/reopen.
 5. **Last commit → `mc_complete_task`** (summary + verificationCommands + rollback) **→ freeze**. CIP lands; agents never merge. Next slice = new branch from the integration branch.
 6. If Hub MCP and the HTTP fallback both fail: stop; CoS/CIP paste `prBodyLine`.
+
+## Wiki schema
+
+This repo keeps a Karpathy-style brand wiki. Before brand-ops edits, read [`docs/wiki-schema.md`](docs/wiki-schema.md), then [`docs/knowledge/index.md`](docs/knowledge/index.md).
+
+- Class C pages (voice, ICP, business identity, content style, claims) are human-only.
+- Meta ads: [`docs/channels/meta-ads.md`](docs/channels/meta-ads.md) and `copy/ads/meta/`.
+- Do not invent products, claims, domains, or ad-account ids. Do not paste another brand's wiki in to fill gaps.
+- File a substantive answer under `docs/knowledge/analyses/` and append `docs/knowledge/log.md`.
