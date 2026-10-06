@@ -27,7 +27,7 @@ This is separate from:
 ## 2026-10-06 — Read-only SEO/AEO catalog audit (no Shopify write)
 
 - **Who:** Stephen Alton + Cursor cloud agent
-- **PR:** open with this commit (TASK-2387)
+- **PR:** [#11](https://github.com/petralabx/1hr-after/pull/11) (TASK-2387)
 - **Done:** Queried live Admin (client-credentials, `1hourafter.myshopify.com` only). Sampled sitemaps/robots/`agents.md` plus WebFetch storefront. Filed [`knowledge/analyses/2026-10-06-seo-aeo-catalog-audit.md`](knowledge/analyses/2026-10-06-seo-aeo-catalog-audit.md). Proposed product table labeled in `products.md`; canonical Active table still empty.
 - **Next:** Human approves Class B roster. Later TASK: one Shopify write for the highest-leverage duplicate-PDP gap, then re-run the same benchmark. Do not merge this PR from the agent. Do not `theme push`.
 - **Watch:** This VM 429s HTML on `1hourafter.com` (robots/sitemaps succeeded). Never call Admin on `1hours.myshopify.com`. Do not invent SKUs. Class C still empty.
