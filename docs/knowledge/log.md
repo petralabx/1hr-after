@@ -8,6 +8,13 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-06T18:25:00Z] audit | Live Shopify theme pull (published Debut only)
+
+- Pulled published theme `#122661372077` (`Theme export  1hours-myshopify-com-debut  03may…`) into `site/theme/`. SANDBOX `#143449981101` not pulled. No Shopify write.
+- Theme Access authenticates on `1hourafter.myshopify.com`. Env `SHOPIFY_FLAG_STORE=1hours.myshopify.com` 401s.
+- Filed [`analyses/2026-10-06-live-shopify-theme-audit.md`](analyses/2026-10-06-live-shopify-theme-audit.md). Recorded shop domain and observed GTM Meta pixel id in `data/config.json`.
+- `--1hr-` tokens are unused in the theme. GTM `GTM-M4LGTWV` loads Meta pixel `1035858581719070`. No Furgenics or For & Against files.
+
 ## [2026-10-06T17:45:00Z] infra | Karpathy wiki and Meta ads lane scaffolded
 
 - Added `docs/knowledge/` (index, log, Class B/C stubs, analyses), `docs/sources/`, `docs/wiki-schema.md`, `copy/content-drafts/`, `copy/ads/meta/`, `data/config.json`, and `site/` placeholder.

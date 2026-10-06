@@ -1,0 +1,1302 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "color_sale_text": "#ffffff",
+    "type_header_base_size": 29,
+    "type_base_size": 16,
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "http://instagram.com/shopify",
+    "social_tumblr_link": "http://shopify.tumblr.com",
+    "social_youtube_link": "",
+    "favicon": "shopify://shop_images/favicon-32x32.png",
+    "mlvedaACS_roundDecimal": false,
+    "mlvedaACS_positionLeft": "10px",
+    "mlvedaACS_defaultCurrency": "CAD",
+    "mlvedaACS_textColor": "#FFFFFF",
+    "mlvedaACS_autoSwitch": false,
+    "mlvedaACS_flagStyle": "circle",
+    "mlvedaACS_isMessageDisplay": true,
+    "mlvedaACS_positionBottom": "10px",
+    "mlvedaACS_messageBackgroundColor": "inherit",
+    "mlvedaACS_messageContent": "<<shop.name>> process all orders in <<shop.currency>>. While the content of your cart is currently displayed in <<shop.selected_currency>>, you will checkout using <<shop.currency>> at the most current exchange rate.",
+    "mlvedaACS_roundDecimalValue": 1,
+    "mlvedaACS_backgroundColor": "inherit",
+    "mlvedaACS_position": "inline",
+    "mlvedaACS_messageColor": "#FFFFFF",
+    "mlvedaACS_textHoverColor": "inherit",
+    "mlvedaACS_enable": true,
+    "mlvedaACS_positionTop": "10px",
+    "mlvedaACS_supportedCurrencies": "CAD USD GBP EUR AUD INR JPY",
+    "mlvedaACS_isCustomized": true,
+    "mlvedaACS_hideDecimal": false,
+    "mlvedaACS_hoverBackgroundColor": "inherit",
+    "mlvedaACS_positionRight": "10px",
+    "mlvedaACS_currencyFormat": "money_with_currency_format",
+    "mlvedaACS_borderLineColor": "inherit",
+    "mlvedaACS_displayFlag": false,
+    "mlvedaACS_borderLook": false,
+    "sections": {
+      "custom-content": {
+        "type": "custom-content",
+        "blocks": {
+          "074d2e9d-84d2-47b4-9f5f-db38e43c5a7b": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/Frame_151.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "4f328b41-0ba9-4d41-8e3b-1e3dc724e85e": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/March_26th_1_HR_After3668_CR.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "85eb293f-d683-472e-b4d3-bc61a64b7caf": {
+            "type": "html",
+            "disabled": true,
+            "settings": {
+              "code": "<div class=\"designed-for-daily\">DESIGNED FOR THE DAILY ATHLETE</div>",
+              "width": "50%"
+            }
+          }
+        },
+        "block_order": [
+          "074d2e9d-84d2-47b4-9f5f-db38e43c5a7b",
+          "4f328b41-0ba9-4d41-8e3b-1e3dc724e85e",
+          "85eb293f-d683-472e-b4d3-bc61a64b7caf"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "custom-content2": {
+        "type": "custom-content2",
+        "blocks": {
+          "13670411-74ae-4a5d-8ab6-35237c4b3949": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"marquee-box\">\n<ul>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n</ul>\n</div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "13670411-74ae-4a5d-8ab6-35237c4b3949"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "9d4f395a-3dd1-4c3b-a8cf-b8fb347d5381": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify://shop_images/aboutusbg_2.png",
+          "title": "",
+          "text": "<h1>WHY 1HOUR AFTER?</h1><h5>We’re redefining post-workout care for the HYROX, Ironman, and marathon communities—where every second counts, including the hour after. 1Hour-After turns recovery into ritual with science-backed body care that rehydrates, replenishes, and refuels skin and hair.<br/><br/>Built for everyday athletes, our formulas go beyond basic grooming. We use high-performance ingredients to support recovery and keep your body as strong as your training routine.</h5>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-1": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter"
+            }
+          },
+          "80b74ff2-b7de-4efb-918e-88b79718fc62": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "80b74ff2-b7de-4efb-918e-88b79718fc62"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#f6f6f6",
+          "color_footer_text": "#333232",
+          "show_locale_selector": true,
+          "show_currency_selector": true
+        }
+      },
+      "45202243-21f9-451b-b390-ede4a2193448": {
+        "type": "custom-content2",
+        "blocks": {
+          "efe369f0-31da-4618-8ec9-bde9ebc6ac07": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"our-power-item\">\n<br>\n<h2>Quality Ingredients You Can Feel\n</h2>\n<br>\n\n<h4 class=\"title\">MAGNESIUM</h4>\n<p>Powered by polymer technology, 1HR-A delivers magnesium directly through the skin to working muscles. This helps restore muscle and skin tissue for faster recovery.</p>\n</div>\n\n<div class=\"our-power-item\">\n<h4 class=\"title\">ZINC</h4>\n<p>Topical zinc has anti-inflammatory and healing properties. It also combats acne, eczema, rosacea, and dandruff thanks to its antifungal effects.</p>\n</div>",
+              "width": "33%"
+            }
+          },
+          "45202243-21f9-451b-b390-ede4a2193448-1676531578aa4d4874-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/MicrosoftTeams-image_540x_56dfe337-1a96-42c2-8778-38a9bab979d3.webp",
+              "width": "33%",
+              "alignment": "bottom-middle"
+            }
+          },
+          "989a5b0c-b479-4e4c-91a6-339ee8de9407": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"our-power-item\">\n<h4 class=\"title\">AMINO ACIDS</h4>\n<p>Sweating depletes moisture from skin and hair, but amino acids help restore it. These antioxidants support hydration, leaving hair soft and strong.\n</p>\n</div>\n<div class=\"our-power-item\">\n<h4 class=\"title\">vitamin e, b3, b5</h4>\n<p>This vitamin blend soothes inflammation while hydrating and strengthening skin and hair. The result: replenished, refueled, and rehydrated tissue.</p>\n</div>",
+              "width": "33%"
+            }
+          }
+        },
+        "block_order": [
+          "efe369f0-31da-4618-8ec9-bde9ebc6ac07",
+          "45202243-21f9-451b-b390-ede4a2193448-1676531578aa4d4874-1",
+          "989a5b0c-b479-4e4c-91a6-339ee8de9407"
+        ],
+        "settings": {
+          "title": "POWER FORMULA TO FUEL YOU ALL WORKOUT LONG"
+        }
+      },
+      "password-header": {
+        "type": "password-header",
+        "settings": {
+          "logo_max_width": 100,
+          "header": "BODYCARE FORMULATED FOR THE HOUR AFTER YOUR WORKOUT"
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "quotes-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+              "author": "Author's name"
+            }
+          },
+          "quotes-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+              "author": "Author's name"
+            }
+          },
+          "quotes-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+              "author": "Author's name"
+            }
+          },
+          "62764375-f6d2-4245-ba6a-3856672534aa": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+              "author": "Author's name"
+            }
+          },
+          "2c3dca35-73a5-4fe9-ae06-149ace1dbec6": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "quotes-0",
+          "quotes-1",
+          "quotes-2",
+          "62764375-f6d2-4245-ba6a-3856672534aa",
+          "2c3dca35-73a5-4fe9-ae06-149ace1dbec6"
+        ],
+        "disabled": true,
+        "settings": {
+          "title": ""
+        }
+      },
+      "article-template": {
+        "type": "article-template",
+        "settings": {
+          "blog_show_author": true,
+          "blog_show_date": true,
+          "show_share_buttons": true,
+          "featured_collection": "featured-collection"
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": false,
+          "show_vendor": false,
+          "enable_payment_button": false,
+          "show_share_buttons": false,
+          "media_size": "medium",
+          "enable_image_zoom": false,
+          "enable_video_looping": false
+        }
+      },
+      "password-footer": {
+        "type": "password-footer",
+        "settings": {
+          "show_share_buttons": true,
+          "social_message": "Spread the word"
+        }
+      },
+      "collection2": {
+        "type": "collection2",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "featured-collection",
+          "grid": 3,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "collection3": {
+        "type": "collection3",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "single",
+          "grid": 3,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "blocks": {
+          "a3a9c29d-67ea-40f5-8d4c-a24adcc294f4": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/cat1.png",
+              "title": "Health Culture"
+            }
+          },
+          "3a9b64ae-f40d-4a0f-94f7-64c8ff5cb340": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/cat3.png",
+              "title": "The science"
+            }
+          },
+          "28e25c49-bd11-491d-b8c4-bc286e8e2f9e": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/img_2_480x480_e6346730-cb7c-4219-924f-ebb4940ef614.png",
+              "title": "Most Popular"
+            }
+          },
+          "7a0830b8-7955-433f-8461-02de257dfe3d": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/img_2_480x480_e6346730-cb7c-4219-924f-ebb4940ef614.png",
+              "title": "Product Guide"
+            }
+          },
+          "e0f1af11-97fe-420e-9e89-ae5cc7fc0494": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/cat2_681a054b-8b56-406a-b66d-d653112f8a4a.png",
+              "title": "The History"
+            }
+          }
+        },
+        "block_order": [
+          "a3a9c29d-67ea-40f5-8d4c-a24adcc294f4",
+          "28e25c49-bd11-491d-b8c4-bc286e8e2f9e",
+          "7a0830b8-7955-433f-8461-02de257dfe3d",
+          "e0f1af11-97fe-420e-9e89-ae5cc7fc0494",
+          "3a9b64ae-f40d-4a0f-94f7-64c8ff5cb340"
+        ],
+        "settings": {
+          "layout": "list",
+          "blog_show_author": true,
+          "blog_show_date": true
+        }
+      },
+      "about-us-content": {
+        "type": "about-us-content",
+        "blocks": {
+          "cd902ceb-2b9b-4b70-984b-f238fe1ff61f": {
+            "type": "top_content",
+            "settings": {
+              "display_banner": true,
+              "banner": "shopify://shop_images/Frame_94.png",
+              "alignment": "right",
+              "title_1": "<h3 class=\"title\">THE WORLD’S <br> FIRST TIME<br> BASED BODYCARE</h3>",
+              "content_1": "THIS IS MORE THAN ANOTHER COLLECTION OF PERSONAL CARE PRODUCTS. THESE ARE SCIENTIFICALLY FORMULATED TO MATCH THE MOMENTUM OF YOUR FITNESS REGIMEN. \n<br><br>\nExplore the 1hr-a active recovery system now.\n<br><br>\n<a href=\"https://1hourafter.com/collections/all\">VIEW THE COLLECTION</a>",
+              "title_2": "",
+              "content_2": "",
+              "title_3": "",
+              "content_3": "",
+              "title_4": "",
+              "content_4": "",
+              "title_5": "",
+              "content_5": ""
+            }
+          },
+          "bdb4dbb7-0c1a-4aaf-b1ea-b3796d7bb251": {
+            "type": "top_content",
+            "settings": {
+              "display_banner": true,
+              "banner": "shopify://shop_images/Frame_93.png",
+              "alignment": "left",
+              "title_1": "<h3 class=\"title\">OWN THE HOUR</h3>",
+              "content_1": "WHEN YOUR WORKOUT ENDS, THE CLOCK BEGINS. YOUR BODY IS MORE OPEN, DOWN TO ITS VERY CELLS, THAN AT ANY OTHER TIME OF THE DAY. WHAT YOU DO IN THE NEXT HOUR GOES DEEPER AND LAST LONGER. <br><br>\nIt’s time to turn your post-workout routine from an afterthought to an active ritual. \n<br><br>\n<!-- <a href=\"https://1hourafter.com/blogs/news\">VIEW ARTICLE</a> -->",
+              "title_2": "",
+              "content_2": "",
+              "title_3": "",
+              "content_3": "",
+              "title_4": "",
+              "content_4": "",
+              "title_5": "",
+              "content_5": ""
+            }
+          },
+          "7c3683af-a3e6-4600-9a51-7bce359d4b69": {
+            "type": "top_content",
+            "settings": {
+              "display_banner": true,
+              "banner": "shopify://shop_images/Frame_95.png",
+              "alignment": "left",
+              "title_1": "<h1 class=\"title\">WELCOME TO<br> A NEW ERA<br> IN ACTIVE<br> RECOVERY</h1>",
+              "content_1": "",
+              "title_2": "",
+              "content_2": "",
+              "title_3": "",
+              "content_3": "",
+              "title_4": "",
+              "content_4": "",
+              "title_5": "",
+              "content_5": ""
+            }
+          }
+        },
+        "block_order": [
+          "7c3683af-a3e6-4600-9a51-7bce359d4b69",
+          "bdb4dbb7-0c1a-4aaf-b1ea-b3796d7bb251",
+          "cd902ceb-2b9b-4b70-984b-f238fe1ff61f"
+        ],
+        "settings": {
+          "display_top_content": true,
+          "top_heading": "",
+          "top_subheading": "",
+          "border_color": "#a6a6a6",
+          "top_content_bgc": "#fafafa",
+          "top_content_tt_size": "30",
+          "top_content_ttc": "#232323",
+          "top_content_txtc": "#3c3c3c",
+          "dots_color": "#9c9c9c",
+          "display_bottom_content": true,
+          "bot_heading": "Behind the scene",
+          "bot_subheading": "Phasellus lorem malesuada ligula pulvinar commodo maecenas suscipit auctom."
+        }
+      },
+      "16510564218bd2197e": {
+        "type": "custom-content",
+        "blocks": {
+          "1cd9d3cd-f4f1-4d50-af6f-4b3e601ce4b5": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"marquee-box\">\n<ul>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n<li>the clock is ticking</li>\n</ul>\n</div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "1cd9d3cd-f4f1-4d50-af6f-4b3e601ce4b5"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "1651052346136c21ed": {
+        "type": "collection",
+        "disabled": true,
+        "settings": {
+          "title": "Featured collection",
+          "collection": "single",
+          "grid": 2,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_ajax_enable": true,
+          "cart_notes_enable": false
+        }
+      },
+      "1651056444332bb4e9": {
+        "type": "custom-content",
+        "blocks": {
+          "1651056444332bb4e9-1": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/Frame_151.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "2ede760b-ecb6-4f94-8162-f9787874ed11": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/HEADERBG_IMAGE-min_1_1.png",
+              "image-mob": "shopify://shop_images/Group_1_1_1.png",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "f546799c-7837-4f76-a2e7-7e3732641ca6": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"designed-for-txt-wrap\">\n<h1 class=\"designed-for-daily\">body care designed for the daily athlete</h1>\n<h2 class=\"designed-for-daily\">Functional Products Formulated To Assist Performance At Every Stage Of Your Workout</h2>\n<div class=\"link-btn\">\n      <a href=\"/collections/all\" class=\"btn\" aria-label=\"View all blogs\">\n        View All Products \n<br><img src=\"https://cdn.shopify.com/s/files/1/0562/2179/4479/files/right-arrow.png?v=1702294846\" alt=\"\">\n      </a>\n    </div>\n</div>",
+              "width": "50%"
+            }
+          },
+          "image_GekYFQ": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/cooled_DTS_IRL_ESCAPISM_0036_2.png",
+              "image-mob": "shopify://shop_images/cooled_DTS_IRL_ESCAPISM_0036_3.png",
+              "width": "100%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1651056444332bb4e9-1",
+          "2ede760b-ecb6-4f94-8162-f9787874ed11",
+          "f546799c-7837-4f76-a2e7-7e3732641ca6",
+          "image_GekYFQ"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "15020300-786d-4530-bbec-7f787fe16620": {
+        "type": "custom-content",
+        "blocks": {
+          "15020300-786d-4530-bbec-7f787fe16620-1676531771948cbc9c-0": {
+            "type": "text",
+            "settings": {
+              "title": "COOLING",
+              "text": "<p>reduce post workout<br/>sweats and redness</p>",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          },
+          "2e7518f5-237f-485d-9386-c2b2b7c09864": {
+            "type": "text",
+            "settings": {
+              "title": "STRENGTHENING",
+              "text": "<p>repair the damage done to your hair & skin during exercise</p>",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          },
+          "1f5720b6-79bc-4abf-ac9b-d97d88a0170e": {
+            "type": "text",
+            "settings": {
+              "title": "HYDRATING",
+              "text": "<p>replenish the moisture<br/>lost during workouts</p>",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          },
+          "d8ae2f27-c67b-4242-aa51-6cdd4b494d23": {
+            "type": "text",
+            "settings": {
+              "title": "MOISTURIZING",
+              "text": "<p>leave your skin & haiR<br/>feeling soft and smooth</p>",
+              "width": "25%",
+              "alignment": "top-middle",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "15020300-786d-4530-bbec-7f787fe16620-1676531771948cbc9c-0",
+          "2e7518f5-237f-485d-9386-c2b2b7c09864",
+          "1f5720b6-79bc-4abf-ac9b-d97d88a0170e",
+          "d8ae2f27-c67b-4242-aa51-6cdd4b494d23"
+        ],
+        "disabled": true,
+        "settings": {
+          "title": "BENEFITS OF INGREDIENTS"
+        }
+      },
+      "94716151-1910-417a-9adf-bd7fbd9b34c8": {
+        "type": "feature-row",
+        "disabled": true,
+        "settings": {
+          "image": "shopify://shop_images/bastien-plu-rKSHAF2RiZQ-unsplash_1_900x_cd15db33-e7da-4995-8f66-7aa94ac513e3.webp",
+          "title": "WHO ARE THESE PRODUCTS FOR?",
+          "text": "<p>1Hour-After products are scientifically formulated for the daily athlete. The people who want to push their body to the limits while pursuing greatness in everything they do. They want to run further, jump higher, lift heavier and last longer. Their incessant passion for more is what fuels us. As a brand, we commit to put as much effort into formulating meaningful body care products as they do into their workouts. Because we know that a successful workout does not end when you leave the gym floor, it ends with a successful post workout recovery routine.</p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "hero-1": {
+        "type": "hero",
+        "disabled": true,
+        "settings": {
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "large",
+          "text_size": "large",
+          "title": "Image with text overlay",
+          "text": "<p>a</p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "hero-2": {
+        "type": "hero",
+        "settings": {
+          "image": "shopify://shop_images/aboutusbg_2.png",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "large",
+          "title": "Image with text overlay",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "blocks": {
+          "e65dac9f-cd6b-4a37-86ac-817dd879dad1": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "e65dac9f-cd6b-4a37-86ac-817dd879dad1"
+        ],
+        "settings": {
+          "display_type": "all",
+          "sort": "alphabetical",
+          "grid": 3
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "featured-collection",
+          "grid": 4,
+          "rows": 1,
+          "show_vendor": false,
+          "show_view_all": true
+        }
+      },
+      "password-content": {
+        "type": "password-content",
+        "settings": {
+          "newsletter_enable": true,
+          "newsletter_form_heading": "LAUNCHING SS/2022",
+          "newsletter_form_subheading": "<p>SUBSCRIBE FOR UPDATES</p>",
+          "newsletter_placeholder": "Email address",
+          "newsletter_button_text": ">"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "layout": "grid",
+          "grid": 4,
+          "rows": 3,
+          "show_collection_image": true,
+          "show_vendor": true,
+          "sort_enable": false,
+          "tags_enable": false
+        }
+      },
+      "db24402a-573c-4cf4-9a49-28013dd607fc": {
+        "type": "featured-blog",
+        "disabled": true,
+        "settings": {
+          "title": "Blog posts",
+          "blog": "news",
+          "post_limit": 3,
+          "blog_show_author": false,
+          "blog_show_date": true,
+          "show_view_all": true
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "disabled": true,
+        "settings": {
+          "title": "Image with text",
+          "text": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "image-bar": {
+        "type": "image-bar",
+        "blocks": {
+          "image-bar-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-1": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-2": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "image-bar-0",
+          "image-bar-1",
+          "image-bar-2"
+        ],
+        "disabled": true,
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo_max_width": 100,
+          "main_linklist": "main-menu",
+          "message": false,
+          "home_page_only": false,
+          "message_text": "Offer Flat 50% off",
+          "message_link": "",
+          "color_bg": "#3a3a3a",
+          "color_text": "#ffffff"
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "blocks": {
+          "feature-columns-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.</p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "feature-columns-0",
+          "feature-columns-1",
+          "feature-columns-2"
+        ],
+        "disabled": true,
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "custom_content_Bq8YWE": {
+        "type": "custom-content",
+        "blocks": {
+          "image_c4PinA": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/Frame_151.jpg",
+              "width": "50%",
+              "alignment": "center"
+            }
+          },
+          "image_HpyBRi": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/HEADERBG_IMAGE-min_1_1.png",
+              "image-mob": "shopify://shop_images/Group_1_1_1.png",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "html_Hma93k": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"designed-for-txt-wrap\">\n<h1 class=\"designed-for-daily\">RACE DAY ESSENTIALS</h1>\n<h2 class=\"designed-for-daily\">From Hyrox to Ironman, We'll Help You Recover After Any Marathon or Workout</h2>\n\n</div>\n<div class=\"prod-info\">\n    <div class=\"col50\">\n          <p>To be used before and during longer events to prevent chafing of skin friction and clothe sores. </p>\n           <div class=\"link-btn\">\n                <a href=\"https://6bx59y79nkxmrxq5-56221794479.shopifypreview.com/products_preview?preview_key=b43bf51c9ba5b7a9635bcc601bf3b87c\" class=\"btn\" aria-label=\"View all blogs\">\n                  SHOP ANTI CHEF BALM\n          <br><img src=\"https://cdn.shopify.com/s/files/1/0562/2179/4479/files/right-arrow.png?v=1702294846\" alt=\"\">\n                </a>\n              </div> \n    </div>\n    <div class=\"col50\">\n      <p>To be used during and after endurance events to assist with cramps, pain management and recovery.</p>\n      <div class=\"link-btn\">\n        <a href=\"https://6bx59y79nkxmrxq5-56221794479.shopifypreview.com/products_preview?preview_key=1bea8b16881057222e0c8f02352ad3b6\" class=\"btn\" aria-label=\"View all blogs\">\n          SHOP RECOVERY BALM\n          <br><img src=\"https://cdn.shopify.com/s/files/1/0562/2179/4479/files/right-arrow.png?v=1702294846\" alt=\"\">\n        </a>\n      </div>\n    </div>\n</div>",
+              "width": "100%"
+            }
+          },
+          "image_kxMdeg": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/d6ee72bf47daeca4b6f478473213c188515478c9_1.png",
+              "image-mob": "shopify://shop_images/mobile_view.png",
+              "width": "100%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "image_c4PinA",
+          "image_HpyBRi",
+          "html_Hma93k",
+          "image_kxMdeg"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "custom_content_PP79By": {
+        "type": "custom-content",
+        "blocks": {
+          "image_zAWJJq": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/desktop_img.jpg",
+              "image-mob": "shopify://shop_images/m.png",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "html_VUzNfn": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"designed-for-txt-wrap\">\n<h1 class=\"designed-for-daily\">body recovery for daily use</h1>\n<h2 class=\"designed-for-daily\">Support your body’s natural recovery — morning, noon, and night.</h2>\n</div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "image_zAWJJq",
+          "html_VUzNfn"
+        ],
+        "settings": {
+          "title": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "hero-1",
+      "feature-row",
+      "db24402a-573c-4cf4-9a49-28013dd607fc",
+      "feature-columns",
+      "1651056444332bb4e9",
+      "custom_content_Bq8YWE",
+      "custom_content_PP79By",
+      "1651052346136c21ed",
+      "collection",
+      "9d4f395a-3dd1-4c3b-a8cf-b8fb347d5381",
+      "45202243-21f9-451b-b390-ede4a2193448",
+      "15020300-786d-4530-bbec-7f787fe16620",
+      "94716151-1910-417a-9adf-bd7fbd9b34c8",
+      "16510564218bd2197e",
+      "hero-2",
+      "quotes",
+      "image-bar"
+    ],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "14060646107696862457": {
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {}
+      },
+      "9760743957074645847": {
+        "type": "shopify://apps/ea-spin-wheel-email-popups/blocks/app-embed-block/559c6968-8916-4f43-b93f-91b8ea061003",
+        "disabled": false,
+        "settings": {}
+      },
+      "4015264832934714879": {
+        "type": "shopify://apps/ecomsend-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "disabled": false,
+        "settings": {}
+      },
+      "10003540932433742857": {
+        "type": "shopify://apps/addly-bundle-upsell/blocks/addly-embed/ba93f155-a558-4082-82dd-21b22b27b698",
+        "disabled": false,
+        "settings": {
+          "n9_embed_css": "/* CSS Rules */",
+          "n9_embed_js": "/* JS Code */"
+        }
+      },
+      "5149645339031002760": {
+        "type": "shopify://apps/minmaxify-order-limits/blocks/app-embed-block/3acfba32-89f3-4377-ae20-cbb9abc48475",
+        "disabled": false,
+        "settings": {
+          "async": false
+        }
+      }
+    }
+  },
+  "presets": {
+    "Light": {
+      "checkout_body_font": "Source Sans Pro",
+      "social_youtube_link": "",
+      "type_header_base_size": 26,
+      "share_twitter": true,
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "color_small_button_text_border": "#162950",
+      "checkout_input_background_color_mode": "white",
+      "social_pinterest_link": "",
+      "color_button": "#DA2F0C",
+      "color_body_text": "#6d6d6d",
+      "checkout_header_image": "",
+      "color_text": "#162950",
+      "social_instagram_link": "",
+      "checkout_error_color": "#ff6d6d",
+      "social_tumblr_link": "",
+      "checkout_body_background_color": "#ffffff",
+      "color_text_field_text": "#162950",
+      "checkout_sidebar_background_image": "",
+      "image_overlay_opacity": 40,
+      "checkout_heading_font": "Roboto",
+      "share_facebook": true,
+      "favicon": "",
+      "social_facebook_link": "",
+      "social_vimeo_link": "",
+      "checkout_accent_color": "#1990c6",
+      "color_sale_text": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "share_pinterest": true,
+      "checkout_body_background_image": "",
+      "type_base_font": "muli_n4",
+      "sections": {
+        "footer": {
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          },
+          "blocks": {
+            "newsletter": {
+              "settings": {},
+              "type": "newsletter"
+            },
+            "link_list": {
+              "settings": {},
+              "type": "link_list"
+            },
+            "text": {
+              "settings": {},
+              "type": "text"
+            }
+          },
+          "type": "footer",
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ]
+        },
+        "hero": {
+          "settings": {
+            "hero_size": "x-large",
+            "text_size": "large",
+            "alignment": "center"
+          },
+          "type": "hero"
+        },
+        "featured-collections": {
+          "settings": {
+            "show_vendor": true,
+            "grid": 3,
+            "rows": 1,
+            "show_view_all": true
+          },
+          "type": "collection"
+        },
+        "1492033809691": {
+          "settings": {},
+          "type": "map"
+        },
+        "collection-template": {
+          "settings": {
+            "layout": "grid",
+            "tags_enable": true,
+            "show_vendor": false,
+            "grid": 2,
+            "show_collection_image": true,
+            "rows": 2,
+            "sort_enable": true
+          },
+          "type": "collection-template"
+        },
+        "1492033924902": {
+          "settings": {
+            "title": ""
+          },
+          "blocks": {
+            "1492033924902-0": {
+              "settings": {
+                "align_text": "center",
+                "width": "100%",
+                "alignment": "center"
+              },
+              "type": "text"
+            }
+          },
+          "type": "custom-content",
+          "block_order": [
+            "1492033924902-0"
+          ]
+        },
+        "article-template": {
+          "settings": {
+            "show_share_buttons": true,
+            "blog_show_date": true,
+            "blog_show_author": true
+          },
+          "type": "article-template"
+        },
+        "product-template": {
+          "settings": {
+            "enable_video_looping": false,
+            "show_vendor": false,
+            "media_size": "medium",
+            "show_share_buttons": true,
+            "enable_image_zoom": true,
+            "show_quantity_selector": false
+          },
+          "type": "product-template"
+        },
+        "blog-template": {
+          "settings": {
+            "layout": "grid",
+            "blog_show_date": false,
+            "blog_show_author": true
+          },
+          "type": "blog-template"
+        },
+        "header": {
+          "settings": {
+            "color_bg": "#162950",
+            "align_logo": "left",
+            "logo_max_width": 135,
+            "color_text": "#ffffff",
+            "logo": "",
+            "message": true,
+            "main_linklist": "main-menu"
+          },
+          "type": "header"
+        },
+        "slideshow": {
+          "settings": {
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5,
+            "slideshow_height": "medium"
+          },
+          "blocks": {
+            "1492095993817": {
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              },
+              "type": "image"
+            },
+            "slideshow-0": {
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              },
+              "type": "image"
+            }
+          },
+          "type": "slideshow",
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ]
+        },
+        "1492096252560": {
+          "settings": {
+            "grid": 3
+          },
+          "blocks": {
+            "1492096252560-1": {
+              "settings": {},
+              "type": "featured_collection"
+            },
+            "1492096252560-0": {
+              "settings": {},
+              "type": "featured_collection"
+            },
+            "1492096252560-2": {
+              "settings": {},
+              "type": "featured_collection"
+            }
+          },
+          "type": "collection-list",
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ]
+        },
+        "cart-template": {
+          "settings": {
+            "cart_notes_enable": false
+          },
+          "type": "cart-template"
+        },
+        "1492033877875": {
+          "settings": {},
+          "blocks": {
+            "1492033877875-0": {
+              "settings": {},
+              "type": "quote"
+            }
+          },
+          "type": "quotes",
+          "block_order": [
+            "1492033877875-0"
+          ]
+        }
+      },
+      "social_snapchat_link": "",
+      "color_body_bg": "#f8f8f8",
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ],
+      "type_base_size": 18,
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "color_text_field_border": "#909090",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "color_borders": "#e4e4e4",
+      "color_text_field": "#ffffff",
+      "checkout_button_color": "#23314e",
+      "type_header_font": "muli_n6",
+      "social_twitter_link": "",
+      "checkout_logo_image": ""
+    },
+    "Default": {
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ],
+      "sections": {
+        "hero-1": {
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          },
+          "type": "hero"
+        },
+        "hero-2": {
+          "settings": {
+            "text_size": "large"
+          },
+          "type": "hero"
+        },
+        "feature-row": {
+          "settings": {},
+          "type": "feature-row"
+        },
+        "footer": {
+          "settings": {
+            "show_payment_icons": true
+          },
+          "blocks": {
+            "footer-1": {
+              "settings": {},
+              "type": "newsletter"
+            },
+            "footer-0": {
+              "settings": {},
+              "type": "link_list"
+            }
+          },
+          "type": "footer",
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ]
+        },
+        "image-bar": {
+          "settings": {},
+          "blocks": {
+            "image-bar-2": {
+              "settings": {},
+              "type": "image"
+            },
+            "image-bar-1": {
+              "settings": {},
+              "type": "image"
+            },
+            "image-bar-0": {
+              "settings": {},
+              "type": "image"
+            }
+          },
+          "type": "image-bar",
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ]
+        },
+        "header": {
+          "settings": {},
+          "type": "header"
+        },
+        "collection": {
+          "settings": {
+            "grid": 4
+          },
+          "type": "collection"
+        },
+        "feature-columns": {
+          "settings": {
+            "title": ""
+          },
+          "blocks": {
+            "feature-columns-2": {
+              "settings": {},
+              "type": "text_block"
+            },
+            "feature-columns-1": {
+              "settings": {},
+              "type": "text_block"
+            },
+            "feature-columns-0": {
+              "settings": {},
+              "type": "text_block"
+            }
+          },
+          "type": "feature-columns",
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ]
+        },
+        "quotes": {
+          "settings": {
+            "title": ""
+          },
+          "blocks": {
+            "quotes-0": {
+              "settings": {},
+              "type": "quote"
+            },
+            "quotes-1": {
+              "settings": {},
+              "type": "quote"
+            },
+            "quotes-2": {
+              "settings": {},
+              "type": "quote"
+            }
+          },
+          "type": "quotes",
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ]
+        }
+      }
+    }
+  }
+}

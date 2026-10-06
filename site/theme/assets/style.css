@@ -1,0 +1,674 @@
+
+@font-face {
+  font-family: 'MonoSpec';
+  src: url('MonoSpec-Regular.eot');
+  src: url('MonoSpec-Regular.eot?#iefix') format('embedded-opentype'),
+    url('MonoSpec-Regular.woff2') format('woff2'),
+    url('MonoSpec-Regular.woff') format('woff'),
+    url('MonoSpec-Regular.ttf') format('truetype'),
+    url('MonoSpec-Regular.svg#MonoSpec-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+ @font-face {
+  font-family: 'MonoSpec';
+  src: url('MonoSpec-Bold.eot');
+  src: url('MonoSpec-Bold.eot?#iefix') format('embedded-opentype'),
+    url('MonoSpec-Bold.woff') format('woff'),
+    url('MonoSpec-Bold.ttf') format('truetype'),
+    url('MonoSpec-Bold.svg#MonoSpec-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MonoSpec';
+  src: url('MonoSpec-Medium.eot');
+  src: url('MonoSpec-Medium.eot?#iefix') format('embedded-opentype'),
+    url('MonoSpec-Medium.woff2') format('woff2'),
+    url('MonoSpec-Medium.woff') format('woff'),
+    url('MonoSpec-Medium.ttf') format('truetype'),
+    url('MonoSpec-Medium.svg#MonoSpec-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+* { font-family: 'MonoSpec' !important; }
+.wrapper{max-width:1200px; width:100%; margin:0 auto; padding: 0 22px; }
+
+.mx-container{ width:100%; margin:0; padding: 0; position: relative;}
+section{ width:100%; margin:0; padding: 0; position: relative;}
+
+.slick-prev { left: -60px; z-index: 1; }
+.slick-next { right: -60px; z-index: 1; }
+
+ul.slick-dots{float:left; width:100%; margin:0px; padding:0px; position:absolute;text-align:center; left:0; bottom: -40px; z-index:1; }
+ul.slick-dots li{ display:inline-block !important; float:none !important; opacity: 1 !important; background:none; width:auto !important; height:auto; outline:none; margin:0px 5px !important; opacity:1; padding: 0;}
+ul.slick-dots li button{ background:transparent; border:1px solid #ffffff; width: 8px; height: 8px; padding:0; border-radius:100%; -moz-border-radius:100%; -webkit-border-radius:100%; line-height:50px; overflow:hidden}
+/*ul.slick-dots li button:before{ background:none; color:#fff}*/
+ul.slick-dots li.slick-active button{ background:#ffffff;}
+ul.slick-dots li.slick-active button:before{color:#ffffff;}
+
+/*HOME PAGE CSS*/
+.abcus-wrap{ float: left; width:100%;height: calc(100vh - 78px); padding: 0px 0px 40px; margin-top: 80px;display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient:horizontal; -webkit-box-direction:normal; -ms-flex-flow:row wrap; flex-flow:row wrap;position: relative; 
+  background-color: #FA5A16; /*   background-color: #fa4616; */  overflow: hidden;}
+.abcus-wrap .row {display: -webkit-box;display: -ms-flexbox;display: flex;-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width:100%; -webkit-animation-timing-function:ease-in-out; animation-timing-function:ease-in-out; -webkit-animation-duration: 0.3s; animation-duration: 0.3s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; opacity: 0; position: relative;}
+.abcus-wrap .row:not(.r1){-webkit-animation-duration: 0.8s;animation-duration: 0.8s;}
+.abcus { width: 100%; padding: 0 50px; }
+
+.abcus-wrap .row .col { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-animation-timing-function:ease-in-out; animation-timing-function:ease-in-out; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-name: colWidth; animation-name: colWidth; -webkit-animation-delay: 1s; animation-delay: 1s; opacity: 0;}
+.abcus-wrap .row div{font-size: 96px; line-height: 115%; color:#ffffff; font-weight: 700; text-transform: uppercase;position: relative}
+.abcus-wrap .row div.word{padding:0 20px;}
+.abcus-wrap .row div.line{height: 10px; min-width:70px; margin-top: 10px; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-duration: 0.5s; animation-duration: 0.5s; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; position: relative;}
+.abcus-wrap .row div.line:before{content:""; position: absolute; width:calc(100% - 40px); height:100%; left: 20px; top:0; background-color: #ffffff;}
+.abcus-wrap .row sup { font-size: 25%; display: inline-block; position: absolute; top: 20px; right: 0; }
+
+/* .abcus-wrap .wrapper{animation-timing-function:ease-in-out; animation-duration: 0.5s; animation-fill-mode: forwards; animation-name: moveRight; animation-delay: 5.5s;} */
+
+/*Animation for ROW*/
+.abcus-wrap .row{-webkit-animation-duration: 0.5s;animation-duration: 0.5s;}
+.abcus-wrap .r1{-webkit-animation-name: row1;animation-name: row1; -webkit-animation-delay: 0.6s; animation-delay: 0.6s;}
+.abcus-wrap .r2{-webkit-animation-name: row2;animation-name: row2; -webkit-animation-delay: 2.6s; animation-delay: 2.6s;}
+.abcus-wrap .r3{-webkit-animation-name: row3;animation-name: row3; -webkit-animation-delay: 2.9s; animation-delay: 2.9s;}
+.abcus-wrap .r4{-webkit-animation-name: row4;animation-name: row4; -webkit-animation-delay: 3.2s; animation-delay: 3.2s;}
+.abcus-wrap .r5{-webkit-animation-name: row5;animation-name: row5; -webkit-animation-delay: 3.4s; animation-delay: 3.4s;}
+.abcus-wrap .r6{-webkit-animation-name: row6;animation-name: row6; -webkit-animation-delay: 3.6s; animation-delay: 3.6s;}
+
+/*Animation for LINE*/
+.abcus-wrap .line { -webkit-animation-name: r1-line; animation-name: r1-line; -webkit-animation-delay: 2.0s; animation-delay: 2.0s;}
+.abcus-wrap .r1 .word.c3 { padding-right: 30px; margin-right: 20px; }
+.abcus-wrap .r2 .line.c1 { max-width: 140px; }
+.abcus-wrap .r3 .line.c3 { max-width: 90px; }
+.abcus-wrap .r4 .line.c2 { max-width: 220px; }
+.abcus-wrap .r5 .line.c4 { max-width: 180px; }
+
+@-webkit-keyframes row1 { 0%{opacity: 10; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px);} 100%{opacity:1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+
+@keyframes row1 { 0%{opacity: 10; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px);} 100%{opacity:1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+@-webkit-keyframes row2 { 0%{opacity: 0; -webkit-transform: translate(0px, -10px); transform: translate(0px, -10px);} 100%{opacity:1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+@keyframes row2 { 0%{opacity: 0; -webkit-transform: translate(0px, -10px); transform: translate(0px, -10px);} 100%{opacity:1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+@-webkit-keyframes row3 { 0%{opacity: 0; -webkit-transform: translate(0px, -10px); transform: translate(0px, -10px);} 100%{opacity:1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+@keyframes row3 { 0%{opacity: 0; -webkit-transform: translate(0px, -10px); transform: translate(0px, -10px);} 100%{opacity:1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+@-webkit-keyframes row4 { 0%{opacity: 0; -webkit-transform: translate(0px, -10px); transform: translate(0px, -10px);} 100%{opacity:1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+@keyframes row4 { 0%{opacity: 0; -webkit-transform: translate(0px, -10px); transform: translate(0px, -10px);} 100%{opacity:1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+@-webkit-keyframes row5 { 0%{opacity: 0; -webkit-transform: translate(0px, -10px); transform: translate(0px, -10px);} 100%{opacity:1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+@keyframes row5 { 0%{opacity: 0; -webkit-transform: translate(0px, -10px); transform: translate(0px, -10px);} 100%{opacity:1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+@-webkit-keyframes row6 { 0%{opacity: 0; -webkit-transform: translate(0px, -10px); transform: translate(0px, -10px);} 100%{opacity:1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+@keyframes row6 { 0%{opacity: 0; -webkit-transform: translate(0px, -10px); transform: translate(0px, -10px);} 100%{opacity:1; -webkit-transform: translate(0px, 0px); transform: translate(0px, 0px); } }
+
+
+@-webkit-keyframes r1-line {0%{ width: 70px; } 100%{width: 100%;}}
+@keyframes r1-line {0%{ width: 70px; } 100%{width: 100%;}}
+@-webkit-keyframes colWidth {0%{ opacity: 0; } 100%{ opacity: 1;}}
+@keyframes colWidth {0%{ opacity: 0; } 100%{ opacity: 1;}}
+
+/*Dial Animation*/
+.dial-wrapper.mobile{display:none;}
+.dial-wrapper { background-color:#FA5A16;
+/*   background-color: #fa4616; */
+  display: flex;align-items: center;justify-content: center; padding: 60px 0 60px; position: relative; width:100%;height: 100vh;position: sticky; top: 0; left: 0;}
+.dial{position: relative;}
+.dial svg{width:610px; height:610px; position:relative}
+.dial svg circle{transform: rotate(-90deg);	transform-origin: 50% 50%; transition: stroke-dashoffset 0.35s; fill: none; stroke-width: 15px; stroke:#ffffff; stroke-dasharray: calc(295px * 2 * 3.14); stroke-dashoffset: calc(295px * 2 * 3.14);}
+.dial svg circle.track{stroke:rgba(255,255,255,0.4);}
+.dial svg circle.progress{stroke:#ffffff}
+
+.dial-products{position:absolute; left: 0; top:0; width:100%; height:100%; display: flex; justify-content: center; align-items: center;}
+.dial-products h4{position: absolute; left:0; top:0; width:100%; height:100%; display: flex; justify-content: center; align-items:center; text-align: center; font-weight: 700; color:#ffffff; font-size:40px; transition: all ease-in-out 0.6s; -webkit-transition: all ease-in-out 0.6s;}
+.dial-products h4.hide{transform: translateX(-80px); opacity: 0; visibility: hidden;}
+.dial-products h4 sup{font-size: 30%; margin-top:-20px;}
+.dial-products h4 span.divider{width:200px; height:5px; padding:0 15px; position:relative;}
+.dial-products h4 span.divider:after{content:''; width:calc(100% - 30px); position: absolute; left:15px; top:0; height:100%; background-color: #ffffff;}
+.dial-products ul.p-list{float: left; width:100%; height:100%; margin:0; padding: 0; position:relative; list-style-type: none; overflow: hidden;}
+.dial-products ul.p-list li{position:absolute; left:0; top:0; float:left; width:100%; height:100%; margin:0; padding:0; display: flex; justify-content: center; align-items:center; transition: all ease-in-out 0.6s; transform: translateX(150px); opacity: 0; visibility: hidden;}
+.dial-products ul.p-list li.in{transform: translateX(0); opacity: 1; visibility: visible;}
+.dial-products ul.p-list li.out{transform: translateX(-150px); opacity: 0; visibility: hidden;}
+.dial-products ul.p-list li div.item{font-size:100px; font-weight: 700; color:#ffffff; width:100%; height:100%; display: flex; justify-content: center; align-items: center; flex-flow:row wrap; padding: 100px;}
+.dial-products ul.p-list li div.item a {width:100%; height: 100%;}
+.dial-products ul.p-list li div.item img{ width:100%; height: 100%; object-fit: contain; }
+
+.dial-products ul.pointers{position: absolute; left:0; top:0; width:100%; height:100%;}
+.dial-products ul.pointers li{width:25px; height:25px; position:absolute; border-radius:100%; -webkit-border-radius:100%; background-color: #ffffff;}
+.dial-products ul.pointers li:nth-child(1){right:107px; top:64px;}
+.dial-products ul.pointers li:nth-child(2){right:27px; top:420px;}
+.dial-products ul.pointers li:nth-child(3){right:255px; top:585px;}
+.dial-products ul.pointers li:nth-child(4){right:445px; top:545px;}
+.dial-products ul.pointers li:nth-child(5){right:577px; top:370px;}
+.dial-products ul.pointers li:nth-child(6){right:560px; top:170px;}
+
+
+.product_detail_view{min-width: 90px; margin-right:5px;border-radius: 0 !important; -webkit-border-radius: 0 !important; moz-border-radius: 0 !important; appearance: none; -webkit-appearance: none;}
+.product_detail_view.buy-now{ padding:7px 10px;border-radius: 0 !important; -webkit-border-radius: 0 !important; moz-border-radius: 0 !important; appearance: none;-webkit- appearance: none;}
+
+.product-list .card .product-form{width: auto; float: left; margin: 0; padding: 0;border-radius: 0 !important; -webkit-border-radius: 0 !important; moz-border-radius: 0 !important; appearance: none; -webkit-appearance: none;}
+.product-list .card .product-form input{ min-height:auto;border-radius: 0 !important; -webkit-border-radius: 0 !important; moz-border-radius: 0 !important; appearance: none; -webkit-appearance: none;}
+.dial-wrapper{transition: all ease-in-out 0.7s; -webkit-transition: all ease-in-out 0.7s;opacity: 0;   }
+.dial-wrap{ text-align:center}
+.dial-wrap .cart__continue-btn{ margin-top:40px}
+
+.lab-series .page-width{max-width: 100%; padding: 0 30px;}
+.dial-wrapper.laptop{display:none;}
+
+
+
+
+
+/* ===========================Home Page Changes 27-4-22======================================= */
+ .product-list-text .grid__item {
+    width: 100% !important;
+}
+
+.product-list-text .product-card__image-with-placeholder-wrapper.card-img {
+    padding: 0px !important;
+}
+
+.product-list-text .card {
+    height: 100%;
+}
+
+#shopify-section-16510564218bd2197e {
+    padding: 0px !important;
+}
+#shopify-section-16510564218bd2197e .page-width {   
+    max-width: 100%;
+}
+.marquee-box {
+    background-color: #000;
+    color: #fff;
+    padding:15px 10px;
+  font-size: 14px;
+}
+.marquee {
+  margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+}
+
+.marquee-box ul {
+    display: flex;
+}
+.marquee-box ul li {
+    padding: 0px 15px;
+    margin: 0px 30px;
+    white-space: nowrap;
+    animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+   0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/* #shopify-section-hero-2{
+    background: url(https://cdn.shopify.com/s/files/1/0561/0618/8973/files/TTMCgShw_1.jpg?v=1651057246) no-repeat right top;
+	background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    padding: 130px 0px;
+      position: relative;
+} */
+
+#shopify-section-1651056444332bb4e9 {
+    padding: 0px !important;
+  position: sticky;
+    top: 0;
+  z-index: -1;
+   
+}
+#shopify-section-1651056444332bb4e9 .page-width {
+    max-width: 100% !important;
+/*     height: 100vh; */
+}
+
+#shopify-section-1651056444332bb4e9 .custom__item-inner--image {
+    max-width: 100% !important;
+      max-height: 100%;
+}
+
+#shopify-section-1651056444332bb4e9 .custom__item-inner--image img {
+    max-width: 100% !important;
+    max-height: 100vh;
+    object-fit: cover;
+/*     height: 100vh; */
+}
+
+
+div#shopify-section-1651052346136c21ed {
+    padding: 0px;
+    height: 100vh;
+}
+#shopify-section-1651052346136c21ed ul.grid.grid--uniform li {
+    height: 100vh;
+}
+#shopify-section-1651052346136c21ed .card-body {
+    padding: 0px !important;
+}
+
+
+.custom__item.custom__item--html.custom__item--f546799c-7837-4f76-a2e7-7e3732641ca6.small--one-half.medium-up--one-half {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center !important;
+    z-index: 999999;
+    transform: translate(-50%, -50%);
+    padding: 0px;
+    margin: 0px;
+}
+
+.designed-for-daily {
+    text-align: center;
+    font-size: 30px;
+    font-weight:700;
+    color: #fff;
+}
+#shopify-section-1651056444332bb4e9 .custom__item.custom__item--image {
+    padding: 0px;
+
+} 
+
+.product-list .card .card-img {   
+    padding:0px;
+}
+
+.product-list .card .card-img img {
+    object-fit: cover;
+  
+}
+img#ProductCardImage-collection-7141660655789 {
+    object-fit: contain;
+/*     width: 300px; */
+}
+div#shopify-section-collection {
+    padding: 0px;
+}
+
+#shopify-section-collection .hr--invisible {
+    display: none;
+}
+#shopify-section-collection .text-center .btn{ 
+  display: none;
+}
+
+section.abcus-wrap {
+    margin-top: 0px;
+  float: unset;
+    
+}
+header.site-header.logo--left {
+    background-color: #fa5a16;
+}
+.product-list-text .price__regular {
+/*     display: none; */
+}
+div#shopify-section-footer {
+    position: relative;
+}
+.lab-series .lab-subscribe .contact-form .input-group {
+    max-width: 540px;
+    float: right;
+}
+.lab-series .lab-subscribe .contact-form .input-group .input-group__field {   
+    color: #fff;
+}
+
+
+.lab-series .lab-subscribe .contact-form .input-group .input-group__field::placeholder  {   
+    color: #fff;
+}
+.lab-series .lab-subscribe .contact-form .input-group .input-group__field:focus{
+     border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* 
+.mobile-nav-wrapper.js-menu--is-open {  
+    background-color: #000;
+}
+
+.mobile-nav-wrapper {
+    background-color: #000 !important;;
+}
+
+.mobile-nav-wrapper::after {   
+    border-bottom: none;
+}
+
+li.mobile-nav__item.border-bottom.mlvedaMobileSwitcher {
+    border: none;
+}  */
+
+
+
+
+/* ===========================Home Page Changes 27-4-22 End======================================= */
+
+
+
+@media screen and (max-width: 1366px){
+  .abcus-wrap .row div{font-size: 78px;}
+  .abcus-wrap .row div.line{ height:8px;}
+  .abcus-wrap .r4 .line.c2 { max-width: 150px; }
+  .abcus-wrap .r5 .line.c4 { max-width: 150px; }
+  .abcus-wrap .r1 .word.c3 { padding-right: 25px; }
+  .abcus-wrap .row sup { top: 15px; }
+   
+  
+  
+  .dial-wrapper.laptop { display: inline-flex; padding: 0px 0 60px;} 
+  .dial svg{ width:500px;height:500px}   
+  .dial-wrapper.desktop{display:none;}
+  .dial-wrapper.desktop.laptop{display:inline-flex;}
+  .dial-wrap .cart__continue-btn { margin-top: 20px;}
+  
+  
+  
+.dial-products ul.pointers li:nth-child(1) { right: 125px; top: 64px;}
+.dial-products ul.pointers li:nth-child(2) {right: 30px; top: 280px;}  
+.dial-products ul.pointers li:nth-child(3) { right: 180px; top: 456px;}  
+.dial-products ul.pointers li:nth-child(4) {right: 376px; top: 426px;}  
+.dial-products ul.pointers li:nth-child(5) {right: 466px; top: 220px;}  
+.dial-products ul.pointers li:nth-child(6) { right: 381px; top: 73px;} 
+  
+
+  
+/*   #shopify-section-hero-2{padding:80px 0} */
+  
+  
+}
+/*@media screen only (max-width: 1366px){
+.dial-products ul.pointers li:nth-child(1) { right: 125px; top: 64px;}
+.dial-products ul.pointers li:nth-child(2) {right: 30px; top: 280px;}  
+.dial-products ul.pointers li:nth-child(3) { right: 180px; top: 456px;}  
+.dial-products ul.pointers li:nth-child(4) {right: 376px; top: 426px;}  
+.dial-products ul.pointers li:nth-child(5) {right: 466px; top: 220px;}  
+.dial-products ul.pointers li:nth-child(6) { right: 381px; top: 73px;} 
+
+} */
+
+@media screen and (max-width:1199px){
+  .dial-wrapper.desktop{display:none;}
+ /* .dial-wrapper.laptop{display:none;}
+  .dial-wrapper.mobile{height:auto; padding:40px 50px 60px; display: flex; justify-content: center; align-items: center; min-height: 1vh; }
+  .dial-wrapper.mobile .dial .circle { width: 100%; height: 100%; position: absolute; top: 0; left: 0; border: 10px solid rgba(255,255,255,0.9); border-radius: 50%; }
+  .dial-wrapper.mobile .dial .p-sldr-list li img{width:100%; height: 100%; object-fit: contain; object-position: center;}
+  .dial-wrapper.mobile .p-sldr-list .item { display: flex; justify-content: center; align-items: center; height: 400px; }
+ .dial-wrapper.mobile .dial { width: 600px; height: 600px; overflow: hidden; padding: 100px; }
+  .dial-wrapper.mobile .dial { width: 360px; height: 360px; padding: 10px;}
+  .dial-wrapper.mobile .dial a { display: block; width: 100%; height: 100%; }*/
+  
+  
+  
+  
+  
+}
+
+@media screen and (max-width: 1170px){
+  .abcus-wrap .row div{font-size: 60px;}
+  .abcus-wrap .row div.line{ height: 6px;}
+  .abcus-wrap .r1 .word.c3 { padding-right: 20px; }
+  .abcus-wrap .row sup { top: 10px; }
+}
+
+@media screen and (max-width:1024px){
+/*-------------------------------------------sanku-28-12-2021-------------------------------*/
+  
+ 
+  
+  /*.dial-products ul.pointers li:nth-child(1) { right: 112px; top: 90px;}
+  .dial-products ul.pointers li:nth-child(2) {right: 50px; top: 190px;}
+  .dial-products ul.pointers li:nth-child(3) {right: 140px;  top: 340px;}
+  .dial-products ul.pointers li:nth-child(4) { right: 290px; top: 301px;}
+  .dial-products ul.pointers li:nth-child(5) {right: 328px; top: 200px;}  
+  .dial-products ul.pointers li:nth-child(5) {right: 328px; top: 200px;}
+  .dial-products ul.pointers li:nth-child(6) { right: 285px; top: 104px;}*/
+ 
+  .dial-products h4 span.divider { width: 110px;}
+  .dial-products h4{font-size: 30px;}
+  
+  .dial-products ul.p-list li.out { transform: translateX(-50px);}
+  .dial-products ul.p-list li{transform: translateX(50px);}
+  .dial svg circle{stroke-width: 12px;}
+  .dial-wrap{ text-align:center}
+  
+  
+  
+  .abcus-wrap,.dial-wrapper{height:auto}
+  
+  
+  /* =======HOME PAGE 27-4-2022========== */
+  #shopify-section-1651052346136c21ed ul.grid.grid--uniform li {
+    height: 100%;
+}
+  #shopify-section-1651056444332bb4e9 .page-width {  
+    height: 100%;
+    padding: 0px;
+}
+  #shopify-section-1651056444332bb4e9 .custom__item-inner--image img {
+    max-height: 100%;   
+    height: 100%;
+}
+  div#shopify-section-1651052346136c21ed {   
+    height: 100%;
+}
+  #shopify-section-16510564218bd2197e .page-width {  
+    padding: 0px;
+}
+  .designed-for-daily {  
+    font-size: 16px;
+}
+  img#ProductCardImage-collection-7141660655789 {   
+/*     width: 220px; */
+} 
+  
+
+}
+
+
+@media screen and (max-width:992px){
+  .abcus { padding: 0 30px; }
+  .abcus-wrap .row div{font-size: 50px;}
+  .abcus-wrap .row div.line{ height: 6px;}
+  .abcus-wrap .r1 .word.c3 { padding-right: 20px; margin-right: 10px; }
+  .abcus-wrap .row sup { font-size: 30%; top: 10px; }
+  .abcus-wrap .row div.word { padding: 0 10px; }
+  .abcus-wrap .row div.line:before { width: calc(100% - 20px); left: 10px; }
+
+  .p-sldr-wrap{ width:100%; margin:0; padding:0; position: relative;}
+  .p-sldr-list{ width:100%; margin:0; position: relative;}
+  .p-sldr-list li{ width:100%; margin:0; padding:0;}
+  .p-sldr-list li div.item{ margin:0; padding:0; }
+  .p-sldr-list li h4{width:100%; height:100%; display: flex; justify-content: center; align-items:center; text-align: center; font-weight:600; color:#ffffff; font-size:30px;}
+  .p-sldr-list li h4 sup{font-size: 30%; margin-top:-20px;}
+  .p-sldr-list li h4 span.divider{width:100px; height:3px; padding:0 15px; position:relative;}
+  .p-sldr-list li h4 span.divider:after{content:''; width:calc(100% - 30px); position: absolute; left:15px; top:0; height:100%; background-color: #ffffff;}
+  
+  
+  
+  
+
+}
+
+@media screen and (max-width:768px){
+  .abcus-wrap {min-height: 1px; padding: 20px 0; }
+  .abcus-wrap .row { margin-bottom: 5px; }
+  .abcus-wrap .row div.word { font-size: 40px; }
+  .abcus-wrap .row div.line { min-width: 40px; }
+  .abcus-wrap .r2 .line.c1 { max-width: 80px; }
+  .abcus-wrap .r3 .line.c3 { max-width: 40px; }
+  .abcus-wrap .r4 .line.c2 { max-width: 100px; }
+  .abcus-wrap .r5 .line.c4 { max-width: 100px; }
+
+  /* Hide animation for mobile   */
+  .abcus-wrap .row,.abcus-wrap .row .col{opacity: 1;animation:none;}
+  .abcus-wrap .row div.line{animation:none;width: 100%;}
+}
+
+@media screen and (max-width:767px){
+
+  .dial-wrapper.laptop{display:none;}
+  .dial-wrapper.mobile{height:auto; padding:40px 50px 60px; display: flex; justify-content: center; align-items: center; min-height: 1vh; }
+  .dial-wrapper.mobile .dial .circle { width: 100%; height: 100%; position: absolute; top: 0; left: 0; border: 10px solid rgba(255,255,255,0.9); border-radius: 50%; }
+  .dial-wrapper.mobile .dial .p-sldr-list li img{width:100%; height: 100%; object-fit: contain; object-position: center;}
+  .dial-wrapper.mobile .p-sldr-list .item { display: flex; justify-content: center; align-items: center; height: 400px; }
+/* .dial-wrapper.mobile .dial { width: 600px; height: 600px; overflow: hidden; padding: 100px; }*/
+  .dial-wrapper.mobile .dial { width: 360px; height: 360px; padding: 10px;}
+  .dial-wrapper.mobile .dial a { display: block; width: 100%; height: 100%; }
+  
+  
+  .abcus-wrap{height: auto !important;}
+ 
+  .dial svg { width: 330px;  height: 330px; position: relative;}
+  
+  .dial-products ul.pointers li:nth-child(1) {right: 64px; top: 60px;}
+ .dial-products ul.pointers li:nth-child(2) { right: 25px; top: 175px;}
+ .dial-products ul.pointers li:nth-child(3) { right: 130px; top: 295px;}
+  
+  .dial-products ul.pointers li:nth-child(4) { right: 270px; top: 249px;}
+  .dial-products ul.pointers li:nth-child(5) { right: 304px;  top: 145px;}
+  .dial-products ul.pointers li:nth-child(6) {right: 230px;  top: 35px;}
+
+}
+
+
+
+@media screen and (max-width: 640px){
+ /* .dial-wrapper.mobile .dial { width: 500px; height: 500px; padding: 80px; }*/
+  .dial-wrapper.mobile .p-sldr-list .item { height: 340px; }
+  .slick-dots li button:before{ display:none}  
+  .dial-products h4{font-size: 24px;}
+  .dial-products h4 span.divider { width: 125px;}
+}
+
+@media screen and (max-width: 576px){
+  .abcus-wrap { margin-top: 50px; }
+  .dial-wrapper.mobile { padding: 30px 22px 50px; }
+ /* .dial-wrapper.mobile .dial { width: 400px; height: 400px; padding: 50px; }*/
+  .dial-wrapper.mobile .p-sldr-list .item { height: 300px; }
+  .dial-wrapper.mobile .p-sldr-list .slick-prev { left: -30px; }
+  .dial-wrapper.mobile .p-sldr-list .slick-next { right: -30px; }
+  
+  #shopify-section-1651052346136c21ed ul.grid.grid--uniform li {
+    height: 300px;
+}
+}
+
+@media screen and (max-width: 480px){
+  .abcus-wrap .row div.line { min-width: 30px; }
+  .abcus-wrap .r2 .line.c1, .abcus-wrap .r4 .line.c2 { display: none; }
+  .abcus-wrap .r4 .line.c2 { max-width: 80px; }
+  .abcus-wrap .r5 .line.c4 { max-width: 80px; }
+  .abcus-wrap .row div.word { font-size: 22px; }
+  .abcus-wrap .row div.line { height: 3px; }
+  .abcus-wrap .r1 .word.c3 { padding-right: 10px; }
+  .abcus-wrap .row sup { top: 3px; }
+}
+
+@media screen and (max-width: 375px){
+  /*.dial-wrapper.mobile .dial { width: 320px; height: 320px; padding: 50px; }*/
+  .dial-wrapper.mobile .p-sldr-list .item { height: 220px; }
+  .dial-wrapper.mobile .p-sldr-list .slick-prev { left: -15px; }
+  .dial-wrapper.mobile .p-sldr-list .slick-next { right: -15px; }
+}
+
+
+@media screen and (max-width: 360px) {
+  .abcus-wrap .row div.word { font-size: 18px; }
+  .abcus-wrap .row div.line:before { width: calc(100% - 10px); left: 5px; }
+ /* .dial-wrapper.mobile .dial { width: 280px; height: 280px; padding: 40px; }*/
+  .dial-wrapper.mobile .dial .circle { border-width: 7px; }
+  .dial-wrapper.mobile .p-sldr-list .item { height: 200px; }
+}
+
+/* css added on 11-12-23 for home page  */
+.site-header, .site-header__mobile-nav .try-samples-wrap a{color:#ffffff;}
+.site-header__icons-wrapper .try-samples-wrap a:hover{color: #000;border: 2px solid #000;}
+
+.try-samples-wrap a {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    text-align: center;
+    line-height: normal;
+}
+@media screen and (max-width: 768px) {
+  .try-samples-wrap{margin-right:0px}
+}
+.logo-menu-text{position: static;transform: unset;line-height:normal;}
+#header{position: absolute;width: 100%;display: block;}
+#shopify-section-1651056444332bb4e9.my-custom-content-class{z-index:0 !important;}
+.designed-for-txt-wrap h1.designed-for-daily {font-size:45px}
+.designed-for-txt-wrap h2.designed-for-daily {margin: 25px 0;font-weight:600; font-family: EB Garamond,serif!important;font-size:34px;text-transform:capitalize;}
+.custom-home-header{position:absolute;width:100%;}
+.site-header__cart .crt-number{margin-left: 5px;border: 2px solid #fff;padding: 3px 8px;border-radius: 50%;}
+.link-btn{width:100%;text-align:center;}
+.link-btn a, .link-btn a:hover{background-color: unset !important; border: 2px solid #fff;display: inline-block;border-radius: 7px;}
+.link-btn a:hover img{left:5px;}
+.link-btn a img{width: 20px;margin-bottom: -2px; transition: .3s;position:relative;left:0;}
+.designed-for-txt-wrap{width:100%}
+.custom-home-header header.site-header.logo--left{background-color:transparent;}
+
+@media only screen and (max-width: 992px){
+  .template-product .try-samples-wrap a{border: 1px solid #000;}
+  .designed-for-txt-wrap h1.designed-for-daily {font-size: 28px;}
+  .designed-for-txt-wrap h2.designed-for-daily {margin: 15px 0;font-size: 20px;}
+}
+@media only screen and (max-width: 640px){
+  .designed-for-txt-wrap h1.designed-for-daily {font-size: 16px; margin-bottom: 5px;}
+  .site-header__mobile-nav .try-samples-wrap a{font-size: 12px; padding: 3px 8px; border-radius:5px;}
+  .designed-for-txt-wrap{padding:0 20px;margin-top: 30px;}
+  .designed-for-txt-wrap h2.designed-for-daily{margin: 5px 0 10px;font-size: 14px;}
+  .link-btn a {font-size: 10px;}
+  .link-btn a img {width:15px}
+}
+
+ /* css added on 20-12-23 for home page body care section */
+#shopify-section-1651056444332bb4e9 img.mob-only{display:none;}
+.custom-home-header .try-wrap-mob-only{width: 100%;text-align: center;background-color: #8C9AA1;position: relative;
+    z-index: 2;padding-bottom:5px;display:none;line-height: normal;}
+.custom-home-header .try-wrap-mob-only a{color:#fff; font-size:10px;font-weight:500;}
+.custom-home-header .try-wrap-mob-only span{border-bottom: 1px solid #fff;}
+.custom-home-header .hdr-ttl.menu-1hr-a{display:none; margin:0;flex: 1;
+    text-align: center;}
+.custom-home-header .hdr-ttl.menu-1hr-a .lab-series-ttl{position: unset;
+    display: inline-block;}
+.custom-home-header .menu-1hr-a.hdr-ttl  h2{font-size: 36px;
+    margin: 0;margin-top: 5px;}
+.custom-home-header .menu-1hr-a.hdr-ttl .lab-series-ttl h2 sup {font-size: 35%;}
+.designed-for-txt-wrap h1.designed-for-daily br, .designed-for-txt-wrap h2.designed-for-daily br{display:none;}
+.link-btn a.btn br{display:none;}
+
+@media only screen and (max-width: 749px){
+  .try-samples-wrap{display:none !important;}
+  #shopify-section-1651056444332bb4e9 img.mob-only{display:block;}
+  #shopify-section-1651056444332bb4e9 img.desk-only{display:none;}
+  .custom-home-header .try-wrap-mob-only{display:block;}
+  .custom-home-header .menu-1hr-a.hdr-ttl{display:block;position: absolute;transform: translateX(-50%);left: 50%;}
+  #shopify-section-1651056444332bb4e9 .custom__item-inner.custom__item-inner--image{height:100vh;}
+  #shopify-section-1651056444332bb4e9 .custom__item.custom__item--html.custom__item--f546799c-7837-4f76-a2e7-7e3732641ca6.small--one-half.medium-up--one-half{bottom: 10px !important;
+    top: unset !important;}
+   h1.designed-for-daily, h2.designed-for-daily, .link-btn{text-align: left;}
+  .link-btn{margin-top:30px;}
+  .designed-for-txt-wrap{padding:0 10px;}
+   .designed-for-txt-wrap h1.designed-for-daily {font-size: 24px; margin-bottom: 5px;}
+   .designed-for-txt-wrap h2.designed-for-daily{margin:10px 0 15px;font-size: 18px;}
+   .site-header .site-header__cart {font-size:12px;}
+  .site-header__cart .crt-number{padding:4px 8px;}
+  .site-header .btn--link .icon.icon-hamburger{width:25px;height:25px;}
+  .designed-for-txt-wrap h1.designed-for-daily br, .designed-for-txt-wrap h2.designed-for-daily br{display:block;}
+  .site-header__mobile-nav{padding-top: 5px;}
+  .link-btn a.btn br{display:block;}
+}

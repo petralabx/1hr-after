@@ -1,0 +1,270 @@
+<link rel="stylesheet" href="{{ 'onehour.css' | asset_url }}" type="text/css" media="print" onload="this.media='all';onLoadStylesheet()">
+<link href="{{ 'style.css' | asset_url }}" as="style" rel="stylesheet">
+<link href="{{ 'slick.css' | asset_url }}" as="style" rel="stylesheet">
+<link href="{{ 'font-awesome.css' | asset_url }}" as="style" rel="stylesheet">
+<link rel="stylesheet" href="{{ 'style.css' | asset_url }}" type="text/css" media="print" onload="this.media='all';onLoadStylesheet()">
+<link rel="stylesheet" href="{{ 'slick.css' | asset_url }}" type="text/css" media="print" onload="this.media='all';onLoadStylesheet()">
+<link rel="stylesheet" href="{{ 'font-awesome.css' | asset_url }}" type="text/css" media="print" onload="this.media='all';onLoadStylesheet()">
+
+<!-- Object Fit polyfill -->
+    <script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script>
+
+    <!-- Lazy Load images -->
+    <!-- <script src="https://unpkg.com/object-fit-images/dist/ofi.min.js"></script> -->
+
+    <!-- Jarallax -->
+ <link href="{{ 'jarallax.css' | asset_url }}" as="style" rel="stylesheet">
+<script src="{{ 'jarallax.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'jarallax-video.js' | asset_url }}" defer="defer"></script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-48958097-8"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-48958097-8');
+    </script> -->
+<script>
+  window.performance.mark('debut:theme_stylesheet_loaded.start');
+
+  function onLoadStylesheet() {
+    performance.mark('debut:theme_stylesheet_loaded.end');
+    performance.measure('debut:theme_stylesheet_loaded', 'debut:theme_stylesheet_loaded.start', 'debut:theme_stylesheet_loaded.end');
+
+    var url = "{{ 'theme.css' | asset_url }}";
+    var link = document.querySelector('link[href="' + url + '"]');
+    link.loaded = true;
+    link.dispatchEvent(new Event('load'));
+  }
+</script>
+<div class="mx-container">
+  <!-- <section class="abcus-wrap">
+    <div class="abcus">
+      <div class="row r1">
+        <div class="col">
+          <div class="word c1">1Hour</div>
+          <div class="line c2"></div>
+          <div class="word c3">After<sup>TM</sup></div>
+        </div>
+      </div>
+      <div class="row r2">
+        <div class="line c1"></div>
+        <div class="word c2">Bodycare</div>
+        <div class="line c3"></div>
+      </div>
+      <div class="row r3">
+        <div class="line c1"></div>
+        <div class="word c2">Formulated</div>
+        <div class="line c3"></div>
+        <div class="word c4">For</div>
+      </div>
+      <div class="row r4">
+        <div class="word c1">The</div>
+        <div class="line c2"></div>
+        <div class="word c3">Hour</div>
+        <div class="line c4"></div>
+      </div>
+      <div class="row r5">
+        <div class="line c1"></div>
+        <div class="word c2">After</div>
+         <div class="line c4"></div>
+        <div class="word c3">Your</div>
+        <div class="line c4"></div>
+      </div>
+      <div class="row r6">
+        <div class="line c1"></div>
+        <div class="word c2">Workout</div>
+      </div>
+    </div>
+  </section> -->
+  
+ <!--  <section class="dial-wrapper desktop">
+    <div class="dial-wrap">
+      <div class="dial">
+        <svg>
+          <circle class="track" r="295" cx="305" cy="305" style="stroke-dashoffset:0;"></circle>
+          <circle class="progress" r="295" cx="305" cy="305"></circle>
+        </svg>
+        <div class="dial-products">
+          <ul class="pointers">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class="p-list">
+            
+            {%for product in collections.all.products limit: 7 %}
+            <li><div class="item"><a href="{{ product.url }}"><img src="{{ product.featured_image| img_url: '380x' }}" alt="Product"/></a>{% form 'customer' %}{% render 'ZooomyBackinStock' %}{% endform %}</div></li>
+
+            {%- endfor -%}              
+           
+          </ul>
+          <h4>1Hour <span class="divider"></span> A <sup>TM</sup></h4>
+        </div>
+      </div>
+    </div>
+  </section> 
+ 
+<section class="dial-wrapper desktop">
+    <div class="dial-wrap">
+      <div class="dial">
+        <svg>
+          <circle class="track" r="295" cx="305" cy="305" style="stroke-dashoffset:0;"></circle>
+          <circle class="progress" r="295" cx="305" cy="305"></circle>
+        </svg>
+        <div class="dial-products">
+          <ul class="pointers">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class="p-list">
+            
+            {%for product in collections.all.products limit: 7 %}
+            <li><div class="item"><a href="{{ product.url }}"><img src="{{ product.featured_image| img_url: '380x' }}" alt="Product"/></a>{% form 'customer' %}{% render 'ZooomyBackinStock' %}{% endform %}</div></li>
+
+            {%- endfor -%}              
+           
+          </ul>
+          <h4>1Hour <span class="divider"></span> A <sup>TM</sup></h4>
+        </div>
+      </div>
+    </div>
+  </section> 
+
+<section class="dial-wrapper desktop">
+    <div class="dial-wrap">
+      <div class="dial">
+        <svg>
+          <circle class="track" r="295" cx="305" cy="305" style="stroke-dashoffset:0;"></circle>
+          <circle class="progress" r="295" cx="305" cy="305"></circle>
+        </svg>
+        <div class="dial-products">
+          <ul class="pointers">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class="p-list">
+            {% comment %}
+            {%for product in collections.all.products limit: 8 %}
+           {% if product.title != 'LAB/SS-001' %}
+            <li><div class="item"><a href="{{ product.url }}"><img src="{{ product.featured_image| img_url: '380x' }}" alt="Product"/></a>{% form 'customer' %}{% render 'ZooomyBackinStock' %}{% endform %}</div></li>
+             {% endif %}
+            {%- endfor -%}
+            {% endcomment %}            
+
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-Adaptogen-Shampoo_1.png?v=1646394810" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-Strengthening-Conditioner_2.png?v=1646394811" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-Cooling-Body-Wash_3.png?v=1646394810" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-REFUELING-Body-Lotion_4.png?v=1646394810" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/lab-series_5.png?v=1646394810" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-Adaptogen-Shampoo_1.png?v=1646394810" alt="Product"/></div></li>            
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/family_6.png?v=1646394810" alt="Product"/></div></li>           
+        
+          </ul>
+          <h4>1Hour <span class="divider"></span> A <sup>TM</sup></h4>
+        </div>
+      </div>
+      <a href="/collections/all" class="btn btn--has-icon-after cart__continue-btn">View Products<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-right" viewBox="0 0 20 8"><path d="M15.186.445c.865.944 1.614 1.662 2.246 2.154.631.491 1.227.857 1.787 1.098v.44a9.933 9.933 0 0 0-1.875 1.196c-.606.485-1.328 1.196-2.168 2.134h-.752c.612-1.309 1.253-2.315 1.924-3.018H.77v-.986h15.577c-.495-.632-.84-1.1-1.035-1.406-.196-.306-.486-.843-.87-1.612h.743z" fill="#000" fill-rule="evenodd"></path></svg></a>
+    </div>
+  </section>   
+  
+<section class="dial-wrapper laptop">
+    <div class="dial-wrap">
+      <div class="dial">
+        <svg>
+          <circle class="track" r="220" cx="240" cy="240" style="stroke-dashoffset:0;"></circle>
+          <circle class="progress" r="220" cx="240" cy="240"></circle>
+        </svg>
+        <div class="dial-products">
+          <ul class="pointers">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+          </ul>
+          <ul class="p-list">
+              {% comment %}
+            {%for product in collections.all.products limit: 8 %}
+              {% if product.title != 'LAB/SS-001' %}
+            <li><div class="item"><a href="{{ product.url }}"><img src="{{ product.featured_image| img_url: '380x' }}" alt="Product"/></a>{% form 'customer' %}{% render 'ZooomyBackinStock' %}{% endform %}</div></li>
+              {% endif %}
+            {%- endfor -%}
+             {% endcomment %}
+
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-Adaptogen-Shampoo_1.png?v=1646394810" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-Strengthening-Conditioner_2.png?v=1646394811" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-Cooling-Body-Wash_3.png?v=1646394810" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-REFUELING-Body-Lotion_4.png?v=1646394810" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/lab-series_5.png?v=1646394810" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-Adaptogen-Shampoo_1.png?v=1646394810" alt="Product"/></div></li>            
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/family_6.png?v=1646394810" alt="Product"/></div></li>            
+           
+          </ul>
+          <h4>1Hour <span class="divider"></span> A <sup>TM</sup></h4>
+        </div>
+      </div>
+      <a href="/collections/all" class="btn btn--has-icon-after cart__continue-btn">View Products<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-right" viewBox="0 0 20 8"><path d="M15.186.445c.865.944 1.614 1.662 2.246 2.154.631.491 1.227.857 1.787 1.098v.44a9.933 9.933 0 0 0-1.875 1.196c-.606.485-1.328 1.196-2.168 2.134h-.752c.612-1.309 1.253-2.315 1.924-3.018H.77v-.986h15.577c-.495-.632-.84-1.1-1.035-1.406-.196-.306-.486-.843-.87-1.612h.743z" fill="#000" fill-rule="evenodd"></path></svg></a>
+    </div>
+  </section>
+   
+   <section class="dial-wrapper mobile" style="opacity:0;">
+    <div class="dial-wrap">
+      <div class="dial">
+        <svg>
+          <circle class="track" r="140" cx="170" cy="170" style="stroke-dashoffset:0;"></circle>
+          <circle class="progress" r="140" cx="170" cy="170"></circle>
+        </svg>
+        <div class="dial-products">
+          <ul class="pointers">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul class="p-list"> 
+            {% comment %}
+            {%for product in collections.all.products limit: 8 %}
+            {% if product.title != 'LAB/SS-001' %}
+            <li><div class="item"><a href="{{ product.url }}"><img src="{{ product.featured_image| img_url: '380x' }}" alt="Product"/></a>{% form 'customer' %}{% render 'ZooomyBackinStock' %}{% endform %}</div></li>
+              {%- endif -%}
+            {%- endfor -%}
+            {% endcomment%}
+
+            
+            <li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-Adaptogen-Shampoo_1.png?v=1646394810" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-Strengthening-Conditioner_2.png?v=1646394811" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-Cooling-Body-Wash_3.png?v=1646394810" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-REFUELING-Body-Lotion_4.png?v=1646394810" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/lab-series_5.png?v=1646394810" alt="Product"/></div></li>
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/1HOUR_AFTER-Adaptogen-Shampoo_1.png?v=1646394810" alt="Product"/></div></li>            
+<li><div class="item"><img src="https://cdn.shopify.com/s/files/1/0561/0618/8973/files/family_6.png?v=1646394810" alt="Product"/></div></li>
+          <h4>1Hour <span class="divider"></span> A <sup>TM</sup></h4>
+        </div>
+      </div>
+      <a href="/collections/all" class="btn btn--has-icon-after cart__continue-btn">View Products<svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-arrow-right" viewBox="0 0 20 8"><path d="M15.186.445c.865.944 1.614 1.662 2.246 2.154.631.491 1.227.857 1.787 1.098v.44a9.933 9.933 0 0 0-1.875 1.196c-.606.485-1.328 1.196-2.168 2.134h-.752c.612-1.309 1.253-2.315 1.924-3.018H.77v-.986h15.577c-.495-.632-.84-1.1-1.035-1.406-.196-.306-.486-.843-.87-1.612h.743z" fill="#000" fill-rule="evenodd"></path></svg></a>
+    </div>
+  </section> 
+
+ -->
+
+
+
+

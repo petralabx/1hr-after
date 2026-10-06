@@ -21,7 +21,7 @@
 | [market-map.md](market-map.md) | Intent clusters and owning URLs. Empty. | Class B |
 | [optimization-log.md](optimization-log.md) | Ship and test log. Header only. | Mixed |
 | [products.md](products.md) | Product roster. No SKUs until a human adds them. | Class B |
-| [schema-state.md](schema-state.md) | Deployed structured data. Nothing deployed. | Agent, once a theme exists |
+| [schema-state.md](schema-state.md) | Deployed structured data in the live Debut export (`#122661372077`). | Agent, once a theme exists |
 | [target-queries.md](target-queries.md) | AEO prompts. Tracking off. | Strategy human; metrics agent |
 | [best-practices/meta-ads.md](best-practices/meta-ads.md) | Meta placement and creative checklist. Confirm specs before launch. | Class B |
 | [best-practices/README.md](best-practices/README.md) | How best-practice notes are filed. | Agent |
@@ -41,6 +41,7 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
+- [Live Shopify theme audit](analyses/2026-10-06-live-shopify-theme-audit.md) — filed 2026-10-06 as `audit` · Published Debut `#122661372077` on 1hourafter.myshopify.com; SANDBOX not pulled; no Shopify write
 - [Karpathy wiki scaffold for 1HR-After](analyses/2026-10-06-karpathy-wiki-scaffold.md) — filed 2026-10-06 as `infra` · Three-layer wiki, Meta ads lane, and the facts this repo deliberately does not contain yet
 
 <!-- AUTO-APPEND:analyses:END -->
@@ -56,6 +57,6 @@
 | [../compliance/claims.md](../compliance/claims.md) | Allowed claims. Empty. Class C. |
 | [../../copy/content-drafts/](../../copy/content-drafts/) | Organic page drafts. |
 | [../../copy/ads/meta/](../../copy/ads/meta/) | Meta ad copy archive. |
-| [../../data/config.json](../../data/config.json) | Shopify and Meta account snapshot. Unconfigured. |
-| [../../site/](../../site/) | Future storefront theme. Placeholder only. |
+| [../../data/config.json](../../data/config.json) | Shopify and Meta account snapshot. `shopify.shopDomain` is `1hourafter.myshopify.com`. |
+| [../../site/](../../site/) | Pulled live Debut theme under `site/theme/` (`#122661372077`). |
 | [../design-system/](../design-system/) | Brand tokens. Out of scope for brand-ops edits. |

@@ -3,15 +3,22 @@
   "displayName": "1HR-After",
   "active": true,
   "tier": "primary",
-  "status": "scaffold",
+  "status": "theme-pulled",
   "shopify": {
-    "status": "unconfigured",
-    "shopDomain": null,
-    "publicDomain": null,
-    "adminUrl": null,
+    "status": "theme-pulled",
+    "shopDomain": "1hourafter.myshopify.com",
+    "shopDomainAlias": "1hours.myshopify.com",
+    "publicDomain": "1hourafter.com",
+    "adminUrl": "https://1hourafter.myshopify.com/admin",
+    "shopId": "56106188973",
+    "themeId": "122661372077",
+    "themeName": "Theme export  1hours-myshopify-com-debut  03may...",
+    "themeRole": "main",
+    "themeUpdatedAt": "2026-09-14T18:30:38-04:00",
+    "pulledAt": "2026-10-06T18:17:00Z",
     "clientIdEnv": "ONEHR_AFTER_SHOPIFY_CLIENT_ID",
     "clientSecretEnv": "ONEHR_AFTER_SHOPIFY_CLIENT_SECRET",
-    "apiVersion": null
+    "apiVersion": "2024-10"
   },
   "channels": {
     "metaAds": {
@@ -20,7 +27,8 @@
       "playbook": "docs/channels/meta-ads.md",
       "copyArchive": "copy/ads/meta",
       "adAccountId": null,
-      "pixelId": null,
+      "pixelId": "1035858581719070",
+      "pixelIdSource": "GTM-M4LGTWV fbq('init') on the live storefront. Not hardcoded in Liquid.",
       "instagramAccountId": null,
       "pageId": null
     }
@@ -37,5 +45,5 @@
     "targetEngines": ["chatgpt", "perplexity", "claude", "gemini"],
     "competitorBrands": []
   },
-  "notes": "Steward snapshot only. Env var names are references; values stay in the secret store. Product facts belong in docs/knowledge/products.md after a human supplies them. Do not copy another brand's config."
+  "notes": "Steward snapshot only. Env var names are references; values stay in the secret store. Shopify.shop / Theme Access original domain is 1hourafter.myshopify.com. SHOPIFY_FLAG_STORE=1hours.myshopify.com is a live alias that 401s Theme Access. Product facts belong in docs/knowledge/products.md after a human supplies them. Do not copy another brand's config."
 }

@@ -24,7 +24,7 @@ Versioned brand home for **1HR-After**. The directory layout follows the Furgeni
 - `docs/sources/` is the immutable raw layer. Agents read it; they do not rewrite committed sources.
 - `docs/channels/meta-ads.md` is the Meta (Facebook and Instagram) playbook. Copy lives in `copy/ads/meta/`.
 - `copy/content-drafts/` is the organic page archive (markdown canonical, HTML paste-ready).
-- `site/` is reserved for the storefront theme. It is empty on purpose.
+- `site/theme/` is the published Shopify theme, pulled read-only. Do not push it back unless a later task says so.
 - `data/config.json` is the steward snapshot (Shopify and Meta ids). Env var names only — never secret values.
 
 `docs/design-system/` is **out of scope for brand-ops work** — leave it alone unless a dedicated design-system task says otherwise.

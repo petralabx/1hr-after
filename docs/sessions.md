@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-06 — Pull live Shopify theme and audit (no Shopify write)
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** draft on `cursor/shopify-live-theme-pull-2638` (TASK-2384)
+- **Done:** Pulled published Debut `#122661372077` into `site/theme/`. Recorded `1hourafter.myshopify.com` in `data/config.json`. Filed the audit under `docs/knowledge/analyses/`. SANDBOX not pulled.
+- **Next:** Human fills Class C pages. Confirm Meta pixel `1035858581719070` in Events Manager before ads. Map `--1hr-` tokens onto the theme in a later task. Do not `theme push`.
+- **Watch:** Theme Access 401s on `1hours.myshopify.com`; use `1hourafter.myshopify.com`. Stale `shopifypreview.com` preview_key and 0562 CDN URLs live in `settings_data.json`. Do not copy Furgenics or For & Against.
+
 ## 2026-10-06 — Brand repo scaffold (Furgenics shape, Meta ads, Karpathy wiki)
 
 - **Who:** Stephen Alton + Cursor cloud agent

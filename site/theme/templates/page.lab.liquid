@@ -1,0 +1,149 @@
+<style>
+  .lab-series-ttl h1 {
+  font-size: 37px;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+    @media only screen and (max-width: 992px){
+.lab-series-ttl h1 {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+    }
+    @media only screen and (max-width: 480px){
+.lab-series-ttl h1 {
+  font-size: 16px;
+  line-height: 22px;
+}}
+    @media only screen and (max-width: 992px){
+.lab-series-ttl h1 {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<div class="prod-wrap">  
+
+</div>
+{%- assign counter = 0 -%}
+{%- assign break_at = section.settings.number_of_products | plus: 0 -%}
+{%- assign current_product = product -%}
+            {%- for product in collections.all.products -%}
+    {%- unless product.handle == current_product.handle -%}
+            {%- if product.tags contains 'lab' -%}
+      <div id="shopify-section-hero-2"> 
+      <div class="lab-series lab-page">
+        <div class="page-width">
+          <div class="lab-series-ttl">
+            <div class="title-subscribe-box">
+           <div class="left-title">
+            <h1>1HR <span class="h-line"></span>A</h1>
+            <h2>LAB SERIES</h2>
+           </div>
+              <div class="right-subscribe-box">
+<!--               <a href="#" class="subscribe-btn">SUBSCRIBE NOW</a> -->
+              {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form' %}
+      {%- if form.posted_successfully? -%}
+        <p class="form-message form-message--success" tabindex="-1" data-form-status>
+          {{ 'general.newsletter_form.confirmation' | t }}
+        </p>
+      {%- endif -%}
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <div class="input-group {% if form.errors %} input-group--error{% endif %}">
+        <input type="email"
+          name="contact[email]"
+          id="{{ formId }}-email"
+          class="input-group__field{% if form.errors %} input--error{% endif %}"
+          value="{{ form.email }}"
+          placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+          aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}"
+          aria-required="true"
+          autocorrect="off"
+          autocapitalize="off"
+          {% if form.errors %}
+            aria-invalid="true"
+            aria-describedby="{{ formId }}-email-error"
+            data-form-status
+          {% endif %}
+          >
+        <span class="input-group__btn">
+          <button type="submit" class="btn" name="commit">
+            <span>{{ 'general.newsletter_form.submit' | t }}</span>
+          </button>
+        </span>
+      </div>
+      {%- if form.errors contains 'email' -%}
+        <span id="{{ formId }}-email-error" class="input-error-message">
+          <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+          {% include 'icon-error' %}
+          <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+        </span>
+      {%- endif -%}
+    {% endform %}
+            </div>
+
+              
+          </div>
+            
+            <div class="divider"></div>           
+<!--             <a href="{{ product.url}} ">EXCLUSIVE ACCESS TO OUR NEWEST SKINCARE<br>
+INNOVATIONS, FROM OUR LAB TO YOUR DOORSTEP</a> -->
+             <p >EXCLUSIVE ACCESS TO OUR NEWEST SKINCARE<br>
+INNOVATIONS, FROM OUR LAB TO YOUR DOORSTEP</p>
+          </div>
+          <div class="product-block lab-main-box">
+<!--             <div class="img-box">
+              <img class="img-parallax" data-speed="-0.8" src="https://cdn.shopify.com/s/files/1/0562/2179/4479/files/bag.png?v=1618495444" />
+            </div> -->
+            <div class="product-info">
+              <h3>{{ product.title }}</h3>
+<!--               <h3>LAB/SS-001</h3> -->
+<!--               <h4>TIME REMAINING 00:23:12</h4> -->
+            </div>
+          </div>
+
+          
+<!--           <div class="lab-subscribe">
+            
+            
+          <div class="left">
+
+              <p>{{ product.description }}</p>
+              <p></p>
+               {%- endif -%}
+              {%- endunless -%}
+            {%- endfor -%} 
+                        </div> 
+            
+        </div>
+      </div> -->
+      
+      
+  {%- if section.settings.hero_layout == 'fixed_width' -%}
+    </div>
+</div>
+<section class="dial-wrapper">    
+  </section>
+  {%- endif -%}
+
+
+
+<script>
+$(document).ready(function(){
+  var winTop = jQuery(window).scrollTop();
+      var labSeriesTop   = $('div#shopify-section-hero-2').offset().top;
+       var abcusWrapTop   = $('.prod-wrap').offset().bottom;
+     //console.log("winTop###"+winTop+"labSeriesTop####"+(labSeriesTop+parseInt($('div#shopify-section-hero-2').outerHeight()) -parseInt(800)));
+      if((winTop) > (labSeriesTop+parseInt($('div#shopify-section-hero-2').outerHeight()-parseInt(1600)))) {
+        $("div.lab-series").addClass("active");
+      }else  if((winTop) < labSeriesTop ) {
+        $("div.lab-series").removeClass("active");
+      }
+      
+});
+</script>
