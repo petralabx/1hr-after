@@ -1,0 +1,25 @@
+
+
+
+{% assign p_id = product.id %}
+
+{% if p_id == 7878684901549 %}
+  {% render 'faq-muscle-recovery-balm' %}
+{% elsif p_id == 7878684934317 %}
+  {% render 'faq-anti-chafe-glide-balm' %}
+{% elsif p_id == 7389948575917 %}
+  {% render 'faq-free-1hour-after-athletic-sampler-pack-post-workout-recovery-products' %}
+{% elsif p_id == 7145590358189 %}
+  {%  render 'faq-strengthening-protein-conditioner' %}
+{% elsif p_id == 6668255723693 %}
+  {% render 'faq-cooling-menthol-body-wash' %}
+{% elsif p_id == 6668255461549 %}
+  {%  render 'faq-adaptogen-protein-strengthening-shampoo' %}
+{% elsif p_id == 6668255920301 %}
+  {% render 'faq-refueling-magnesium-body-lotion' %}
+{% elsif p_id == 7162482262189 %}
+  {% render 'faq-marathon-pack' %}
+{% elsif p_id == 8140422578349 %}
+  {% render 'faq-marathon-race-pack' %}
+{% else %}
+{% endif %}

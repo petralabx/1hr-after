@@ -1,0 +1,117 @@
+<style>
+
+  .product-name-price h1 {
+  font-size: 14px !important;
+  text-align: left !important;
+  font-weight: 400 !important;
+  max-width: 140px;
+  line-height: 20px;
+}
+</style>
+<link rel="stylesheet" href="{{ 'style.css' | asset_url }}" type="text/css">
+{% comment %}
+    Renders a product card using "Grid" style
+    Accepts:
+    - max_height: {Number} Maximum height of the product's image (required)
+    - product: {Object} Product Liquid object (required)
+    - show_vendor: {Boolean} Show the product's vendor depending on the section setting (optional)
+
+    Usage:
+    {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
+{% endcomment %}
+
+ {% if product.title != 'LAB/SS-001' %}
+
+<!-- <div class="grid-view-item{% unless product.available %} grid-view-item--sold-out{% endunless %} product-card card">   -->
+  
+  <div class="grid-view-item product-card card">  
+ 
+  <span class="visually-hidden">{{ product.title }}</span>
+ 
+
+  {% capture img_id %}ProductCardImage-{{ section.id }}-{{ product.id }}{% endcapture %}
+  {% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}
+{% if product.id == 7162482262189 %}
+  {%- assign preview_image =  product.images[3] -%}
+{% else %}
+  {%- assign preview_image = product.featured_media.preview_image -%}
+{% endif %}  {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+  {% unless preview_image == blank %}
+    {% include 'image-style', image: preview_image, height: max_height, wrapper_id: wrapper_id, img_id: img_id %}
+  {% endunless %}
+ 
+  <div class="product-card__image-with-placeholder-wrapper card-img product-info-img" data-image-loading-animation>
+    
+    <img id="{{ img_id }}"
+              class="grid-view-item__image lazyload"
+              alt="{{ preview_image.alt }}"
+              data-src="{{ img_url }}"
+              data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+              data-aspectratio="{{ preview_image.aspect_ratio }}"
+              data-sizes="auto"
+              data-image>
+    
+  </div>
+ 
+  <noscript>
+    {% capture image_size %}{{ max_height }}x{{ max_height }}{% endcapture %}
+    <img class="grid-view-item__image" src="{{ preview_image | img_url: image_size, scale: 2 }}" alt="{{ preview_image.alt }}" style="max-width: {{ max_height | times: preview_image.aspect_ratio }}px;">
+  </noscript>
+   {% if product.title != 'coming soon' %}
+  
+
+
+
+<div class="card-body product-info-details-3">
+ 
+   
+
+  
+ 
+  <a class="product-link-box" href="{{ product.url }}"></a>
+  
+  <div class="product-name-price">  
+  <h3 class="h4 grid-view-item__title product-card__title" aria-hidden="true">{{ product.title }}</h3> 
+     {% if product.title != 'Recovery Body Gel' %} 
+     {% include 'product-price-listing', product: product, show_vendor: show_vendor %}
+       {% else %}
+    <h5 class="h4 grid-view-item__title product-card__title product-coming-soon">Coming Soon</h5>
+     {% endif %}
+  </div> 
+     
+   {% if product.title != 'Recovery Body Gel' %} 
+  <div class="product-but-now-view">
+    
+   
+   
+<!--     <a href="/collections/all"><button type="button" class="product_detail_view">VIEW</button></a> -->
+   {% else %}
+<!--     <a href="{{ product.url }}"><button type="button" class="product_detail_view">VIEW</button></a> -->
+   {% endif %}     
+    
+<!--      <form  class="product-form" action="/cart/add" data-productid="PRODUCT ID"  method="post"> -->
+   
+    
+     <form  class="product-form" action="/cart/add" data-productid="PRODUCT ID"  method="post"> 
+     <input type="hidden" name="id" data-productid="PRODUCT ID" class="" value="{{ product.variants.first.id }}" data-variant-title="VARIANT TITLE" />
+        {% if product.title != 'Recovery BodyGel' %}
+      <input type="submit" value="Buy Now" class="product_detail_view buy-now" />
+       {% else %}
+        <input type="submit" value="coming soon" class="product_detail_view buy-now" disabled />
+
+       {% endif %}
+       <!--button type="button" class="product_detail_view buy-now">Buy Now</button-->
+    <input type="hidden" name="return_to" value="/cart/" />
+     </form>
+    </div> 
+
+ 
+
+  </div>
+       </form>
+
+  {% endif %}
+{% render 'preorder-now-collection-item', product: product %}</div>
+<!-- </a> -->
+{% endif %}

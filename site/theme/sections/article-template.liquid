@@ -1,0 +1,474 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+<style>
+  .catching-cont {
+    display: none;
+  }
+
+  .related-blogs {
+    padding: 2rem 0;
+  }
+
+  .related-blogs h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .related-blogs ul.blog-list-view {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .related-blogs img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+    /*scrolling  */
+  .scroll-button-bottom-fixed {
+    position: fixed;
+    margin-top: 15px;
+    text-align: left;
+    right: 15px;
+    /* bottom: 25px; */
+    /* background: #ffffff; */
+    border-radius: 100%;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+}
+
+ .scroll-button-bottom-fixed button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    /* padding: 8px 16px; */
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    height: 100%;
+}
+
+  .scroll-button-bottom-fixed button:hover {
+    background-color: #444;
+  }
+</style>
+
+<div class="article-wrap-box article-custom-link">
+  <div class="img-box blog-full-img">
+    {% if article.image %}
+      {%- assign img_url = article.image | img_url: '1920x1061' -%}
+      <img src="{{ img_url }}" id='image123' class='lazyload' />
+    {% endif %}
+  </div>
+
+  <div class="article-information-section">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="data">
+        <div class="page-width">
+          <div class="article-title-details article-sidenav-product">
+            <div class="article-section-header-t">
+              {% if section.settings.blog_show_date %}
+                <span class="article__date">
+                  {{ article.published_at | time_tag: format: 'date' }}
+                </span>
+              {% endif %}
+
+              <h1 class="article__title" id="title-0">{{ article.title }}</h1>
+              
+               <!-- Table of Contents - Now appears before products -->
+              <div id="toc-container" class="toc-wrapper">
+                <div class="toc-header">
+                  <h2 class="toc-heading">Table of Contents</h2>
+                  <button class="toc-toggle mobile-only">☰</button>
+                </div>
+                <div class="toc-content">
+                  <ul id="toc-list"></ul>
+                </div>
+              </div>
+
+              {% for prod in collections.all.products %}
+                {% for tag in prod.tags %}
+                  {% if article.tags contains tag %}
+                    {%- assign img_url = prod.featured_image | img_url: 'master' -%}
+                    <div class="sidenav-product-wrap desk-only">
+                      <div class="article-listing single-blog-details">
+                        <a href="{{ prod.url }}" data-preorder-handle="{{ prod.url }}">
+                          <img src="{{ img_url }}" id="image123eee" class="ls-is-cached lazyloaded">
+                        </a>
+                        <h2 class="article__title h3">{{ prod.title }}</h2>
+                        <div class="price-cart-wrap">
+                          <strong class="read-more-blog no-border-1">{{ prod.price | money }}</strong>
+                          <div class="cart-form">
+                            <form method="post" action="/cart/add">
+                              <input name="id" value="{{ prod.variants.first.id }}" type="hidden" />
+                              {% if prod.id == 7389948575917 %}
+                                <input class="product-form__cart-submit" name="add" value="SEND ME A SAMPLE PACK" type="submit" />
+                              {% else %}
+                                <input class="product-form__cart-submit" name="add" value="ADD TO CART" type="submit" />
+                              {% endif %}
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+
+              {% if section.settings.blog_show_author %}
+                <!--<span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>-->
+              {% endif %}
+            </div>
+
+            <div class="article-details-t ">
+              {{ article.content }}
+
+              {% for prod in collections.all.products %}
+                {% for tag in prod.tags %}
+                  {% if article.tags contains tag %}
+                    {%- assign img_url = prod.featured_image | img_url: 'master' -%}
+                    <div class="sidenav-product-wrap mob-only">
+                      <div class="article-listing single-blog-details">
+                        <a href="{{ prod.url }}" data-preorder-handle="{{ prod.url }}">
+                          <img src="{{ img_url }}" id="image123eee" class="ls-is-cached lazyloaded">
+                        </a>
+                        <h2 class="article__title h3">{{ prod.title }}</h2>
+                        <div class="price-cart-wrap">
+                          <strong class="read-more-blog no-border-1">{{ prod.price | money }}</strong>
+                          <div class="cart-form">
+                            <form method="post" action="/cart/add">
+                              <input name="id" value="{{ prod.variants.first.id }}" type="hidden" />
+                              {% if prod.id == 7389948575917 %}
+                                <input class="product-form__cart-submit" name="add" value="SEND ME A SAMPLE PACK" type="submit" />
+                              {% else %}
+                                <input class="product-form__cart-submit" name="add" value="ADD TO CART" type="submit" />
+                              {% endif %}
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+
+              <div class="view-collection-btn">
+                <a href="{{ '/collections/all' }}" class="">View The Collection</a>
+              </div>
+               <div class="scroll-button-bottom-fixed">
+  <button onclick="scrollToTop()">↑</button>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% assign titles = article.metafields.custom.related_titles.value %}
+{% assign urls = article.metafields.custom.related_urls.value %}
+{% assign images = article.metafields.custom.related_images.value %}
+
+{% if titles and urls and images %}
+  <div class="more-articles-section">
+    <div class="page-width">
+      <h4 class="blog-head">More Articles</h4>
+      <ul class="blog-list-view">
+
+        {% assign base_url = 'https://1hourafter.com/cdn/shop/' %}
+
+{% for image in images %}
+  {% assign i = forloop.index0 %}
+  {% assign img_url = base_url | append: image %}
+  
+  <li>
+    <div class="article-listing single-blog-details">
+
+      {% if image %}
+        <a href="{{ urls[i] }}">
+          <img 
+            src="{{ img_url }}" 
+            width="400" 
+            height="250" 
+            alt="{{ titles[i] | escape }}" 
+            loading="lazy"
+          />
+        </a>
+      {% else %}
+        <p style="color:red;">⚠️ Image missing at index {{ i }}</p>
+      {% endif %}
+ <h2 class="article__title h3">
+                <a href="{{ urls[i] }}">{{ titles[i] }}</a>
+              </h2>
+      <div class="read_more">
+        <a href="{{ urls[i] }}" class="read-more-blog">Read more</a>
+      </div>
+    </div>
+  </li>
+{% endfor %}
+
+      </ul>
+    </div>
+  </div>
+{% else %}
+  <p style="color:red;"><strong>⚠️ One or more metafields (titles, urls, images) are missing.</strong></p>
+{% endif %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<script>
+  $(document).ready(function () {
+    $('ul.prod-list').slick({
+      autoplay: true,
+      autoplaySpeed: 1000,
+      dots: true,
+      infinite: true,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+      arrows: false
+    });
+  });
+
+  // TOC logic
+  document.addEventListener("DOMContentLoaded", function () {
+  const tocList = document.getElementById("toc-list");
+  const contentArea = document.querySelector(".article-details-t");
+  const tocToggle = document.querySelector(".toc-toggle");
+  const tocContent = document.querySelector(".toc-content");
+
+  if (tocToggle) {
+    tocToggle.setAttribute("aria-label", "Toggle table of contents");
+    tocToggle.addEventListener("click", function () {
+      tocContent.classList.toggle("active");
+    });
+  }
+
+  const headings = contentArea.querySelectorAll("h2, h3");
+  let currentH2 = null;
+  const idMap = {};
+
+  headings.forEach(function (heading) {
+    const isInsideIgnored = heading.closest('.toc-ignore') !== null;
+    const text = heading.innerText.trim();
+
+    if (isInsideIgnored || heading.classList.contains("toc-heading") || text === "") return;
+
+    let anchorId = text.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
+    if (idMap[anchorId]) {
+      idMap[anchorId]++;
+      anchorId += "-" + idMap[anchorId];
+    } else {
+      idMap[anchorId] = 1;
+    }
+
+    heading.setAttribute("id", anchorId);
+
+    const li = document.createElement("li");
+    li.classList.add(heading.tagName.toLowerCase());
+
+    const a = document.createElement("a");
+    a.setAttribute("href", "#" + anchorId);
+    a.innerText = text;
+
+    li.appendChild(a);
+
+    if (heading.tagName.toLowerCase() === 'h2') {
+      tocList.appendChild(li);
+      currentH2 = li;
+    } else if (heading.tagName.toLowerCase() === 'h3') {
+      // Always create nested UL under parent <li.h2>
+      if (currentH2) {
+        let nestedList = currentH2.querySelector('ul');
+        if (!nestedList) {
+          nestedList = document.createElement('ul');
+          currentH2.appendChild(nestedList);
+        }
+        nestedList.appendChild(li);
+      } else {
+        // In case h3 appears before any h2
+        tocList.appendChild(li);
+      }
+    }
+  });
+
+  // Smooth scroll and highlight
+  document.querySelectorAll('#toc-list a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - 120;
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+
+        targetElement.classList.add('highlight-heading');
+        setTimeout(() => targetElement.classList.remove('highlight-heading'), 2000);
+
+        if (window.innerWidth <= 768) tocContent.classList.remove("active");
+
+        history.pushState(null, null, targetId);
+      }
+    });
+  });
+
+  // Handle initial anchor scroll
+  if (window.location.hash) {
+    const targetElement = document.querySelector(window.location.hash);
+    if (targetElement) {
+      setTimeout(() => {
+        const offsetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - 120;
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      }, 300);
+    }
+  }
+});
+
+  // ✅ Scroll To Top / Bottom Functions
+ function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+</script>
+{% schema %}
+{
+"name": {
+"cs": "Příspěvky",
+"da": "Opslag",
+"de": "Posts",
+"en": "Posts",
+"es": "Publicaciones",
+"fi": "Julkaisut",
+"fr": "Articles",
+"it": "Articoli",
+"ja": "投稿",
+"ko": "게시물",
+"nb": "Innlegg",
+"nl": "Berichten",
+"pl": "Posty",
+"pt-BR": "Posts",
+"pt-PT": "Publicações",
+"sv": "Inlägg",
+"th": "โพสต์",
+"tr": "Gönderiler",
+"vi": "Bài viết",
+"zh-CN": "文章",
+"zh-TW": "貼文"
+},
+"settings": [
+{
+"type": "checkbox",
+"id": "blog_show_author",
+"label": {
+"cs": "Zobrazit autora",
+"da": "Vis forfatter",
+"de": "Autor anzeigen",
+"en": "Show author",
+"es": "Mostrar autor",
+"fi": "Näytä tekijä",
+"fr": "Afficher l'auteur",
+"it": "Mostra autore",
+"ja": "執筆者を表示する",
+"ko": "작성자 표시",
+"nb": "Vis forfatter",
+"nl": "Auteur weergeven",
+"pl": "Pokaż autora",
+"pt-BR": "Exibir autor",
+"pt-PT": "Mostrar autor",
+"sv": "Visa författare",
+"th": "แสดงผู้เขียน",
+"tr": "Yazarı göster",
+"vi": "Hiển thị tác giả",
+"zh-CN": "显示作者",
+"zh-TW": "顯示作者"
+},
+"default": true
+},
+{
+"type": "checkbox",
+"id": "blog_show_date",
+"label": {
+"cs": "Zobrazit datum",
+"da": "Vis dato",
+"de": "Datum anzeigen",
+"en": "Show date",
+"es": "Mostrar fecha",
+"fi": "Näytä päivämäärä",
+"fr": "Afficher la date",
+"it": "Mostra data",
+"ja": "日付を表示する",
+"ko": "날짜 표시",
+"nb": "Vis dato",
+"nl": "Datum weergeven",
+"pl": "Pokaż datę",
+"pt-BR": "Exibir data",
+"pt-PT": "Mostrar data",
+"sv": "Visa datum",
+"th": "แสดงวันที่",
+"tr": "Tarihi göster",
+"vi": "Hiển thị ngày",
+"zh-CN": "显示日期",
+"zh-TW": "顯示日期"
+},
+"default": true
+},
+{
+"type": "checkbox",
+"id": "show_share_buttons",
+"label": {
+"cs": "Zobrazit tlačítka pro sdílení na sociálních sítích",
+"da": "Vis knapper til deling på sociale medier",
+"de": "Buttons für Social Media anzeigen",
+"en": "Show social sharing buttons",
+"es": "Mostrar botones para compartir en redes sociales",
+"fi": "Näytä sosiaalisen median jakamispainikkeet",
+"fr": "Afficher les boutons de partage sur les médias sociaux",
+"it": "Mostra i pulsanti per la condivisione sui social",
+"ja": "ソーシャルメディアでの共有ボタンを表示する",
+"ko": "소셜 공유 버튼 표시",
+"nb": "Vis knapper for deling på sosiale medier",
+"nl": "Knoppen voor sociaal delen weergeven",
+"pl": "Pokaż przyciski udostępniania w mediach społecznościowych",
+"pt-BR": "Exibir botões de compartilhamento em redes sociais",
+"pt-PT": "Mostrar botões de partilha nas redes sociais",
+"sv": "Visa knappar för delning i sociala medier",
+"th": "แสดงปุ่มสำหรับแชร์ลงโซเชียล",
+"tr": "Sosyal medya paylaşım düğmelerini göster",
+"vi": "Hiển thị nút chia sẻ qua mạng xã hội",
+"zh-CN": "显示社交分享按钮",
+"zh-TW": "顯示社群分享按鈕"
+},
+"default": true
+},
+
+{
+"type": "collection",
+"id": "featured_collection",
+"label": "Featured Products"
+}
+
+]
+
+	
+}
+{% endschema %}

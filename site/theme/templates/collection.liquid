@@ -1,0 +1,99 @@
+{% comment %}
+  The contents of the collection.liquid template can be found in /sections/collection-template.liquid
+{% endcomment %}
+{% comment %}
+{% section 'collection-template' %}
+{% section 'custom-content' %}
+
+{% endcomment %}
+
+
+{% section 'collection3' %}
+
+
+{% section 'collection2' %}
+
+{% section 'custom-content2' %}
+
+ {%- assign counter = 0 -%}
+{%- assign break_at = section.settings.number_of_products | plus: 0 -%}
+{%- assign current_product = product -%}
+            {%- for product in collections.all.products -%}
+    {%- unless product.handle == current_product.handle -%}
+            {%- if product.tags contains 'lab' -%}
+<div class="shop-page-lab-background">
+ <div class="lab-series">
+        <div class="page-width home">
+          <div class="lab-series-ttl">
+            <h2>1HR <span class="h-line"></span>A</h2>
+            <h2>LAB SERIES</h2>
+            <div class="divider"></div>           
+<!--            <a href="pages/lab-1hr"> EXCLUSIVE ACCESS TO OUR NEWEST SKINCARE </br>
+INNOVATIONS, FROM OUR LAB TO YOUR DOORSTEP.
+ </a> -->
+ <a href="https://1hourafter.com/pages/lab-1hr"> EXCLUSIVE ACCESS TO OUR NEWEST SKINCARE </br>
+INNOVATIONS, FROM OUR LAB TO YOUR DOORSTEP.
+ </a> 
+            
+          </div>
+          <div class="product-block">
+
+            <div class="product-info">
+              <h3>{{ product.title }}</h3>
+
+            </div>
+          </div>
+          <div class="lab-subscribe">    
+            
+            <div class="left">
+              <p></p> 
+               {%- endif -%}
+              {%- endunless -%}
+            {%- endfor -%}
+                        </div>
+            <div class="right">
+<!--               <a href="#" class="subscribe-btn">SUBSCRIBE NOW</a> -->
+              {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form' %}
+      {%- if form.posted_successfully? -%}
+        <p class="form-message form-message--success" tabindex="-1" data-form-status>
+          {{ 'general.newsletter_form.confirmation' | t }}
+        </p>
+      {%- endif -%}
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <div class="input-group {% if form.errors %} input-group--error{% endif %}">
+        <input type="email"
+          name="contact[email]"
+          id="{{ formId }}-email"
+          class="input-group__field{% if form.errors %} input--error{% endif %}"
+          value="{{ form.email }}"
+          placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+          aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}"
+          aria-required="true"
+          autocorrect="off"
+          autocapitalize="off"
+          {% if form.errors %}
+            aria-invalid="true"
+            aria-describedby="{{ formId }}-email-error"
+            data-form-status
+          {% endif %}
+          >
+        <span class="input-group__btn">
+          <button type="submit" class="btn" name="commit">
+            <span>{{ 'general.newsletter_form.submit' | t }}</span>
+          </button>
+        </span>
+      </div>
+      {%- if form.errors contains 'email' -%}
+        <span id="{{ formId }}-email-error" class="input-error-message">
+          <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+          {% include 'icon-error' %}
+          <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+        </span>
+      {%- endif -%}
+    {% endform %}
+            </div>
+        </div>
+      </div>    
+  
+    </div>
+</div>
