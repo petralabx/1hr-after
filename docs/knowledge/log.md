@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-06T19:55:00Z] audit | Read-only SEO/AEO catalog audit (no Shopify write)
+
+- Admin GraphQL on `1hourafter.myshopify.com` (client-credentials; token prefix only). 35 products (14 ACTIVE), 6 collections, 10 pages, 51 articles, 39 redirects. `1hours.myshopify.com` was not called.
+- Filed [`analyses/2026-10-06-seo-aeo-catalog-audit.md`](analyses/2026-10-06-seo-aeo-catalog-audit.md). Proposed roster labeled in [`products.md`](products.md); Class B not approved. Class C pages not rewritten.
+- Highest-leverage gaps: duplicate live PDPs, collection SEO/canonicals, missing meta, FAQ id mismatches, crawl clutter (lab SKU, test blog, 0562 CDN). No live Shopify fixes.
+
 ## [2026-10-06T18:25:00Z] audit | Live Shopify theme pull (published Debut only)
 
 - Pulled published theme `#122661372077` (`Theme export  1hours-myshopify-com-debut  03may…`) into `site/theme/`. SANDBOX `#143449981101` not pulled. No Shopify write.
