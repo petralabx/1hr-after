@@ -74,7 +74,7 @@ Mission Control milestone IDs when applicable (`MRP-M-*`, `ERP-M-*`, etc.).
 ## 5. Validation before merge
 
 ```bash
-# pytest / npm test — add when project has a test suite
+python3 scripts/check-brand-repo-structure.py
 ```
 
 Required GitHub checks: **CI**, **PLX MC Compliance Gate**.

@@ -6,6 +6,8 @@ Operational repos (repoKind=operational|platform with adoptsPlxTokens=true) are
 checked lightly: plx-brand.json must exist and declare adoption. Marketing-brand
 repos (repoKind=marketing-brand or adoptsPlxTokens=false) must also ship the
 complete structural bundle documented in docs/runbooks/marketing-brand-repo-setup.md.
+When brand.slug is 1hr-after, the Furgenics-shaped wiki plus the Meta ads lane
+are required too.
 
 Run from a consumer repo root:
     python scripts/check-brand-repo-structure.py
@@ -39,6 +41,29 @@ MARKETING_REQUIRED_FILES = (
 )
 
 MARKETING_REQUIRED_DIRS = ("docs/design-system/decisions",)
+
+# 1HR-After brand-ops bundle: Furgenics-shaped wiki plus the Meta ads lane.
+# Checked only when plx-brand.json brand.slug is 1hr-after, so this script can
+# still be pointed at another marketing repo with --repo-root.
+ONEHR_AFTER_FILES = (
+    "docs/wiki-schema.md",
+    "docs/sessions.md",
+    "docs/sources/README.md",
+    "docs/knowledge/README.md",
+    "docs/knowledge/index.md",
+    "docs/knowledge/log.md",
+    "docs/knowledge/products.md",
+    "docs/knowledge/brand-voice.md",
+    "docs/knowledge/analyses/README.md",
+    "docs/channels/meta-ads.md",
+    "docs/compliance/claims.md",
+    "copy/content-drafts/README.md",
+    "copy/content-drafts/_template.md",
+    "copy/ads/meta/README.md",
+    "data/config.json",
+    "site/README.md",
+    "site/theme/README.md",
+)
 
 # PLX operational token names — marketing repos must not define these as their
 # primary layer when adoptsPlxTokens is false.
@@ -138,6 +163,30 @@ def _uses_own_tokens(manifest: dict) -> bool:
     return ds.get("adoptsPlxTokens") is False
 
 
+def _check_onehr_after(repo_root: Path, manifest: dict, violations: list[str]) -> None:
+    brand = manifest.get("brand") or {}
+    if brand.get("slug") != "1hr-after":
+        return
+    for rel in ONEHR_AFTER_FILES:
+        if not (repo_root / rel).is_file():
+            violations.append(f"missing 1hr-after brand file: {rel}")
+    config_path = repo_root / "data" / "config.json"
+    if not config_path.is_file():
+        return
+    try:
+        config = json.loads(config_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        violations.append(f"data/config.json: invalid JSON — {exc}")
+        return
+    meta = ((config.get("channels") or {}).get("metaAds") or {})
+    if meta.get("enabled") is not True:
+        violations.append("data/config.json channels.metaAds.enabled must be true")
+    if meta.get("playbook") != "docs/channels/meta-ads.md":
+        violations.append(
+            "data/config.json channels.metaAds.playbook must be docs/channels/meta-ads.md"
+        )
+
+
 def _check_marketing_files(repo_root: Path, violations: list[str]) -> None:
     for rel in MARKETING_REQUIRED_FILES:
         if not (repo_root / rel).is_file():
@@ -198,6 +247,7 @@ def check_repo(repo_root: Path) -> list[str]:
 
     if _is_marketing_brand(manifest):
         _check_marketing_files(repo_root, violations)
+        _check_onehr_after(repo_root, manifest, violations)
         _check_token_isolation(repo_root, manifest, violations)
     elif _uses_own_tokens(manifest):
         _check_token_isolation(repo_root, manifest, violations)
