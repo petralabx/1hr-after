@@ -24,20 +24,20 @@ Class B. Copied from Admin GraphQL on `1hourafter.myshopify.com`. **Do not treat
 
 | Observed SKU | Admin title | Handle | Status | Human decision |
 |---|---|---|---|---|
-| OH100 | ADAPTOGEN PROTEIN STRENGTHENING SHAMPOO | `adaptogen-protein-strengthening-shampoo` | ACTIVE | pending |
+| OH100 | Adaptogen Protein Strengthening Shampoo | `adaptogen-protein-strengthening-shampoo` | ACTIVE | vendor/type cleaned 2026-10-06 |
 | OH100-A | ADAPTOGEN PROTEIN STRENGTHENING SHAMPOO | `1hr-adaptogen-shampoo` | DRAFT (2026-10-06 live) | 301 → `adaptogen-protein-strengthening-shampoo` |
-| OH800-KIT | ANTI CHAFE GLIDE BALM | `anti-chafe-balm` | ACTIVE | pending |
-| OH300-FBA | COOLING MENTHOL BODY WASH | `cooling-menthol-body-wash` | ACTIVE | pending |
+| OH800-KIT | Anti Chafe Glide Balm | `anti-chafe-balm` | ACTIVE | vendor/type cleaned 2026-10-06 |
+| OH300-FBA | Cooling Menthol Body Wash | `cooling-menthol-body-wash` | ACTIVE | vendor/type cleaned 2026-10-06 |
 | OHSP50 | Free 1Hour-After Athletic Sampler Pack | `free-1hour-after-athletic-sampler-pack` | ACTIVE | pending (SKU also on a draft) |
 | 2 | LAB/SS-001 | `lab-ss-001` | DRAFT (2026-10-06 live) | 301 → `/pages/lab-1hr` |
 | OH701-KIT | Muscle Recovery Balm | `post-workout-hair-care-kit` | DRAFT (2026-10-06 live) | 301 → `muscle-recovery-balm` |
 | — | Muscle Recovery Balm | `muscle-recovery-balm` | ACTIVE | pending (SKU blank in Admin) |
-| — | Recovery BodyGel | `recovery-body-gel` | ACTIVE | pending (SKU blank) |
-| OH600-FBA | REFUELING MAGNESIUM BODY LOTION | `muscle-recovery-magnesium-body-lotion` | ACTIVE | pending |
+| — | Recovery Body Gel | `recovery-body-gel` | DRAFT (2026-10-06 archive) | Real SKU, not produced ~1 year; 301 → `muscle-recovery-balm`. Do not delete. |
+| OH600-FBA | Refueling Magnesium Body Lotion | `muscle-recovery-magnesium-body-lotion` | ACTIVE | vendor/type cleaned 2026-10-06 |
 | — | REFUELING MAGNESIUM BODY LOTION | `post-workout-body-care-set` | DRAFT (2026-10-06 live) | 301 → `muscle-recovery-magnesium-body-lotion` |
-| OH200 | Strengthening Protein Conditioner | `strengthening-protein-conditioner` | ACTIVE | pending |
-| OH700-KIT | The Marathon Pack | `marathon-pack` | ACTIVE | pending |
-| — | THE MARATHON RACE PACK | `marathon-race-pack` | ACTIVE | pending (SKU blank) |
+| OH200 | Strengthening Protein Conditioner | `strengthening-protein-conditioner` | ACTIVE | vendor/type cleaned 2026-10-06 |
+| OH700-KIT | The Marathon Pack | `marathon-pack` | ACTIVE | vendor/type cleaned 2026-10-06 |
+| — | The Marathon Race Pack | `marathon-race-pack` | ACTIVE | pending (SKU blank) |
 
 Draft clones (`repair-remedy-duo*`, MLVeda sentinels, `1hr-a-sample-pack`) stay out of the canonical Draft table until a human says they belong there.
 

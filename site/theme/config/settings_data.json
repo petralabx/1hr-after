@@ -15,8 +15,8 @@
     "social_twitter_link": "",
     "social_facebook_link": "",
     "social_pinterest_link": "",
-    "social_instagram_link": "http://instagram.com/shopify",
-    "social_tumblr_link": "http://shopify.tumblr.com",
+    "social_instagram_link": "https://www.instagram.com/1hourafter/",
+    "social_tumblr_link": "",
     "social_youtube_link": "",
     "favicon": "shopify://shop_images/favicon-32x32.png",
     "mlvedaACS_roundDecimal": false,
@@ -390,7 +390,7 @@
               "display_banner": true,
               "banner": "shopify://shop_images/Frame_95.png",
               "alignment": "left",
-              "title_1": "<h1 class=\"title\">WELCOME TO<br> A NEW ERA<br> IN ACTIVE<br> RECOVERY</h1>",
+              "title_1": "<h1 class=\"title\">1HOUR AFTER IS<br> TIME-BASED BODYCARE<br> FOR THE HOUR<br> AFTER TRAINING</h1>",
               "content_1": "",
               "title_2": "",
               "content_2": "",
@@ -485,7 +485,7 @@
           "f546799c-7837-4f76-a2e7-7e3732641ca6": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"designed-for-txt-wrap\">\n<h1 class=\"designed-for-daily\">body care designed for the daily athlete</h1>\n<h2 class=\"designed-for-daily\">Functional Products Formulated To Assist Performance At Every Stage Of Your Workout</h2>\n<div class=\"link-btn\">\n      <a href=\"/collections/all\" class=\"btn\" aria-label=\"View all blogs\">\n        View All Products \n\n      </a>\n    </div>\n</div>",
+              "code": "<div class=\"designed-for-txt-wrap\">\n<h1 class=\"designed-for-daily\">1Hour After is post-workout body care for daily athletes</h1>\n<h2 class=\"designed-for-daily\">Functional Products Formulated To Assist Performance At Every Stage Of Your Workout</h2>\n<div class=\"link-btn\">\n      <a href=\"/collections/all\" class=\"btn\" aria-label=\"View all blogs\">\n        View All Products \n\n      </a>\n    </div>\n</div>",
               "width": "50%"
             }
           },

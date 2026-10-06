@@ -8,6 +8,11 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-06T21:30:00Z] ship | Archive gel, Organization schema, affiliate canonical, catalog hygiene
+
+- Archived Recovery Body Gel (DRAFT + 301 to recovery balm). Deleted leftover `/blogs/test`; kept News. Canonical affiliate is `/pages/affiliate-signup`. Organization JSON-LD is `1Hour After` + Instagram. Published aligned Shop facts only. Vendor/type/title hygiene. FAQ claims not rewritten.
+- Filed [`analyses/2026-10-06-seo-aeo-hygiene-org.md`](analyses/2026-10-06-seo-aeo-hygiene-org.md). Agents do not merge.
+
 ## [2026-10-06T20:25:00Z] ship | Live SEO/AEO gap fixes on 1hourafter.myshopify.com
 
 - Drafted four duplicate/thin ACTIVE products and 301'd their handles. Collection SEO filled; `frontpage` retitled. Missing sampler/page meta filled. Theme `#122661372077` pushed (canonical overrides, 0562 CDN, FAQ heading gate, ANTI CHAFE links).
