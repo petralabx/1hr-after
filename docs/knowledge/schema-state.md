@@ -2,8 +2,8 @@
 
 > **Owner:** Agent keeps this aligned with what is actually deployed.
 > **Status:** Live Debut export in `site/theme/` (theme `#122661372077` on `1hourafter.myshopify.com`). Markup is Liquid JSON-LD, not a separate snippet app.
-> **Last updated:** 2026-10-06 (live theme push: FAQ heading gated to the nine FAQ JSON-LD product ids; duplicate PDPs drafted)
-> **Verified against:** Admin GraphQL + WebFetch 2026-10-06 after TASK-2388 writes.
+> **Last updated:** 2026-10-06 (post-ship re-sample: Organization sameAs still Shopify Instagram; gel Offer is OutOfStock / $0)
+> **Verified against:** Live homepage + PDP HTML 2026-10-06 after TASK-2388 / PR #12.
 
 ## Deployed
 
