@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-06 (five-gap ship on live theme)
+> **Last updated:** 2026-10-06 (hygiene + Organization ship)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-06 — storefront + Admin — gel archive, Organization, affiliate canonical
+
+- **Hypothesis:** A $0 leftover gel PDP and Shopify sample `sameAs` were hurting catalog and entity signals more than another title tweak.
+- **Change:** DRAFT gel + 301; delete test blog; keep News; keep affiliate-signup; Organization name + Instagram; vendor/type hygiene. See [`analyses/2026-10-06-seo-aeo-hygiene-org.md`](analyses/2026-10-06-seo-aeo-hygiene-org.md).
+- **Result:** Live 301s and JSON-LD verified this session. Rankings not promised.
+- **Source:** TASK-2459
 
 ## 2026-10-06 — storefront + Admin — SEO/AEO five-gap ship
 
