@@ -2,7 +2,7 @@
 
 > **Owner:** Class B (agent proposes, human approves semantic changes)
 > **Status:** Canonical tables still empty. A **proposed** snapshot from live Admin (2026-10-06) is below; it is not approved.
-> **Last updated:** 2026-10-06
+> **Last updated:** 2026-10-07
 
 Canonical product list. Shopify, Amazon, page drafts, and Meta catalog ads sync from this table. If a surface disagrees, fix this page first after checking the live catalog.
 
@@ -37,7 +37,7 @@ Class B. Copied from Admin GraphQL on `1hourafter.myshopify.com`. **Do not treat
 | — | REFUELING MAGNESIUM BODY LOTION | `post-workout-body-care-set` | DRAFT (2026-10-06 live) | 301 → `muscle-recovery-magnesium-body-lotion` |
 | OH200 | Strengthening Protein Conditioner | `strengthening-protein-conditioner` | ACTIVE | vendor/type cleaned 2026-10-06 |
 | OH700-KIT | The Marathon Pack | `marathon-pack` | ACTIVE | vendor/type cleaned 2026-10-06 |
-| — | The Marathon Race Pack | `marathon-race-pack` | ACTIVE | pending (SKU blank) |
+| — | Race Day Kit: Anti-Chafe + Recovery Balm | `marathon-race-pack` | ACTIVE | Display title renamed 2026-10-07 (handle unchanged). Compare-at set to $32.98 (sum of the two live balm prices). |
 
 Draft clones (`repair-remedy-duo*`, MLVeda sentinels, `1hr-a-sample-pack`) stay out of the canonical Draft table until a human says they belong there.
 

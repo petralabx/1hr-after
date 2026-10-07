@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-07 — SEO action-plan live updates
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** this PR (TASK-2514). CIP lands; agent cannot merge.
+- **Done:** Agreed action-plan slice live on `1hourafter.myshopify.com`: snippets matching article numbers, hike structure, two old-slug 301s, Race Day Kit rewrite, homepage kit CTA added, collection H1 template, noindex featured/frontpage.
+- **Next:** CIP merge. Optional later: evergreen Valentine/marathon-checklist slugs after the season; Body Glide comparison after sourced claims; gift-list trim if a human picks the keepers.
+- **Watch:** Do not robots-block `/pages/affiliate-signup` or `/apps/`. App still lacks `write_publications`. Do not call `1hours.myshopify.com`. Do not invent SKUs.
+
 ## 2026-10-06 — Archive gel, Organization, affiliate canonical, catalog hygiene
 
 - **Who:** Stephen Alton + Cursor cloud agent
