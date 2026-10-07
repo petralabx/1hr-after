@@ -32,3 +32,5 @@ Write the markdown first. Keep the HTML semantically aligned. Do not publish a p
 | Slug | Status | Target | Published |
 |---|---|---|---|
 | `_template` | Template | — | n/a |
+| [`body-glide-vs-1hr-a-anti-chafe-balm`](body-glide-vs-1hr-a-anti-chafe-balm.md) | Drafted 2026-10-07 | Body Glide vs 1HR-A | `/blogs/news/body-glide-vs-1hr-a-anti-chafe-balm` (this TASK) |
+| [`best-anti-chafe-balm-for-runners`](best-anti-chafe-balm-for-runners.md) | Drafted 2026-10-07 | best anti-chafe balm for runners | `/blogs/news/best-anti-chafe-balm-for-runners` (this TASK) |
