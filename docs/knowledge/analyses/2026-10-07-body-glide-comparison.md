@@ -96,13 +96,17 @@ Not used as a company “made in USA” claim: customer reviews on Body Glide. N
 
 ## Live checks (2026-10-07)
 
-Filled after `articleCreate`.
+`articleCreate` ids: vs `gid://shopify/Article/634953957549`, roundup `gid://shopify/Article/634953990317`. Chafing update on `gid://shopify/Article/561753325741`.
 
 | URL | Result |
 |---|---|
-| `/blogs/news/body-glide-vs-1hr-a-anti-chafe-balm` | TBD |
-| `/blogs/news/best-anti-chafe-balm-for-runners` | TBD |
-| `/blogs/news/how-to-prevent-chafing-when-running` | TBD (new internal links) |
+| `/blogs/news/body-glide-vs-1hr-a-anti-chafe-balm` | 200. Title `Body Glide vs 1HR-A Anti-Chafe Balm for Runners`. Canonical self. Meta matches `description_tag`. Opening answer present. “Where Body Glide Original wins” present. No `outperform`. “Made in Canada” only as a negation. Product card after body (`sidenav-product-wrap`). |
+| `/blogs/news/best-anti-chafe-balm-for-runners` | 200. Title `Best Anti-Chafe Balm for Runners: Stick vs Cream`. Canonical self. Opening “not one best.” Chamois Butt’r called a cream. Product card after body. |
+| `/blogs/news/how-to-prevent-chafing-when-running` | 200. Title/meta unchanged. New sentence links both posts. |
+
+Search sample 2026-10-07 en-US (WebSearch): the two new URLs were **not** in the first-page mix yet (published this session). `1hourafter.com/products/anti-chafe-balm` did appear among “Body Glide vs 1Hour After” results. That is evidence of recency, **not** a ranking.
+
+Brand-repo validator: `python3 scripts/check-brand-repo-structure.py` exit 0.
 
 ## Rollback (Shopify)
 

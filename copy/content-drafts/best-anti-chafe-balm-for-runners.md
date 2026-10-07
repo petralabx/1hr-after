@@ -1,10 +1,10 @@
 # Best Anti-Chafe Balm for Runners: Stick vs Cream by Use
 
 > **Content type:** Article at `/blogs/news/best-anti-chafe-balm-for-runners`
-> **Status:** Draft (Shopify publish in the same TASK)
+> **Status:** Published
 > **Target query:** best anti-chafe balm for runners (operator-reviewed action-plan follow-up)
 > **Drafted:** 2026-10-07
-> **Published:**
+> **Published:** 2026-10-07 (`gid://shopify/Article/634953990317`)
 > **Why this page:** Category roundup so the vs post is not forced to rank five brands. Head-to-head lives on the Body Glide vs 1HR-A article.
 > **Drafting notes:** No prices. No year in the title. No hold-time test. No invented “7 proven” / “9 fixes.” Chamois Butt’r is a cream, not a stick. Gold Bond INCI taken from goldbond.com Friction Defense listing. Chamois full INCI attributed to their ingredients blog, not the PDP. SNB eczema claims not repeated. Competitor names from proposed [`docs/knowledge/competitor-intel.md`](../../docs/knowledge/competitor-intel.md). Shopify body omits the H1.
 
@@ -129,4 +129,4 @@ Read the two-stick close-up: [Body Glide vs 1HR-A Anti-Chafe Balm](/blogs/news/b
 - [x] Competitor names limited to proposed `competitor-intel.md` rows
 - [x] No “clinically proven”; no Made in Canada; no disparagement
 - [x] HTML twin updated
-- [ ] `ship` line added to `docs/knowledge/log.md` after publish
+- [x] `ship` line added to `docs/knowledge/log.md` after publish

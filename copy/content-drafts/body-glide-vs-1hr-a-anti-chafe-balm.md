@@ -1,10 +1,10 @@
 # Body Glide vs 1HR-A Anti-Chafe Balm: Which Stick Fits Runners?
 
 > **Content type:** Article at `/blogs/news/body-glide-vs-1hr-a-anti-chafe-balm`
-> **Status:** Draft (Shopify publish in the same TASK)
+> **Status:** Published
 > **Target query:** Body Glide vs 1Hour After / Body Glide vs 1HR-A anti-chafe (operator-named 2026-10-07)
 > **Drafted:** 2026-10-07
-> **Published:**
+> **Published:** 2026-10-07 (`gid://shopify/Article/634953957549`)
 > **Why this page:** Head-to-head owner for the named comparison. Category roundup is a separate post.
 > **Drafting notes:** No prices (canonical `products.md` prices empty). No year in the title. No hold-time test. No “clinically proven.” No Made in Canada. Do not copy PDP “outperform the competition” or FAQ “outperform industry standards.” Body Glide “made in the USA” is a customer-review line, not used as a company claim. Competitor names from proposed [`docs/knowledge/competitor-intel.md`](../../docs/knowledge/competitor-intel.md) rows. Shopify body omits the H1 (Debut renders `article.title`).
 
@@ -113,4 +113,4 @@ If the 1HR-A list and the recovery pair are what you wanted from this comparison
 - [x] Competitor names limited to proposed `competitor-intel.md` rows
 - [x] No “clinically proven”; no Made in Canada; no disparagement
 - [x] HTML twin updated
-- [ ] `ship` line added to `docs/knowledge/log.md` after publish
+- [x] `ship` line added to `docs/knowledge/log.md` after publish
