@@ -94,35 +94,6 @@
                 </div>
               </div>
 
-              {% for prod in collections.all.products %}
-                {% for tag in prod.tags %}
-                  {% if article.tags contains tag %}
-                    {%- assign img_url = prod.featured_image | img_url: 'master' -%}
-                    <div class="sidenav-product-wrap desk-only">
-                      <div class="article-listing single-blog-details">
-                        <a href="{{ prod.url }}" data-preorder-handle="{{ prod.url }}">
-                          <img src="{{ img_url }}" id="image123eee" class="ls-is-cached lazyloaded">
-                        </a>
-                        <h2 class="article__title h3">{{ prod.title }}</h2>
-                        <div class="price-cart-wrap">
-                          <strong class="read-more-blog no-border-1">{{ prod.price | money }}</strong>
-                          <div class="cart-form">
-                            <form method="post" action="/cart/add">
-                              <input name="id" value="{{ prod.variants.first.id }}" type="hidden" />
-                              {% if prod.id == 7389948575917 %}
-                                <input class="product-form__cart-submit" name="add" value="SEND ME A SAMPLE PACK" type="submit" />
-                              {% else %}
-                                <input class="product-form__cart-submit" name="add" value="ADD TO CART" type="submit" />
-                              {% endif %}
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  {% endif %}
-                {% endfor %}
-              {% endfor %}
-
               {% if section.settings.blog_show_author %}
                 <!--<span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>-->
               {% endif %}
@@ -135,12 +106,12 @@
                 {% for tag in prod.tags %}
                   {% if article.tags contains tag %}
                     {%- assign img_url = prod.featured_image | img_url: 'master' -%}
-                    <div class="sidenav-product-wrap mob-only">
+                    <div class="sidenav-product-wrap">
                       <div class="article-listing single-blog-details">
                         <a href="{{ prod.url }}" data-preorder-handle="{{ prod.url }}">
                           <img src="{{ img_url }}" id="image123eee" class="ls-is-cached lazyloaded">
                         </a>
-                        <h2 class="article__title h3">{{ prod.title }}</h2>
+                        <p class="article__title h3">{{ prod.title }}</p>
                         <div class="price-cart-wrap">
                           <strong class="read-more-blog no-border-1">{{ prod.price | money }}</strong>
                           <div class="cart-form">

@@ -8,6 +8,11 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-07T16:30:00Z] ship | SEO action-plan snippets, hike structure, Race Day Kit, collection H1
+
+- Answer-first titles/metas whose numbers match the live articles. Hike product cards moved below the fold. Two old-slug 301s. Race pack renamed in title (handle unchanged). Collection pages render this collection. Featured/frontpage noindex. Affiliate-signup and `/apps/` not robots-blocked.
+- Filed [`analyses/2026-10-07-seo-aeo-action-plan.md`](analyses/2026-10-07-seo-aeo-action-plan.md). Agents do not merge.
+
 ## [2026-10-06T21:30:00Z] ship | Archive gel, Organization schema, affiliate canonical, catalog hygiene
 
 - Archived Recovery Body Gel (DRAFT + 301 to recovery balm). Deleted leftover `/blogs/test`; kept News. Canonical affiliate is `/pages/affiliate-signup`. Organization JSON-LD is `1Hour After` + Instagram. Published aligned Shop facts only. Vendor/type/title hygiene. FAQ claims not rewritten.

@@ -41,6 +41,7 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
+- [SEO/AEO action-plan ship](analyses/2026-10-07-seo-aeo-action-plan.md) — filed 2026-10-07 as `ship` · Snippets matching live copy; hike structure; two 404→301s; Race Day Kit; collection H1 template; noindex featured/frontpage
 - [SEO/AEO hygiene + Organization](analyses/2026-10-06-seo-aeo-hygiene-org.md) — filed 2026-10-06 as `ship` · Archived gel; kept News blog; affiliate-signup canonical; Organization 1Hour After + Instagram; catalog hygiene; FAQ claims not rewritten
 - [SEO/AEO live fixes](analyses/2026-10-06-seo-aeo-live-fixes.md) — filed 2026-10-06 as `ship` · Duplicate PDPs drafted + redirected; collection SEO; theme canonicals/0562/FAQ heading; live theme `#122661372077`
 - [SEO/AEO catalog audit](analyses/2026-10-06-seo-aeo-catalog-audit.md) — filed 2026-10-06 as `audit` · Read-only Admin + storefront sample; 14 ACTIVE products; duplicate PDPs and empty collection SEO ranked highest; no Shopify write
