@@ -8,6 +8,11 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-07T19:15:00Z] ship | Body Glide vs 1HR-A comparison + runners roundup
+
+- Two evergreen News posts live: `/blogs/news/body-glide-vs-1hr-a-anti-chafe-balm` and `/blogs/news/best-anti-chafe-balm-for-runners`. Chafing guide now links both. No prices, no year titles, honest Body Glide-wins section.
+- Class B proposed competitor-intel rows (Body Glide human-named). Filed [`analyses/2026-10-07-body-glide-comparison.md`](analyses/2026-10-07-body-glide-comparison.md). Agents do not merge.
+
 ## [2026-10-07T16:30:00Z] ship | SEO action-plan snippets, hike structure, Race Day Kit, collection H1
 
 - Answer-first titles/metas whose numbers match the live articles. Hike product cards moved below the fold. Two old-slug 301s. Race pack renamed in title (handle unchanged). Collection pages render this collection. Featured/frontpage noindex. Affiliate-signup and `/apps/` not robots-blocked.
