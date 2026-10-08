@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-08 — Rollback Oct 8 live theme (images and mobile)
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#18](https://github.com/petralabx/1hr-after/pull/18) (TASK-2549). Draft [#17](https://github.com/petralabx/1hr-after/pull/17) closed — do not merge it. CIP lands; agent cannot merge.
+- **Done:** Restored live Debut `#122661372077` from `origin/main` (`9d28210`) after WebP/mobile CSS hid images. Reverted TASK-2546 Admin menus, featured-collection order, product copy, and 18 article bodies.
+- **Next:** Any later slice must not use `format: 'webp'` on the `_1x1.` lazy-load pattern, and must not override mobile overlay CSS, without a visual check first.
+- **Watch:** Do not merge PR #17. Do not call `1hours.myshopify.com`. Do not invent SKUs.
+
 ## 2026-10-07 — SEO action-plan live updates
 
 - **Who:** Stephen Alton + Cursor cloud agent

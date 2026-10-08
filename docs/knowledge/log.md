@@ -8,6 +8,11 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-08T17:30:00Z] ship | Rollback Oct 8 theme: restore images and mobile
+
+- Live Debut `#122661372077` restored from `origin/main` (`9d28210` / PR #15) after `format: webp` plus mobile overlay CSS hid homepage images and broke small-viewport layout. Admin mutations from TASK-2546 reverted from backups. Draft PR #17 must not merge.
+- Filed [`analyses/2026-10-08-oct8-rollback.md`](analyses/2026-10-08-oct8-rollback.md). Agents do not merge.
+
 ## [2026-10-07T16:30:00Z] ship | SEO action-plan snippets, hike structure, Race Day Kit, collection H1
 
 - Answer-first titles/metas whose numbers match the live articles. Hike product cards moved below the fold. Two old-slug 301s. Race pack renamed in title (handle unchanged). Collection pages render this collection. Featured/frontpage noindex. Affiliate-signup and `/apps/` not robots-blocked.
