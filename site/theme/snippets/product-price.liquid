@@ -55,7 +55,11 @@
       </dt>
       <dd>
         <span class="price-item price-item--regular" data-regular-price>
-          {{ money_price }}
+          {% if price == 0 %}
+            Free — $1.99 shipping
+          {% else %}
+            {{ money_price }}
+          {% endif %}
         </span>
       </dd>
     </div>

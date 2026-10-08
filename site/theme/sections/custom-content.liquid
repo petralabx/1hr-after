@@ -60,8 +60,8 @@
           {% case block.type %}
             {% when 'image' %}
               {% if block.settings.image != blank %}
-                {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                {%- assign img_url_mob = block.settings.image-mob | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                {%- assign img_url = block.settings.image | img_url: '1x1', format: 'webp' | replace: '_1x1.', '_{width}x.' -%}
+                {%- assign img_url_mob = block.settings.image-mob | img_url: '1x1', format: 'webp' | replace: '_1x1.', '_{width}x.' -%}
                 <div style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100}}%;" data-image-loading-animation>
                   <img id="{{ img_id }}"
                        class="custom__image lazyload js desk-only"

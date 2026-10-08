@@ -108,20 +108,16 @@ INNOVATIONS, FROM OUR LAB TO YOUR DOORSTEP</p>
           </div>
 
           
-<!--           <div class="lab-subscribe">
-            
-            
-          <div class="left">
-
-              <p>{{ product.description }}</p>
-              <p></p>
-               {%- endif -%}
-              {%- endunless -%}
-            {%- endfor -%} 
-                        </div> 
-            
+{% comment %}
+  Old lab-subscribe markup removed. Liquid in an HTML comment still runs;
+  that leaked a literal --> on /pages/lab-1hr.
+{% endcomment %}
         </div>
-      </div> -->
+      </div>
+      </div>
+              {%- endif -%}
+              {%- endunless -%}
+            {%- endfor -%}
       
       
   {%- if section.settings.hero_layout == 'fixed_width' -%}

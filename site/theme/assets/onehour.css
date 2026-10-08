@@ -2170,6 +2170,11 @@ article.blog-details {
 .prod-info .col50{width: 50%;padding: 0 30px 0 0; } 
 .prod-info .col50 .link-btn a{width: 100%;} 
 .prod-info p{color: #ffffff;text-align: justify;margin-bottom: 40px;text-transform: none !important;font-family: 'EB Garamond', serif !important; padding: 0 35px; font-size: 21px}
+#shopify-section-9d4f395a-3dd1-4c3b-a8cf-b8fb347d5381 h5,
+#shopify-section-9d4f395a-3dd1-4c3b-a8cf-b8fb347d5381 p,
+.made-clean-sec p {
+    text-transform: none !important;
+}
 .custom__item--html.custom__item--html_Hma93k .custom__item-inner.custom__item-inner--html{display:flex;flex-direction: column;height: 100%;justify-content: space-between;}
 
 #shopify-section-custom_content_PP79By{padding-top: 0}
@@ -3011,8 +3016,23 @@ article.blog-details {
 
                         #shopify-section-45202243-21f9-451b-b390-ede4a2193448 .custom__item--image{order:1;flex: 1 0 100%;padding: 20px 0 35px !important;}
                   .lab-series-ttl .divider,.lab-series .lab-subscribe{border-bottom:2px solid #fff;}
-                .custom-home-header .try-wrap-mob-only {display:none !important;}
+                .custom-home-header .try-wrap-mob-only {display:block !important;}
                 .offer-marquee {display:none !important;}
+                #shopify-section-custom_content_Bq8YWE {height: auto !important;}
+                #shopify-section-custom_content_Bq8YWE .custom__item.custom__item--html_Hma93k {
+                    position: static !important;
+                    transform: none !important;
+                    left: auto !important;
+                    width: 100% !important;
+                    top: auto !important;
+                }
+                .custom-home-header .menu-1hr-a.hdr-ttl {
+                    max-width: 58%;
+                    overflow: hidden;
+                }
+                .custom-home-header .menu-1hr-a.hdr-ttl h2 sup {
+                    font-size: 18% !important;
+                }
 
                 #shopify-section-45202243-21f9-451b-b390-ede4a2193448 .custom__image{top:90px}
                 #shopify-section-45202243-21f9-451b-b390-ede4a2193448 .custom-content{margin-top:-50px;}

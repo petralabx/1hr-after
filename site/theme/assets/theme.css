@@ -7726,6 +7726,12 @@ header.site-header.logo--left.shop-page-header .try-samples-wrap a {
 .made-clean-sec p {
     color: #fff;
     font-size: 14px;
+    text-transform: none;
+}
+.made-clean-sec ul li h3 {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.25;
 }
 .made-clean-sec .made-clean-wrap {
     width: 100%;

@@ -8,6 +8,11 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-08T16:00:00Z] ship | Oct 8 review: pack ATC, nav, homepage grid, typos (no Markets)
+
+- Restored native Add to Cart on Race Day Kit and Marathon Pack (theme had hidden those two product ids). Labs out of live menus. Featured collection reordered kit / anti-chafe / recovery first. Sampler $0 Shop Pay gated. Redirect URLs replaced in 18 articles. No claim edits. Markets/CAD deferred for Stephen + Support.
+- Filed [`analyses/2026-10-08-site-review.md`](analyses/2026-10-08-site-review.md). Agents do not merge.
+
 ## [2026-10-07T16:30:00Z] ship | SEO action-plan snippets, hike structure, Race Day Kit, collection H1
 
 - Answer-first titles/metas whose numbers match the live articles. Hike product cards moved below the fold. Two old-slug 301s. Race pack renamed in title (handle unchanged). Collection pages render this collection. Featured/frontpage noindex. Affiliate-signup and `/apps/` not robots-blocked.

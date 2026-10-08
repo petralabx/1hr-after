@@ -1,9 +1,28 @@
 {{ '//code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css' | stylesheet_tag }}
-{{ '//code.jquery.com/jquery-1.10.2.js' | script_tag }}
-{{ '//code.jquery.com/ui/3.7.1/jquery-ui.js' | script_tag }}
+{{ '//code.jquery.com/ui/1.13.2/jquery-ui.js' | script_tag }}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <style>
   .cont-hide{display:none}
+  {% if product.handle == 'marathon-race-pack' or product.handle == 'marathon-pack' %}
+  .product-form__cart-submit {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    pointer-events: auto !important;
+  }
+  [class*="addly"], [id*="addly"], [class*="Addly"], [id*="Addly"] {
+    display: none !important;
+  }
+  {% endif %}
+  .made-clean-sec p {
+    text-transform: none;
+  }
+  .made-clean-sec ul li h3 {
+    white-space: normal;
+    overflow-wrap: break-word;
+    line-height: 1.25;
+  }
 
   
   .blog-list-view li .article-listing.single-blog-details .article__date, .blog-list-view li .article-listing.single-blog-details h2 a, .single-blog-details .read-more-blog, .blog-page-title-details h4 {
@@ -206,7 +225,9 @@
         </div>
       {% if content_for_header contains 'bss-sub-recurring-pay' %}{% render 'bss-sub-price-with-discount', product: product %}{% endif %}
 {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
-            {{ form | payment_terms }}
+            {% if product.price > 0 %}
+              {{ form | payment_terms }}
+            {% endif %}
 
             {% unless product.has_only_default_variant %}
 <!--               <div class="product-form__controls-group">
@@ -288,7 +309,6 @@
 {% endif %}
 <!-- End of Buy With Prime Widget --> 
 
- {% if product.id != 8140422578349 and product.id != 7162482262189 %}
 <!-- {% assign sample_handle = 'free-1hour-after-athletic-sampler-pack' %}
 
 {% if product.handle == sample_handle %}
@@ -333,9 +353,6 @@
                     {% include 'icon-spinner' %}
                   </span>
                 </button>
-{% else %}
-
-{% endif %}
                
                  {% endif %}
                 {% if section.settings.enable_payment_button %}
@@ -753,37 +770,37 @@
             <ul class="made-clean-img-wrap">
               <li>
                 <div class="img-box">
-                  <img src="{{ image_url1.value | image_url }}" >
+                  <img src="{{ image_url1.value | image_url }}" alt="{{ product_icon1_title.value | escape }}">
                 </div>
                 <h3 class="h2">{{ product_icon1_title.value }}</h3>
               </li>
                <li>
                 <div class="img-box">
-                  <img src="{{ image_url2.value | image_url }}" >
+                  <img src="{{ image_url2.value | image_url }}" alt="{{ product_icon2_title.value | escape }}">
                 </div>
                 <h3 class="h2">{{ product_icon2_title.value }}</h3>
               </li>
                <li>
                 <div class="img-box">
-                  <img src="{{ image_url3.value | image_url }}" >
+                  <img src="{{ image_url3.value | image_url }}" alt="{{ product_icon3_title.value | escape }}">
                 </div>
                 <h3 class="h2">{{ product_icon3_title.value }}</h3>
               </li>
                <li>
                 <div class="img-box">
-                  <img src="{{ image_url4.value | image_url }}" >
+                  <img src="{{ image_url4.value | image_url }}" alt="{{ product_icon4_title.value | escape }}">
                 </div>
                 <h3 class="h2">{{ product_icon4_title.value }}</h3>
               </li>
                <li>
                 <div class="img-box">
-                  <img src="{{ image_url5.value | image_url }}" >
+                  <img src="{{ image_url5.value | image_url }}" alt="{{ product_icon5_title.value | escape }}">
                 </div>
                 <h3 class="h2">{{ product_icon5_title.value }}</h3>
               </li>
                <li>
                 <div class="img-box">
-                  <img src="{{ image_url6.value | image_url }}" >
+                  <img src="{{ image_url6.value | image_url }}" alt="{{ product_icon6_title.value | escape }}">
                 </div>
                 <h3 class="h2">{{ product_icon6_title.value }}</h3>
               </li>

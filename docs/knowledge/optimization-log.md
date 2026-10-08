@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-07 (action-plan ship)
+> **Last updated:** 2026-10-08 (Oct 8 site-review ship)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-08 — storefront + Admin — pack ATC, nav, homepage heroes, typos
+
+- **Hypothesis:** Missing native Add to Cart on both packs, an empty Labs nav item, and a hair-care-first homepage grid were killing conversion more than Search Console titles.
+- **Change:** Theme ATC restore + Addly hide on pack handles; sampler Shop Pay gate; Labs out of menus; featured-collection reorder; canonical affiliate/sampler URLs; typos and four redirect URL replacements. Markets not in this slice. See [`analyses/2026-10-08-site-review.md`](analyses/2026-10-08-site-review.md).
+- **Result:** Live checks in that analysis. Rankings not promised.
+- **Source:** TASK-2546
 
 ## 2026-10-07 — storefront + Admin — action-plan snippets, hike, Race Day Kit, collections
 
