@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-07 (action-plan ship)
+> **Last updated:** 2026-10-08 (Oct 8 theme rollback)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-08 — storefront + Admin — rollback Oct 8 theme (images / mobile)
+
+- **Hypothesis:** The Oct 8 live theme ship (WebP `img_url` + mobile overlay CSS) hid homepage images and broke small viewports.
+- **Change:** Pushed `site/theme` from `origin/main` (`9d28210`) onto live Debut `#122661372077`. Reverted TASK-2546 Admin mutations from backups. See [`analyses/2026-10-08-oct8-rollback.md`](analyses/2026-10-08-oct8-rollback.md).
+- **Result:** Homepage lazy image at 720px returns 200 PNG; `format=webp` gone from homepage HTML; mobile `try-wrap-mob-only` rule restored to `display:none`. Rankings not promised.
+- **Source:** TASK-2549
 
 ## 2026-10-07 — storefront + Admin — action-plan snippets, hike, Race Day Kit, collections
 
