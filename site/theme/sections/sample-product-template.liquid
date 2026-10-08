@@ -1,6 +1,5 @@
 {{ '//code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css' | stylesheet_tag }}
-{{ '//code.jquery.com/jquery-1.10.2.js' | script_tag }}
-{{ '//code.jquery.com/ui/3.7.1/jquery-ui.js' | script_tag }}
+{{ '//code.jquery.com/ui/1.13.2/jquery-ui.js' | script_tag }}
 <style>
   .cont-hide{display:none}
 
@@ -172,7 +171,9 @@
          
       {% if content_for_header contains 'bss-sub-recurring-pay' %}{% render 'bss-sub-price-with-discount', product: product %}{% endif %}
 {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
-            {{ form | payment_terms }}
+            {% if product.price > 0 %}
+              {{ form | payment_terms }}
+            {% endif %}
 
             {% unless product.has_only_default_variant %}
 <!--               <div class="product-form__controls-group">

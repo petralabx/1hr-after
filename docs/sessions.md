@@ -27,7 +27,7 @@ This is separate from:
 ## 2026-10-08 — Oct 8 site review (aligned slice only)
 
 - **Who:** Stephen Alton + Cursor cloud agent
-- **PR:** this branch (TASK-2546). CIP lands; agent cannot merge.
+- **PR:** [#17](https://github.com/petralabx/1hr-after/pull/17) (TASK-2546). CIP lands; agent cannot merge.
 - **Done:** Independently verified the Oct 8 review. Restored native ATC on Race Day Kit and Marathon Pack. Labs out of nav. Homepage featured grid starts with kit / anti-chafe / recovery. Sampler $0 / Shop Pay. Typos, FAQ question rename, blog redirect URLs, kit Directions copied from both balms. No claim edits.
 - **Next:** CIP merge. Stephen + Shopify Support for CAD base currency and USD `.99` market list before Markets. Optional later: Addly dashboard (recommend kit on single balms) once native ATC is confirmed live.
 - **Watch:** Do not change store base currency or enter USD prices without Stephen sign-off. Do not edit product/ingredient claims. Do not call `1hours.myshopify.com`. Do not invent SKUs. App still lacks `write_publications`.

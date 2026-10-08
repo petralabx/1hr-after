@@ -46,7 +46,7 @@ Hard rule from the review (kept): **no edits to product or ingredient claims.** 
 - Lab template: HTML-comment leak converted to `{% comment %}`; loop closers explicit.
 - Mobile: try-wrap visible; Race Day overlay `position: static`; logo TM max-width 58%.
 - Why 1Hour After / Made clean `p` `text-transform: none`. Badge `h3` `overflow-wrap`. Icon alts from title metafields.
-- jquery-1.10.2 dropped from `product-template.liquid`. `custom-content` images request `format: 'webp'`.
+- jquery-1.10.2 dropped from `product-template.liquid` and `sample-product-template.liquid`. `custom-content` images request `format: 'webp'`.
 
 ### Admin (2024-10, client_credentials, `1hourafter.myshopify.com`)
 
