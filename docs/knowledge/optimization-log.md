@@ -7,6 +7,13 @@
 
 <!-- AUTO-APPEND:ships:START -->
 
+## 2026-10-07 — storefront + Admin — Body Glide vs + anti-chafe roundup
+
+- **Hypothesis:** “Body Glide vs 1Hour After” and “best anti-chafe balm for runners” had no answer-ready first-party owner.
+- **Change:** Two evergreen News articles + chafing-guide cross-link. Proposed Class B competitor rows. See [`analyses/2026-10-07-body-glide-comparison.md`](analyses/2026-10-07-body-glide-comparison.md).
+- **Result:** Live 200s, self-canonicals, SEO titles/metas verified this session. Search sample the same day did not yet show the new URLs (too new). Rankings not promised.
+- **Source:** TASK-2518
+
 ## 2026-10-07 — storefront + Admin — action-plan snippets, hike, Race Day Kit, collections
 
 - **Hypothesis:** CTR on already-ranking posts and thin identical collection URLs were the bottleneck, not a robots overhaul.

@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-07 — Body Glide comparison + anti-chafe roundup
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#16](https://github.com/petralabx/1hr-after/pull/16) (TASK-2518). CIP lands; agent cannot merge.
+- **Done:** Published `/blogs/news/body-glide-vs-1hr-a-anti-chafe-balm` and `/blogs/news/best-anti-chafe-balm-for-runners` on `1hourafter.myshopify.com`. Cross-linked the chafing guide. Proposed Class B competitor-intel / query / market-map rows.
+- **Next:** CIP merge. Optional later: GSC URL inspection on the two new posts; human Class B on the proposed tables.
+- **Watch:** Do not name these competitors in Meta ads (`claims.md` still empty). Do not add prices. Do not robots-block affiliate-signup. Do not call `1hours.myshopify.com`.
+
 ## 2026-10-07 — SEO action-plan live updates
 
 - **Who:** Stephen Alton + Cursor cloud agent
