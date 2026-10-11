@@ -57,6 +57,20 @@ Round 0 = TASK-2387 audit. Round 1 = TASK-2388 live five-gap ship. **This filing
 | 1HR-A magnesium body lotion for athletes | Google via WebSearch | en-US | 2026-10-06 | Canonical lotion URL **and** `/products/post-workout-body-care-set` still returned (index lag; live 301 works) |
 | site:1hourafter.com post-workout body care | Google via WebSearch | en-US | 2026-10-06 | Body wash, blogs, homepage, **and** the old body-care-set URL still in the set |
 
+## Status since audit (2026-10-11)
+
+The findings below are unchanged and describe the 2026-10-06 state. Main has since landed follow-up ships that address most of the ranked items (see [`2026-10-06-seo-aeo-hygiene-org.md`](2026-10-06-seo-aeo-hygiene-org.md) and [`2026-10-07-seo-aeo-action-plan.md`](2026-10-07-seo-aeo-action-plan.md)). Status per `log.md`, `schema-state.md` and `products.md` on main; not re-sampled on the store (no Shopify calls this session).
+
+| # | Item | Status on main |
+|---|------|----------------|
+| 1 | `recovery-body-gel` leftover PDP | Archived as DRAFT with 301 to `muscle-recovery-balm` — PR #14 (TASK-2459, `a772093`) |
+| 2 | Sitemap noindex URLs | `/blogs/test` deleted (PR #14); `sample-pack` noindex only, since the app lacks `write_publications`; featured/frontpage noindexed (PR #15, TASK-2514, `9d28210`) |
+| 3 | Three affiliate pages | `/pages/affiliate-signup` kept as canonical, other two 301'd — PR #14 |
+| 4 | Organization `sameAs` | Name `1Hour After`, `sameAs` Instagram only — PR #14 |
+| 5 | Query → page ownership | Partly: collection H1 template, snippets matching live copy, hike structure — PR #15 |
+| 6 | FAQ / claims (Class C) | Unchanged; FAQ JSON-LD not rewritten |
+| 7 | Catalog hygiene | Vendor/type/title hygiene — PR #14 |
+
 ## Ranked remaining website improvements
 
 Impact heuristic: critical technical first, then intent/answer, then schema/citations, then metadata. **Next live TASK should pick one.**

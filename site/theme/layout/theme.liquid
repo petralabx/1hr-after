@@ -26,7 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="robots" content="noindex">
 {% endif %}
 
-  {% if handle == 'test' or handle == 'sample-pack' %}
+  {% if handle == 'test' or handle == 'sample-pack' or handle == 'featured-collection' or handle == 'frontpage' %}
 <meta name="robots" content="noindex">
 {% endif %}
 
@@ -130,9 +130,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       &ndash; {{ shop.name }}
     {%- endunless -%}
   {%- endcapture -%}
-  <title>{% if template contains "index" %}{{ page_title }}{% else %}{{ page_title }}{% if current_tags %} {{ 'general.meta.tagged_html' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} {{ 'general.meta.page' | t: page_number: current_page }}{% endif %}{% endif %}</title>
+  <title>{% if collection.handle == 'all' %}All Post-Workout Body Care | 1HR-A{% elsif template contains "index" %}{{ page_title }}{% else %}{{ page_title }}{% if current_tags %} {{ 'general.meta.tagged_html' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} {{ 'general.meta.page' | t: page_number: current_page }}{% endif %}{% endif %}</title>
 
-  {%- if page_description -%}
+  {%- if collection.handle == 'all' -%}
+    <meta name="description" content="Every 1Hour After product: recovery balm, anti-chafe balm, magnesium lotion, cooling body wash, protein shampoo and conditioner, race packs, and the athletic sampler pack.">
+  {%- elsif page_description -%}
     <meta name="description" content="{{ page_description | escape }}">
   {%- endif -%}
 

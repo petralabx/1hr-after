@@ -3,9 +3,23 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-06 (post-ship re-measure of the five-gap ship)
+> **Last updated:** 2026-10-07 (action-plan ship)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-07 — storefront + Admin — action-plan snippets, hike, Race Day Kit, collections
+
+- **Hypothesis:** CTR on already-ranking posts and thin identical collection URLs were the bottleneck, not a robots overhaul.
+- **Change:** Title/meta/H1 rewrites whose numbers match live copy; hike structure; two 404→301s; race-pack rewrite + homepage kit CTA; collection-template H1; noindex featured/frontpage. See [`analyses/2026-10-07-seo-aeo-action-plan.md`](analyses/2026-10-07-seo-aeo-action-plan.md).
+- **Result:** Live titles, collection H1s, 301s, and homepage kit CTA verified this session. Rankings not promised.
+- **Source:** TASK-2514
+
+## 2026-10-06 — storefront + Admin — gel archive, Organization, affiliate canonical
+
+- **Hypothesis:** A $0 leftover gel PDP and Shopify sample `sameAs` were hurting catalog and entity signals more than another title tweak.
+- **Change:** DRAFT gel + 301; delete test blog; keep News; keep affiliate-signup; Organization name + Instagram; vendor/type hygiene. See [`analyses/2026-10-06-seo-aeo-hygiene-org.md`](analyses/2026-10-06-seo-aeo-hygiene-org.md).
+- **Result:** Live 301s and JSON-LD verified this session. Rankings not promised.
+- **Source:** TASK-2459
 
 ## 2026-10-06 — storefront — post-ship re-measure (no write)
 
