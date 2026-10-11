@@ -24,6 +24,30 @@ This is separate from:
 
 ---
 
+## 2026-10-07 — SEO action-plan live updates
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#15](https://github.com/petralabx/1hr-after/pull/15) (TASK-2514). CIP lands; agent cannot merge.
+- **Done:** Agreed action-plan slice live on `1hourafter.myshopify.com`: snippets matching article numbers, hike structure, two old-slug 301s, Race Day Kit rewrite, homepage kit CTA added, collection H1 template, noindex featured/frontpage.
+- **Next:** CIP merge. Optional later: evergreen Valentine/marathon-checklist slugs after the season; Body Glide comparison after sourced claims; gift-list trim if a human picks the keepers.
+- **Watch:** Do not robots-block `/pages/affiliate-signup` or `/apps/`. App still lacks `write_publications`. Do not call `1hours.myshopify.com`. Do not invent SKUs.
+
+## 2026-10-06 — Archive gel, Organization, affiliate canonical, catalog hygiene
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#14](https://github.com/petralabx/1hr-after/pull/14) (TASK-2459). CIP lands; agent cannot merge.
+- **Done:** Archived Recovery Body Gel (not deleted). Kept `/blogs/news`, deleted leftover `/blogs/test`. Kept `/pages/affiliate-signup` and 301'd the other two affiliate URLs. Theme Organization name `1Hour After` + Instagram `sameAs`. Published only brand-aligned Shop facts. Catalog vendor/type/title hygiene. FAQ JSON-LD not rewritten.
+- **Next:** Operator GSC recrawl of the 301 list. Class B on `products.md`. Gift-card / founding-year facts stay unpublished until confirmed.
+- **Watch:** App still lacks `write_publications` (`sample-pack` noindex only). Do not call `1hours.myshopify.com`. Do not invent SKUs.
+
+## 2026-10-06 — Live SEO/AEO gap fixes (Shopify write)
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#12](https://github.com/petralabx/1hr-after/pull/12) (TASK-2388). Includes the TASK-2387 audit commits. CIP lands; agent cannot merge. Draft [#11](https://github.com/petralabx/1hr-after/pull/11) is the audit-only slice on the parent branch.
+- **Done:** Drafted four duplicate/thin products and 301'd them. Collection SEO + theme canonicals. Sampler/page meta. Live theme push `#122661372077` (0562 CDN, ANTI CHAFE, FAQ heading gate).
+- **Next:** CIP merge. Human Class B on `products.md`. `write_publications` if `sample-pack` should leave the sitemap. Do not invent SKUs.
+- **Watch:** App lacks `write_publications`. Theme Access REST Asset API 401s; CLI password works on `1hourafter.myshopify.com`. Do not call `1hours.myshopify.com`.
+
 ## 2026-10-06 — Read-only SEO/AEO catalog audit (no Shopify write)
 
 - **Who:** Stephen Alton + Cursor cloud agent

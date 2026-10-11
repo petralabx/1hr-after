@@ -319,3 +319,13 @@ Do **not** `theme push` until that task says so. Do **not** invent SKUs for blan
 ## How a later session should behave
 
 Re-run the **same** `priority_pages` + `target_queries` + locale. Prove Admin with the verification commands above (length + `shpa` prefix + shop domain only). Fetch HTML canonicals/robots from a network that is not 429-limited. Fix gap #1 only, then re-sample. Never invent `dsp_*` or write to Shopify from an audit TASK.
+
+## Status since audit (2026-10-11)
+
+Added when PR #11 was updated with `main`. The findings above are unchanged and describe 2026-10-06. Later work on `main` has acted on several of them:
+
+- Duplicate/thin PDPs drafted and 301'd, collection SEO filled, theme canonicals and FAQ heading gate: [`2026-10-06-seo-aeo-live-fixes.md`](2026-10-06-seo-aeo-live-fixes.md) (PR #12, TASK-2388, `6592a5c`).
+- Recovery Body Gel archived, Organization schema, affiliate canonical, vendor/type/title hygiene: [`2026-10-06-seo-aeo-hygiene-org.md`](2026-10-06-seo-aeo-hygiene-org.md) (PR #14, TASK-2459, `a772093`).
+- Action-plan snippets, hike structure, Race Day Kit rename, collection H1, noindex featured/frontpage: [`2026-10-07-seo-aeo-action-plan.md`](2026-10-07-seo-aeo-action-plan.md) (PR #15, TASK-2514, `9d28210`).
+
+Current product and schema state is in [`../products.md`](../products.md) and [`../schema-state.md`](../schema-state.md); those pages supersede the "proposed" labels and FAQ gating notes quoted from this audit.
