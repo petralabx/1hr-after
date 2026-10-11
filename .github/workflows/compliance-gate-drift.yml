@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GEN_REPO: petralabx/PLX_MC
-      GEN_SHA: 5db108c746fad912f4ab34997caa1c255f5b4d8c
+      GEN_SHA: 64ecc2ad681c4c123284fe17fb8844cf4f19b5bf
       GEN_PATH: scripts/generate-compliance-gate.py
       GATE_FILE: .github/workflows/plx-mc-compliance.yml
       VERIFY_PATH: scripts/compliance-pr-verify.mjs
