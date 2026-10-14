@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-14 — Phased Oct 8 re-ship (mobile CSS rolled back)
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#21](https://github.com/petralabx/1hr-after/pull/21) (TASK-2893). CIP lands; agent cannot merge.
+- **Done:** Live on `1hourafter.myshopify.com`: copy fixes, 12 article link replacements, Labs off three menus, featured order kit / anti-chafe / recovery, native Add to Cart on both packs, sampler `Free — $1.99 shipping`, Shop Pay hidden at $0. Phase 7 mobile CSS was pushed, failed the 390px check (buttons covered the hero), and was rolled back with `--only assets/onehour.css`. WebP skipped.
+- **Next:** CIP merge. A later single-file attempt can move the Race Day shop buttons off the balm labels. Do not reuse `position: static` plus `height: auto` on `#shopify-section-custom_content_Bq8YWE`.
+- **Watch:** Do not add `format: 'webp'` on `img_url: '1x1'` lazy images. Do not call `1hours.myshopify.com`. Do not edit product or ingredient claims. Recovery balm still says “FOR EVEN MORE BETTER RESULTS”.
+
 ## 2026-10-07 — Body Glide comparison + anti-chafe roundup
 
 - **Who:** Stephen Alton + Cursor cloud agent

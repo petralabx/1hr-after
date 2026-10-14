@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-14T15:10:00Z] ship | Phased Oct 8 re-ship; mobile CSS rolled back
+
+- Admin copy, 12 article links, Labs off three menus, featured order kit → anti-chafe → recovery. Theme: native Add to Cart on both packs; sampler reads `Free — $1.99 shipping`; Shop Pay hidden at $0.
+- Mobile Race Day CSS shipped, covered the hero, and was rolled back with `--only assets/onehour.css`. WebP lazy-load filters stayed skipped.
+- Filed [`analyses/2026-10-14-phased-oct8-reship.md`](analyses/2026-10-14-phased-oct8-reship.md). Agents do not merge.
+
 ## [2026-10-07T19:15:00Z] ship | Body Glide vs 1HR-A comparison + runners roundup
 
 - Two evergreen News posts live: `/blogs/news/body-glide-vs-1hr-a-anti-chafe-balm` and `/blogs/news/best-anti-chafe-balm-for-runners`. Chafing guide now links both. No prices, no year titles, honest Body Glide-wins section.

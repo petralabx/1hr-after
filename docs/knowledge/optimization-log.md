@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-07 (action-plan ship)
+> **Last updated:** 2026-10-14 (phased re-ship)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-14 — storefront + Admin — phased Oct 8 re-ship
+
+- **Hypothesis:** The agreed Oct 8 fixes can land one surface at a time if each step keeps the homepage image loading.
+- **Change:** Copy, article links, menus, featured order, pack Add to Cart, sampler price label, Shop Pay hidden at $0. Mobile overlay CSS was pushed, failed a 390px screenshot, and rolled back alone. WebP skipped. See [`analyses/2026-10-14-phased-oct8-reship.md`](analyses/2026-10-14-phased-oct8-reship.md).
+- **Result:** Homepage `_720x.png` is HTTP 200 `image/png`. 390px after rollback shows the runner photo and both balm sticks. Pack and sampler `name="add"` present. Rankings not promised.
+- **Source:** TASK-2893
 
 ## 2026-10-07 — storefront + Admin — Body Glide vs + anti-chafe roundup
 
