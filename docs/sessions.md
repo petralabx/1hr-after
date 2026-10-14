@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-14 — Visual fixes from operator screenshots
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** open with this commit (TASK-2899). CIP lands; agent cannot merge.
+- **Done:** Body Recovery photo is full-bleed on wide windows. Race Day Kit Add to Cart sits on the divider. Affiliate “SIGN UP NOW” is visible. Bundle prices show one dollar sign. The two October 7 posts have the existing anti-chafe stick as the featured image.
+- **Next:** CIP merge. Race Day Kit still has no SKU; do not invent one. Compare-at prices ($120 Marathon Pack, $32.98 Race Day Kit) are still the crossed-out numbers.
+- **Watch:** Do not add `format: 'webp'` on `img_url: '1x1'`. Do not call `1hours.myshopify.com`. Addly still offers Marathon Pack and Race Day Kit together on both pages.
+
 ## 2026-10-14 — Phased Oct 8 re-ship (mobile CSS rolled back)
 
 - **Who:** Stephen Alton + Cursor cloud agent

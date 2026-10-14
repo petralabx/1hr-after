@@ -41,6 +41,7 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
+- [Visual fixes after the phased re-ship](analyses/2026-10-14-visual-fixes.md) — filed 2026-10-14 as `ship` · Full-bleed Body Recovery photo, kit button on the divider, affiliate label, one dollar sign in the bundle, blog tile images
 - [Phased Oct 8 re-ship](analyses/2026-10-14-phased-oct8-reship.md) — filed 2026-10-14 as `ship` · Copy, article links, menus, featured order, pack Add to Cart, sampler price; mobile Race Day CSS tried and rolled back; WebP skipped
 - [Body Glide comparison + anti-chafe roundup](analyses/2026-10-07-body-glide-comparison.md) — filed 2026-10-07 as `ship` · Evergreen vs post + runners roundup; proposed competitor rows; News publish + chafing cross-link
 - [SEO/AEO action-plan ship](analyses/2026-10-07-seo-aeo-action-plan.md) — filed 2026-10-07 as `ship` · Snippets matching live copy; hike structure; two 404→301s; Race Day Kit; collection H1 template; noindex featured/frontpage

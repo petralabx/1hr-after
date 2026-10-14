@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-14T16:55:00Z] ship | Visual fixes: banner, kit button, affiliate label, bundle dollar, blog images
+
+- Body Recovery photo fills wide windows. Race Day Kit Add to Cart sits on the divider. Affiliate “SIGN UP NOW” is visible. Addly’s extra `$` is hidden. Two News posts have the existing anti-chafe stick as the featured image.
+- Marathon Pack SKU `OH700-KIT` and Race Day Kit (no SKU) are different products. The bundle widget offers both.
+- Filed [`analyses/2026-10-14-visual-fixes.md`](analyses/2026-10-14-visual-fixes.md). Agents do not merge.
+
 ## [2026-10-14T15:10:00Z] ship | Phased Oct 8 re-ship; mobile CSS rolled back
 
 - Admin copy, 12 article links, Labs off three menus, featured order kit → anti-chafe → recovery. Theme: native Add to Cart on both packs; sampler reads `Free — $1.99 shipping`; Shop Pay hidden at $0.

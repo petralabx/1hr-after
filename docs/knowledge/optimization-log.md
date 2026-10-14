@@ -7,6 +7,13 @@
 
 <!-- AUTO-APPEND:ships:START -->
 
+## 2026-10-14 — storefront — visual fixes after the phased re-ship
+
+- **Hypothesis:** The screenshots were separate layout and app-markup bugs, not another missing-image WebP failure.
+- **Change:** Full-bleed Body Recovery photo, kit button aligned to the divider, affiliate label color, hide Addly’s extra dollar span, featured images on the two new posts. See [`analyses/2026-10-14-visual-fixes.md`](analyses/2026-10-14-visual-fixes.md).
+- **Result:** Wide banner is one photo. Bundle prices show one `$`. Blog tiles render. Homepage `_720x.png` is still HTTP 200 `image/png`. Rankings not promised.
+- **Source:** TASK-2899
+
 ## 2026-10-14 — storefront + Admin — phased Oct 8 re-ship
 
 - **Hypothesis:** The agreed Oct 8 fixes can land one surface at a time if each step keeps the homepage image loading.
