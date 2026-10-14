@@ -3011,8 +3011,20 @@ article.blog-details {
 
                         #shopify-section-45202243-21f9-451b-b390-ede4a2193448 .custom__item--image{order:1;flex: 1 0 100%;padding: 20px 0 35px !important;}
                   .lab-series-ttl .divider,.lab-series .lab-subscribe{border-bottom:2px solid #fff;}
-                .custom-home-header .try-wrap-mob-only {display:none !important;}
+                .custom-home-header .try-wrap-mob-only {display:block !important;}
                 .offer-marquee {display:none !important;}
+                #shopify-section-custom_content_Bq8YWE {height: auto !important;}
+                #shopify-section-custom_content_Bq8YWE .custom__item.custom__item--html_Hma93k {
+                    position: static !important;
+                    transform: none !important;
+                    left: auto !important;
+                    width: 100% !important;
+                    top: auto !important;
+                }
+                .custom-home-header .menu-1hr-a.hdr-ttl {
+                    max-width: 58%;
+                    overflow: hidden;
+                }
 
                 #shopify-section-45202243-21f9-451b-b390-ede4a2193448 .custom__image{top:90px}
                 #shopify-section-45202243-21f9-451b-b390-ede4a2193448 .custom-content{margin-top:-50px;}
