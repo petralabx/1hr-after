@@ -7,6 +7,13 @@
 
 <!-- AUTO-APPEND:ships:START -->
 
+## 2026-10-14 — storefront — Add to Cart row and first paint
+
+- **Hypothesis:** The mismatched buttons were a fixed 70px title row plus a body-wash rule, and the white hold was the theme hiding `.main-content` until CSS arrived.
+- **Change:** `onehour.css` title-row height `auto` and the 1025px body-wash button override removed. `theme.liquid` loads `theme.css` and `onehour.css` as normal stylesheets and no longer hides the page. See [`analyses/2026-10-14-atc-and-first-paint.md`](analyses/2026-10-14-atc-and-first-paint.md).
+- **Result:** Kit price clears Shop Pay. Body wash matches the balms at 1000px. Homepage hero `naturalWidth` 1241 and 1440. No `{width}` in image URLs. Rankings not promised.
+- **Source:** TASK-2937
+
 ## 2026-10-14 — storefront — visual fixes after the phased re-ship
 
 - **Hypothesis:** The screenshots were separate layout and app-markup bugs, not another missing-image WebP failure.

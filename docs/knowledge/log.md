@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-14T20:30:00Z] ship | ATC alignment and first paint
+
+- Title row height is auto. Body-wash button override under 1025px is removed. Race Day Kit price clears Shop Pay. Body wash matches the balms at 1000px.
+- `theme.liquid` no longer hides `.main-content` until CSS arrives. Homepage hero and product photos still load. No `{width}` in image URLs.
+- Filed [`analyses/2026-10-14-atc-and-first-paint.md`](analyses/2026-10-14-atc-and-first-paint.md). Agents do not merge.
+
 ## [2026-10-14T18:45:00Z] query | ATC alignment, CAD switcher, first paint
 
 - Add to Cart differs because the title row is 70px tall and the body wash has its own rule under 1025px. Race Day Kit’s compare-at price overlaps Shop Pay.

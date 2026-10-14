@@ -1550,7 +1550,7 @@ li.mobile-nav__item.border-bottom.mlvedaMobileSwitcher {
 .prod-template-new-nav .product-single__meta {
     border-top: none;
     padding: 15px 5px 0 0;
-    height: 70px;
+    height: auto;
 }
 .prod-template-new-nav .product_info_title p,
 .prod-template-new-nav .product_info_title p span {
@@ -3874,13 +3874,6 @@ article.blog-details {
 .cooling-menthol-pro .product_flex_box{
   margin-top: 20px ;
 }
-  .cooling-menthol-pro .product-form__item.product-form__item--submit.cart-amezon-wrap.product-form__item--no-variants{
-    position:static;
-  }
-  .cooling-menthol-pro .prod-template-new-nav .product-single__description{
-    margin-top:40px;
-    
-  }
 }
 
 body .affilate .first-sec .lab-series-ttl a.cart__submit.btn {
