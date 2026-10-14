@@ -27,7 +27,7 @@ This is separate from:
 ## 2026-10-14 — ATC alignment, CAD switcher, first paint
 
 - **Who:** Stephen Alton + Cursor cloud agent
-- **PR:** draft on `cursor/seo-aeo-atc-markets-f8cc` (TASK-2927). CIP lands; agent cannot merge.
+- **PR:** [#24](https://github.com/petralabx/1hr-after/pull/24) (TASK-2927). CIP lands; agent cannot merge.
 - **Done:** Explained the four-product Add to Cart mismatch, identified header CAD as Mlveda, and confirmed US (`uni`, primary) and Canada markets already exist with USD-only presentment. No Shopify write.
 - **Next:** One CSS change so the kit price no longer covers Shop Pay and the body wash matches the balms under 1025px. Then the `theme.liquid` first-paint edit. Then CAD on the Canada market and Mlveda off together. Do not activate US Retail.
 - **Watch:** Do not add `format: 'webp'` on `img_url: '1x1'`. Do not call `1hours.myshopify.com`. Do not create a second US market.
