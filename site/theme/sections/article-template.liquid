@@ -62,12 +62,12 @@
 </style>
 
 <div class="article-wrap-box article-custom-link">
+  {% if article.image %}
   <div class="img-box blog-full-img">
-    {% if article.image %}
       {%- assign img_url = article.image | img_url: '1920x1061' -%}
-      <img src="{{ img_url }}" id='image123' class='lazyload' />
-    {% endif %}
+      <img src="{{ img_url }}" id='image123' class='lazyload' alt="{{ article.image.alt | escape }}" />
   </div>
+  {% endif %}
 
   <div class="article-information-section">
     <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
