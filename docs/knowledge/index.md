@@ -41,6 +41,7 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
+- [Add to Cart alignment, CAD switcher, first paint](analyses/2026-10-14-atc-markets-first-paint.md) — filed 2026-10-14 as `query` · Button mismatch is a fixed title row plus a body-wash rule; CAD is Mlveda; US and Canada markets already exist
 - [Page load and the Race Day Kit bundle](analyses/2026-10-14-page-load-review.md) — filed 2026-10-14 as `query` · Blank first paint, then Addly and CAD; keep the Race Day Kit as its own offer
 - [Visual fixes after the phased re-ship](analyses/2026-10-14-visual-fixes.md) — filed 2026-10-14 as `ship` · Full-bleed Body Recovery photo, kit button on the divider, affiliate label, one dollar sign in the bundle, blog tile images
 - [Phased Oct 8 re-ship](analyses/2026-10-14-phased-oct8-reship.md) — filed 2026-10-14 as `ship` · Copy, article links, menus, featured order, pack Add to Cart, sampler price; mobile Race Day CSS tried and rolled back; WebP skipped

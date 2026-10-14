@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-14T18:45:00Z] query | ATC alignment, CAD switcher, first paint
+
+- Add to Cart differs because the title row is 70px tall and the body wash has its own rule under 1025px. Race Day Kit’s compare-at price overlaps Shop Pay.
+- Header CAD is Mlveda. Shopify presents USD only. Primary market `uni` is the United States. Canada is already an active market. US Retail stays draft.
+- Filed [`analyses/2026-10-14-atc-markets-first-paint.md`](analyses/2026-10-14-atc-markets-first-paint.md). No Shopify write.
+
 ## [2026-10-14T17:40:00Z] query | Page load and Race Day Kit bundle
 
 - Cold loads: first paint ~0.3–0.4 s on a white page, product visible by 0.9 s, Addly bundle and CAD text by ~1.8 s. Server time to first byte was 18–46 ms on three of four pages.
