@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-14T17:40:00Z] query | Page load and Race Day Kit bundle
+
+- Cold loads: first paint ~0.3–0.4 s on a white page, product visible by 0.9 s, Addly bundle and CAD text by ~1.8 s. Server time to first byte was 18–46 ms on three of four pages.
+- Race Day Kit stays its own offer. The pre-checked Addly pair with the Marathon Pack should come off. No Shopify write in this slice.
+- Filed [`analyses/2026-10-14-page-load-review.md`](analyses/2026-10-14-page-load-review.md). Agents do not merge.
+
 ## [2026-10-14T16:55:00Z] ship | Visual fixes: banner, kit button, affiliate label, bundle dollar, blog images
 
 - Body Recovery photo fills wide windows. Race Day Kit Add to Cart sits on the divider. Affiliate “SIGN UP NOW” is visible. Addly’s extra `$` is hidden. Two News posts have the existing anti-chafe stick as the featured image.

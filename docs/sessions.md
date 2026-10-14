@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-14 — Page load review and Race Day Kit bundle
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#23](https://github.com/petralabx/1hr-after/pull/23) (TASK-2921). CIP lands; agent cannot merge.
+- **Done:** Measured homepage, both packs, and News with cache off. The blank first paint is the theme hiding `.main-content` until CSS loads. The second jump is Addly inserting the pre-checked Marathon Pack + Race Day Kit pair, then Mlveda writing CAD. Recommendation: keep the Race Day Kit as its own offer and turn that Addly pair off. No Shopify write.
+- **Next:** Operator confirms the Addly pair comes off. Then one `theme.liquid` change for the blank first paint, with a screenshot before the next slice. Leave Mlveda CAD until the Markets decision.
+- **Watch:** Do not add `format: 'webp'` on `img_url: '1x1'`. Do not call `1hours.myshopify.com`. `product-template.liquid` still calls `dev.maxdigi.co` with a Judge.me token in the page. Do not copy that token into docs.
+
 ## 2026-10-14 — Visual fixes from operator screenshots
 
 - **Who:** Stephen Alton + Cursor cloud agent
