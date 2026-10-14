@@ -27,7 +27,7 @@ This is separate from:
 ## 2026-10-14 — ATC alignment and first paint
 
 - **Who:** Stephen Alton + Cursor cloud agent
-- **PR:** draft on `cursor/seo-aeo-atc-paint-f8cc` (TASK-2937). CIP lands; agent cannot merge.
+- **PR:** [#25](https://github.com/petralabx/1hr-after/pull/25) (TASK-2937). CIP lands; agent cannot merge.
 - **Done:** Live on theme `#122661372077`. Title row grows so the Race Day Kit compare-at price clears Shop Pay. Body wash uses the same button rules as the balms under 1025px. `theme.liquid` loads the two stylesheets normally and no longer hides the page. Homepage hero and kit photos still load. Mlveda stays uninstalled. Markets were not changed.
 - **Next:** CIP merge. `sections/header.liquid` still has a print copy of `onehour.css`. The kit button still nudges onto the line after load because that product has no stars.
 - **Watch:** Do not add `format: 'webp'` on `img_url: '1x1'`. Do not call `1hours.myshopify.com`. Do not activate the draft US Retail market. Do not reinstall Mlveda while Canada presents CAD.
