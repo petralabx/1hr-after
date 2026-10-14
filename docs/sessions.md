@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-14 — Homepage taglines, Race Day buttons, blog tiles
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** pending (TASK-2939). CIP lands; agent cannot merge.
+- **Done:** Live on theme `#122661372077`. Race Day shop buttons share a baseline and stay on the photo from 1000px to 1440px. Both homepage taglines use MonoSpec. The Body Recovery line no longer uses an em dash. The two October 7 posts use different existing shop images. Shop Pay stays on paid products.
+- **Next:** CIP merge. At 390px the Race Day shop buttons still cross the stick labels. Do not fix that with `position: static` and `height: auto` on the Race Day block.
+- **Watch:** Do not add `format: 'webp'` on `img_url: '1x1'`. Do not call `1hours.myshopify.com`. Do not push the repo `settings_data.json` as a whole. Do not activate the draft US Retail market.
+
 ## 2026-10-14 — ATC alignment and first paint
 
 - **Who:** Stephen Alton + Cursor cloud agent

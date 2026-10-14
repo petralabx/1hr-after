@@ -41,6 +41,7 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
+- [Homepage taglines, Race Day buttons, and blog tiles](analyses/2026-10-14-tagline-buttons-blog.md) — filed 2026-10-14 as `ship` · Shop buttons share a baseline; taglines use MonoSpec; Body Recovery drops the em dash; the two October posts use different existing photos; Shop Pay stays on paid products
 - [Add to Cart alignment and the first paint](analyses/2026-10-14-atc-and-first-paint.md) — filed 2026-10-14 as `ship` · Title row grows with the kit price; body wash matches the balms; the page is no longer hidden until CSS arrives
 - [Add to Cart alignment, CAD switcher, first paint](analyses/2026-10-14-atc-markets-first-paint.md) — filed 2026-10-14 as `query` · Button mismatch is a fixed title row plus a body-wash rule; CAD is Mlveda; US and Canada markets already exist
 - [Page load and the Race Day Kit bundle](analyses/2026-10-14-page-load-review.md) — filed 2026-10-14 as `query` · Blank first paint, then Addly and CAD; keep the Race Day Kit as its own offer

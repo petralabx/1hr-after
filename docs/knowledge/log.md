@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-14T21:00:00Z] ship | Homepage taglines, Race Day buttons, blog tiles
+
+- Race Day shop buttons share a baseline and stay inside the photo from 1000px through 1440px. Taglines use MonoSpec. The Body Recovery em dash is a period.
+- Shop Pay is still on paid product pages. The two October 7 posts use different existing shop images.
+- Filed [`analyses/2026-10-14-tagline-buttons-blog.md`](analyses/2026-10-14-tagline-buttons-blog.md). Agents do not merge.
+
 ## [2026-10-14T20:30:00Z] ship | ATC alignment and first paint
 
 - Title row height is auto. Body-wash button override under 1025px is removed. Race Day Kit price clears Shop Pay. Body wash matches the balms at 1000px.
