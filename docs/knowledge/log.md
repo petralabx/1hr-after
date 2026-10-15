@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-15T21:05:00Z] ship | Hide the Try Free Sample button
+
+- The Athletic Sampler stays draft. The header “try free sample” button, the homepage mobile sample bar, and the scrolling sample line are Liquid comments in `sections/header.liquid`.
+- Live theme `#122661372077` header asset updated `2026-10-15T17:00:00-04:00`. Homepage at 1440px and 390px has no sample button. Logo, cart, and the runner photo remain.
+- Filed [`analyses/2026-10-15-hide-try-sample.md`](analyses/2026-10-15-hide-try-sample.md). Agents do not merge.
+
 ## [2026-10-14T21:00:00Z] ship | Homepage taglines, Race Day buttons, blog tiles
 
 - Race Day shop buttons share a baseline and stay inside the photo from 1000px through 1440px. Taglines use MonoSpec. The Body Recovery em dash is a period.

@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-14 (taglines, buttons, blog tiles)
+> **Last updated:** 2026-10-15 (Try Free Sample button parked)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-15 — storefront — hide Try Free Sample
+
+- **Hypothesis:** The header sample button and the scrolling sample line still send people to a sampler that is draft because packs are short.
+- **Change:** Three blocks in `sections/header.liquid` are Liquid comments labeled `RESTORE:`: the scrolling bar, the homepage mobile bar, and the “try free sample” button. See [`analyses/2026-10-15-hide-try-sample.md`](analyses/2026-10-15-hide-try-sample.md).
+- **Result:** Homepage at 1440px and 390px shows no sample button and no sample-pack bar. Cart and the runner photo remain. Rankings not promised.
+- **Source:** TASK-3041
 
 ## 2026-10-14 — storefront — taglines, Race Day buttons, blog tiles
 

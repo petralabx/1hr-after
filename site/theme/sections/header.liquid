@@ -1,4 +1,10 @@
 <link rel="stylesheet" href="{{ 'onehour.css' | asset_url }}" type="text/css" media="print" onload="this.media='all';onLoadStylesheet()">
+{% comment %}
+  RESTORE: scrolling "TRY OUR FREE SAMPLE PACK! JUST PAY SHIPPING!" bar.
+  Parked 2026-10-15 (TASK-3041) with the Try Free Sample button. The Athletic Sampler is draft because sample packs are short.
+  This bar rendered above the header on every template wider than 749px. To bring it back: publish the sampler, then remove this comment wrapper.
+{% endcomment %}
+{% comment %}
 <!-- Start custom marquee  -->
     <div class="offer-marquee">
       <ul class="marquee__group">
@@ -17,6 +23,7 @@
       </ul>
     </div>
 <!-- End custom marquee  -->
+{% endcomment %}
 {% if section.settings.message %}
   <style>
     {% if section.settings.logo != blank %}
@@ -37,11 +44,18 @@
 
 {% if template == 'index' %}
 <div data-section-id="{{ section.id }}" data-section-type="header-section" data-header-section class="custom-home-header">
+  {% comment %}
+    RESTORE: homepage mobile "try a free sample now" bar.
+    Parked 2026-10-15 (TASK-3041). The Athletic Sampler is draft because sample packs are short.
+    This bar only rendered on the homepage. To bring it back: publish the sampler, then remove this comment wrapper.
+  {% endcomment %}
+  {% comment %}
    <div class="try-wrap-mob-only">
     <a href="/products/free-1hour-after-sample-pack" >
    try a <span>free</span> sample now! 
     </a>
   </div>
+  {% endcomment %}
   {% else %}
   <div data-section-id="{{ section.id }}" data-section-type="header-section" data-header-section>
     {% endif %}
@@ -182,10 +196,19 @@
              {% endif %}
           
       <div class="site-header__icons-wrapper">
+          {% comment %}
+            RESTORE: "try free sample" header button.
+            Parked 2026-10-15 (TASK-3041). The Athletic Sampler
+            (/products/free-1hour-after-athletic-sampler-pack) is draft because sample packs are short.
+            This button rendered in the header on every template. To bring it back: publish the sampler, then remove this comment wrapper.
+            The click handler $(".try-samples-wrap").toggle() further down can stay; it is a no-op while this markup is commented.
+          {% endcomment %}
+          {% comment %}
            <div class="try-samples-wrap"><a href="/products/free-1hour-after-athletic-sampler-pack" class="site-nav__link site-nav__link--main">
           <span class="site-nav__label">try free sample</span>
                
         </a></div>
+          {% endcomment %}
        
 <!--           <button type="button" class="btn--link site-header__icon site-header__search-toggle js-drawer-open-top" data-predictive-search-open-drawer>
             {% include 'icon-search' %}
