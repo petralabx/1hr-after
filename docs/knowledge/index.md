@@ -41,6 +41,11 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
+- [Hide the Try Free Sample button](analyses/2026-10-15-hide-try-sample.md) — filed 2026-10-15 as `ship` · Header sample button, homepage mobile bar, and scrolling sample line are commented in `header.liquid` while the Athletic Sampler stays draft
+- [Homepage taglines, Race Day buttons, and blog tiles](analyses/2026-10-14-tagline-buttons-blog.md) — filed 2026-10-14 as `ship` · Shop buttons share a baseline; taglines use MonoSpec; Body Recovery drops the em dash; the two October posts use different existing photos; Shop Pay stays on paid products
+- [Add to Cart alignment and the first paint](analyses/2026-10-14-atc-and-first-paint.md) — filed 2026-10-14 as `ship` · Title row grows with the kit price; body wash matches the balms; the page is no longer hidden until CSS arrives
+- [Add to Cart alignment, CAD switcher, first paint](analyses/2026-10-14-atc-markets-first-paint.md) — filed 2026-10-14 as `query` · Button mismatch is a fixed title row plus a body-wash rule; CAD is Mlveda; US and Canada markets already exist
+- [Page load and the Race Day Kit bundle](analyses/2026-10-14-page-load-review.md) — filed 2026-10-14 as `query` · Blank first paint, then Addly and CAD; keep the Race Day Kit as its own offer
 - [Visual fixes after the phased re-ship](analyses/2026-10-14-visual-fixes.md) — filed 2026-10-14 as `ship` · Full-bleed Body Recovery photo, kit button on the divider, affiliate label, one dollar sign in the bundle, blog tile images
 - [Phased Oct 8 re-ship](analyses/2026-10-14-phased-oct8-reship.md) — filed 2026-10-14 as `ship` · Copy, article links, menus, featured order, pack Add to Cart, sampler price; mobile Race Day CSS tried and rolled back; WebP skipped
 - [Body Glide comparison + anti-chafe roundup](analyses/2026-10-07-body-glide-comparison.md) — filed 2026-10-07 as `ship` · Evergreen vs post + runners roundup; proposed competitor rows; News publish + chafing cross-link
