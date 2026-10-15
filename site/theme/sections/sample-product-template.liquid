@@ -172,7 +172,9 @@
          
       {% if content_for_header contains 'bss-sub-recurring-pay' %}{% render 'bss-sub-price-with-discount', product: product %}{% endif %}
 {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
-            {{ form | payment_terms }}
+            {% if product.price > 0 %}
+              {{ form | payment_terms }}
+            {% endif %}
 
             {% unless product.has_only_default_variant %}
 <!--               <div class="product-form__controls-group">
