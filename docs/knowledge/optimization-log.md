@@ -3,9 +3,23 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-14 (phased re-ship)
+> **Last updated:** 2026-10-15 (Try Free Sample button parked)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-15 — storefront — hide Try Free Sample
+
+- **Hypothesis:** The header sample button and the scrolling sample line still send people to a sampler that is draft because packs are short.
+- **Change:** Three blocks in `sections/header.liquid` are Liquid comments labeled `RESTORE:`: the scrolling bar, the homepage mobile bar, and the “try free sample” button. See [`analyses/2026-10-15-hide-try-sample.md`](analyses/2026-10-15-hide-try-sample.md).
+- **Result:** Homepage at 1440px and 390px shows no sample button and no sample-pack bar. Cart and the runner photo remain. Rankings not promised.
+- **Source:** TASK-3041
+
+## 2026-10-14 — storefront — taglines, Race Day buttons, blog tiles
+
+- **Hypothesis:** The buttons drifted because the paragraphs wrapped to different heights, and the serif taglines were an EB Garamond override that loaded after MonoSpec.
+- **Change:** Flex columns pin the shop buttons. Narrower desktops use smaller type so the buttons stay on the rock. Taglines are MonoSpec. The Body Recovery em dash is a period. Two existing shop photos replace the duplicate stick on the October posts. See [`analyses/2026-10-14-tagline-buttons-blog.md`](analyses/2026-10-14-tagline-buttons-blog.md).
+- **Result:** Buttons align at 1000, 1100, 1200, 1366, and 1440. Taglines compute as MonoSpec. News tiles are the salve comparison and the park stick. Shop Pay still shows on the anti-chafe page. Rankings not promised.
+- **Source:** TASK-2939
 
 ## 2026-10-14 — storefront — Add to Cart row and first paint
 

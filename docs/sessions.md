@@ -24,6 +24,22 @@ This is separate from:
 
 ---
 
+## 2026-10-15 — Hide the Try Free Sample button
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#27](https://github.com/petralabx/1hr-after/pull/27) (TASK-3041). CIP lands; agent cannot merge.
+- **Done:** Live on theme `#122661372077`. The header “try free sample” button, the homepage mobile sample bar, and the scrolling “TRY OUR FREE SAMPLE PACK” line are commented in [`site/theme/sections/header.liquid`](../site/theme/sections/header.liquid). Restore by removing the three `RESTORE:` comment wrappers and pushing that file. The Athletic Sampler stays draft.
+- **Next:** CIP merge. At 390px the Race Day shop buttons still cross the stick labels. Do not fix that with `position: static` and `height: auto` on the Race Day block.
+- **Watch:** Do not add `format: 'webp'` on `img_url: '1x1'`. Do not call `1hours.myshopify.com`. Do not push the repo `settings_data.json` as a whole. Do not activate the draft US Retail market. Do not undraft the Athletic Sampler from this slice.
+
+## 2026-10-14 — Homepage taglines, Race Day buttons, blog tiles
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#26](https://github.com/petralabx/1hr-after/pull/26) (TASK-2939). CIP lands; agent cannot merge.
+- **Done:** Live on theme `#122661372077`. Race Day shop buttons share a baseline and stay on the photo from 1000px to 1440px. Both homepage taglines use MonoSpec. The Body Recovery line no longer uses an em dash. The two October 7 posts use different existing shop images. Shop Pay stays on paid products.
+- **Next:** CIP merge. At 390px the Race Day shop buttons still cross the stick labels. Do not fix that with `position: static` and `height: auto` on the Race Day block.
+- **Watch:** Do not add `format: 'webp'` on `img_url: '1x1'`. Do not call `1hours.myshopify.com`. Do not push the repo `settings_data.json` as a whole. Do not activate the draft US Retail market.
+
 ## 2026-10-14 — ATC alignment and first paint
 
 - **Who:** Stephen Alton + Cursor cloud agent
