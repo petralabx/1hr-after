@@ -3,9 +3,37 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-14 (phased re-ship)
+> **Last updated:** 2026-10-15 (Try Free Sample button parked)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-15 — storefront — hide Try Free Sample
+
+- **Hypothesis:** The header sample button and the scrolling sample line still send people to a sampler that is draft because packs are short.
+- **Change:** Three blocks in `sections/header.liquid` are Liquid comments labeled `RESTORE:`: the scrolling bar, the homepage mobile bar, and the “try free sample” button. See [`analyses/2026-10-15-hide-try-sample.md`](analyses/2026-10-15-hide-try-sample.md).
+- **Result:** Homepage at 1440px and 390px shows no sample button and no sample-pack bar. Cart and the runner photo remain. Rankings not promised.
+- **Source:** TASK-3041
+
+## 2026-10-14 — storefront — taglines, Race Day buttons, blog tiles
+
+- **Hypothesis:** The buttons drifted because the paragraphs wrapped to different heights, and the serif taglines were an EB Garamond override that loaded after MonoSpec.
+- **Change:** Flex columns pin the shop buttons. Narrower desktops use smaller type so the buttons stay on the rock. Taglines are MonoSpec. The Body Recovery em dash is a period. Two existing shop photos replace the duplicate stick on the October posts. See [`analyses/2026-10-14-tagline-buttons-blog.md`](analyses/2026-10-14-tagline-buttons-blog.md).
+- **Result:** Buttons align at 1000, 1100, 1200, 1366, and 1440. Taglines compute as MonoSpec. News tiles are the salve comparison and the park stick. Shop Pay still shows on the anti-chafe page. Rankings not promised.
+- **Source:** TASK-2939
+
+## 2026-10-14 — storefront — Add to Cart row and first paint
+
+- **Hypothesis:** The mismatched buttons were a fixed 70px title row plus a body-wash rule, and the white hold was the theme hiding `.main-content` until CSS arrived.
+- **Change:** `onehour.css` title-row height `auto` and the 1025px body-wash button override removed. `theme.liquid` loads `theme.css` and `onehour.css` as normal stylesheets and no longer hides the page. See [`analyses/2026-10-14-atc-and-first-paint.md`](analyses/2026-10-14-atc-and-first-paint.md).
+- **Result:** Kit price clears Shop Pay. Body wash matches the balms at 1000px. Homepage hero `naturalWidth` 1241 and 1440. No `{width}` in image URLs. Rankings not promised.
+- **Source:** TASK-2937
+
+## 2026-10-14 — storefront — visual fixes after the phased re-ship
+
+- **Hypothesis:** The screenshots were separate layout and app-markup bugs, not another missing-image WebP failure.
+- **Change:** Full-bleed Body Recovery photo, kit button aligned to the divider, affiliate label color, hide Addly’s extra dollar span, featured images on the two new posts. See [`analyses/2026-10-14-visual-fixes.md`](analyses/2026-10-14-visual-fixes.md).
+- **Result:** Wide banner is one photo. Bundle prices show one `$`. Blog tiles render. Homepage `_720x.png` is still HTTP 200 `image/png`. Rankings not promised.
+- **Source:** TASK-2899
 
 ## 2026-10-14 — storefront + Admin — phased Oct 8 re-ship
 

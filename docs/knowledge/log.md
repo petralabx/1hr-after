@@ -8,6 +8,42 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-15T21:05:00Z] ship | Hide the Try Free Sample button
+
+- The Athletic Sampler stays draft. The header “try free sample” button, the homepage mobile sample bar, and the scrolling sample line are Liquid comments in `sections/header.liquid`.
+- Live theme `#122661372077` header asset updated `2026-10-15T17:00:00-04:00`. Homepage at 1440px and 390px has no sample button. Logo, cart, and the runner photo remain.
+- Filed [`analyses/2026-10-15-hide-try-sample.md`](analyses/2026-10-15-hide-try-sample.md). Agents do not merge.
+
+## [2026-10-14T21:00:00Z] ship | Homepage taglines, Race Day buttons, blog tiles
+
+- Race Day shop buttons share a baseline and stay inside the photo from 1000px through 1440px. Taglines use MonoSpec. The Body Recovery em dash is a period.
+- Shop Pay is still on paid product pages. The two October 7 posts use different existing shop images.
+- Filed [`analyses/2026-10-14-tagline-buttons-blog.md`](analyses/2026-10-14-tagline-buttons-blog.md). Agents do not merge.
+
+## [2026-10-14T20:30:00Z] ship | ATC alignment and first paint
+
+- Title row height is auto. Body-wash button override under 1025px is removed. Race Day Kit price clears Shop Pay. Body wash matches the balms at 1000px.
+- `theme.liquid` no longer hides `.main-content` until CSS arrives. Homepage hero and product photos still load. No `{width}` in image URLs.
+- Filed [`analyses/2026-10-14-atc-and-first-paint.md`](analyses/2026-10-14-atc-and-first-paint.md). Agents do not merge.
+
+## [2026-10-14T18:45:00Z] query | ATC alignment, CAD switcher, first paint
+
+- Add to Cart differs because the title row is 70px tall and the body wash has its own rule under 1025px. Race Day Kit’s compare-at price overlaps Shop Pay.
+- Header CAD is Mlveda. Shopify presents USD only. Primary market `uni` is the United States. Canada is already an active market. US Retail stays draft.
+- Filed [`analyses/2026-10-14-atc-markets-first-paint.md`](analyses/2026-10-14-atc-markets-first-paint.md). No Shopify write.
+
+## [2026-10-14T17:40:00Z] query | Page load and Race Day Kit bundle
+
+- Cold loads: first paint ~0.3–0.4 s on a white page, product visible by 0.9 s, Addly bundle and CAD text by ~1.8 s. Server time to first byte was 18–46 ms on three of four pages.
+- Race Day Kit stays its own offer. The pre-checked Addly pair with the Marathon Pack should come off. No Shopify write in this slice.
+- Filed [`analyses/2026-10-14-page-load-review.md`](analyses/2026-10-14-page-load-review.md). Agents do not merge.
+
+## [2026-10-14T16:55:00Z] ship | Visual fixes: banner, kit button, affiliate label, bundle dollar, blog images
+
+- Body Recovery photo fills wide windows. Race Day Kit Add to Cart sits on the divider. Affiliate “SIGN UP NOW” is visible. Addly’s extra `$` is hidden. Two News posts have the existing anti-chafe stick as the featured image.
+- Marathon Pack SKU `OH700-KIT` and Race Day Kit (no SKU) are different products. The bundle widget offers both.
+- Filed [`analyses/2026-10-14-visual-fixes.md`](analyses/2026-10-14-visual-fixes.md). Agents do not merge.
+
 ## [2026-10-14T15:10:00Z] ship | Phased Oct 8 re-ship; mobile CSS rolled back
 
 - Admin copy, 12 article links, Labs off three menus, featured order kit → anti-chafe → recovery. Theme: native Add to Cart on both packs; sampler reads `Free — $1.99 shipping`; Shop Pay hidden at $0.
