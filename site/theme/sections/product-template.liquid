@@ -249,7 +249,93 @@
                   >
                 </div>
               </div>
-      
+
+            <div class="subscriptions_app_embed_block"></div>
+            {% if product.selling_plan_groups.size > 0 %}
+              <div class="oha-purchase-options" data-oha-purchase hidden>
+                <fieldset>
+                  <legend>Purchase options</legend>
+                  {% unless product.requires_selling_plan %}
+                    <label>
+                      <input type="radio" data-oha-plan="" checked>
+                      <span>One-time purchase</span>
+                    </label>
+                  {% endunless %}
+                  {% assign oha_plan_selected = false %}
+                  {% for group in product.selling_plan_groups %}
+                    {% for plan in group.selling_plans %}
+                      {% assign oha_plan_price = blank %}
+                      {% for allocation in current_variant.selling_plan_allocations %}
+                        {% if allocation.selling_plan.id == plan.id %}
+                          {% assign oha_plan_price = allocation.price %}
+                        {% endif %}
+                      {% endfor %}
+                      <label>
+                        <input type="radio" data-oha-plan="{{ plan.id }}"{% if product.requires_selling_plan and oha_plan_selected == false %} checked{% assign oha_plan_selected = true %}{% endif %}>
+                        <span>{{ plan.name }}{% if oha_plan_price != blank %} — {{ oha_plan_price | money }}{% endif %}</span>
+                      </label>
+                    {% endfor %}
+                  {% endfor %}
+                </fieldset>
+                <input type="hidden" name="selling_plan" value="" disabled data-oha-selling-plan>
+              </div>
+              <style>
+                .oha-purchase-options{margin:16px 0;color:inherit}
+                .oha-purchase-options fieldset{margin:0;padding:12px 14px;border:1px solid currentColor}
+                .oha-purchase-options legend{padding:0 6px}
+                .oha-purchase-options label{display:flex;gap:8px;align-items:flex-start;margin:8px 0;cursor:pointer}
+              </style>
+              <script>
+                (function () {
+                  var fallback = document.querySelector('[data-oha-purchase]');
+                  var embed = document.querySelector('.subscriptions_app_embed_block');
+                  if (!fallback || !embed) return;
+                  var hidden = fallback.querySelector('[data-oha-selling-plan]');
+                  var radios = fallback.querySelectorAll('[data-oha-plan]');
+                  function officialPresent() {
+                    return embed.childElementCount > 0;
+                  }
+                  function retire() {
+                    if (hidden) hidden.disabled = true;
+                    fallback.remove();
+                  }
+                  function sync() {
+                    if (!hidden || !fallback.isConnected) return;
+                    var selected = fallback.querySelector('[data-oha-plan]:checked');
+                    var id = selected ? selected.getAttribute('data-oha-plan') : '';
+                    if (id) {
+                      hidden.disabled = false;
+                      hidden.value = id;
+                    } else {
+                      hidden.disabled = true;
+                      hidden.value = '';
+                    }
+                  }
+                  radios.forEach(function (radio) {
+                    radio.addEventListener('change', function () {
+                      radios.forEach(function (other) { if (other !== radio) other.checked = false; });
+                      sync();
+                    });
+                  });
+                  function reveal() {
+                    if (officialPresent()) retire();
+                    else fallback.hidden = false;
+                    sync();
+                  }
+                  var observer = new MutationObserver(function () {
+                    if (officialPresent()) {
+                      observer.disconnect();
+                      retire();
+                    }
+                  });
+                  observer.observe(embed, { childList: true, subtree: true });
+                  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', reveal);
+                  else reveal();
+                  setTimeout(reveal, 1500);
+                })();
+              </script>
+            {% endif %}
+
             <div class="product-form__error-message-wrapper product-form__error-message-wrapper--hidden{% if section.settings.enable_payment_button %} product-form__error-message-wrapper--has-payment-button{% endif %}"
               data-error-message-wrapper
               role="alert"

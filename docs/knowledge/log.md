@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-16T21:05:00Z] ship | Subscribe and Save on the product template
+
+- The product form now has Shopify’s `subscriptions_app_embed_block` mount, plus a one-time or monthly choice that submits `selling_plan`.
+- Cooling Menthol Body Wash shows “Deliver every month, 10% off — $27.00”. A throwaway cart add took that plan and was cleared.
+- Filed [`analyses/2026-10-16-subscribe-embed.md`](analyses/2026-10-16-subscribe-embed.md).
+
 ## [2026-10-16T20:45:00Z] ship | Grey first paint and Subscribe & Save
 
 - The blank flash is the `#C7C4C4` page color while `theme.css` and `onehour.css` block the first paint. An inline ring now covers that wait and leaves after both files apply.
