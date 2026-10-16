@@ -206,7 +206,9 @@
         </div>
       {% if content_for_header contains 'bss-sub-recurring-pay' %}{% render 'bss-sub-price-with-discount', product: product %}{% endif %}
 {% form 'product', product, class:form_classes, novalidate: 'novalidate', data-product-form: '' %}
-            {{ form | payment_terms }}
+            {% if product.price > 0 %}
+              {{ form | payment_terms }}
+            {% endif %}
 
             {% unless product.has_only_default_variant %}
 <!--               <div class="product-form__controls-group">
@@ -288,7 +290,6 @@
 {% endif %}
 <!-- End of Buy With Prime Widget --> 
 
- {% if product.id != 8140422578349 and product.id != 7162482262189 %}
 <!-- {% assign sample_handle = 'free-1hour-after-athletic-sampler-pack' %}
 
 {% if product.handle == sample_handle %}
@@ -333,9 +334,6 @@
                     {% include 'icon-spinner' %}
                   </span>
                 </button>
-{% else %}
-
-{% endif %}
                
                  {% endif %}
                 {% if section.settings.enable_payment_button %}
@@ -368,7 +366,25 @@
           {% endif %}       
 
         </div>
-         
+<script>
+(function () {
+  function alignAtc() {
+    var badge = document.querySelector('.jdgm-prev-badge[data-average-rating="0.00"]');
+    if (!badge) return;
+    var btn = document.querySelector('.prod-template-new-nav button[name="add"]');
+    var desc = document.querySelector('.prod-template-new-nav .product-single__description');
+    if (!btn || !desc) return;
+    var gap = desc.getBoundingClientRect().top - btn.getBoundingClientRect().bottom;
+    if (Math.abs(gap) < 3) return;
+    var current = parseFloat(window.getComputedStyle(desc).marginTop) || 0;
+    desc.style.marginTop = (current - gap) + 'px';
+  }
+  window.addEventListener('load', function () {
+    alignAtc();
+    setTimeout(alignAtc, 500);
+  });
+})();
+</script>
 
 <!-- <div id='wk_product_faq'></div> -->
 
