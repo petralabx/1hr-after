@@ -72,7 +72,13 @@
   <a class="product-link-box" href="{{ product.url }}"></a>
   
   <div class="product-name-price">  
-  <h3 class="h4 grid-view-item__title product-card__title" aria-hidden="true">{{ product.title }}</h3> 
+  <h3 class="h4 grid-view-item__title product-card__title" aria-hidden="true">{{ product.title }}</h3>
+  <div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}">{{ product.metafields.judgeme.badge }}</div>
+  {% if product.handle == 'marathon-pack' %}
+    <p class="card-contents">Shampoo, conditioner, body wash, and magnesium lotion.</p>
+  {% elsif product.handle == 'marathon-race-pack' %}
+    <p class="card-contents">Anti-chafe balm and muscle recovery balm.</p>
+  {% endif %} 
      {% if product.title != 'Recovery Body Gel' %} 
      {% include 'product-price-listing', product: product, show_vendor: show_vendor %}
        {% else %}

@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-16 — Homepage grid, product page, and mobile Race Day
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** this branch, TASK-3065. CIP lands; agent cannot merge.
+- **Done:** Live on theme `#122661372077`. Homepage shows six products, including the lotion and the body wash. Cards show review counts and, for the two packs, what is in them. Product pages have three bullets, a quantity field, an open ingredient list, and a mobile Add to Cart bar. Race Day buttons sit under the photo on small screens. Write-up: [`docs/knowledge/analyses/2026-10-16-storefront-feedback.md`](knowledge/analyses/2026-10-16-storefront-feedback.md).
+- **Next:** CIP merge. Do not rename The Marathon Pack, do not print “Save $52”, and do not add a free-shipping bar until a real threshold is confirmed. Rotate the Judge.me token that used to sit in the product template.
+- **Watch:** Do not add `format: 'webp'` on `img_url: '1x1'`. Do not use `position: static` and `height: auto` on `#shopify-section-custom_content_Bq8YWE`. Do not push `settings_data.json` as a whole. Do not call `1hours.myshopify.com`. Do not activate US Retail. Do not undraft the Athletic Sampler.
+
 ## 2026-10-15 — Hide the Try Free Sample button
 
 - **Who:** Stephen Alton + Cursor cloud agent

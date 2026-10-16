@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-15 (Try Free Sample button parked)
+> **Last updated:** 2026-10-16 (homepage grid, PDP, mobile Race Day)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-16 — storefront — homepage grid, cards, and product page
+
+- **Hypothesis:** The homepage stopped at four products because of a section limit, and the product page hid the useful lines under a wall of all-caps copy.
+- **Change:** Six handles on the featured grid, review badges and pack contents on cards, bullets plus the existing accordions on the product page, mobile Add to Cart, Race Day buttons under the photo, footer and homepage meta, Refueling spelling. See [`analyses/2026-10-16-storefront-feedback.md`](analyses/2026-10-16-storefront-feedback.md).
+- **Result:** Lotion and body wash render with the other four. Ingredient list is open. Long intro sits inside closed Benefits. Rankings not promised. Prices unchanged.
+- **Source:** TASK-3065
 
 ## 2026-10-15 — storefront — hide Try Free Sample
 

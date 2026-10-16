@@ -3922,5 +3922,101 @@ body .designed-for-txt-wrap h2.designed-for-daily {
 body .addly_widget_interact span.n9Currency {
   display: none !important;
 }
+/* Homepage featured grid: six products, three per row. */
+#shopify-section-collection .product-list {
+  flex-flow: row wrap;
+}
+#shopify-section-collection .grid__item--collection {
+  width: 33.33%;
+}
+@media only screen and (max-width: 749px) {
+  #shopify-section-collection .product-list li {
+    width: 50%;
+  }
+  /* Race Day shop buttons sit under the photo, not on the white sticks. */
+  #shopify-section-custom_content_Bq8YWE {
+    height: auto !important;
+  }
+  #shopify-section-custom_content_Bq8YWE .custom-content {
+    display: flex;
+    flex-direction: column;
+  }
+  #shopify-section-custom_content_Bq8YWE .custom__item--image {
+    position: relative;
+    order: 1;
+    height: 420px;
+    max-height: 70vh;
+  }
+  #shopify-section-custom_content_Bq8YWE .custom__item--html_Hma93k {
+    order: 2;
+  }
+  body #shopify-section-custom_content_Bq8YWE .custom__item.custom__item--html_Hma93k {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 20px 16px 28px !important;
+    background: #1c1c1c;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .custom-home-header .menu-1hr-a.hdr-ttl {
+    z-index: 1;
+    max-width: 52%;
+  }
+  .custom-home-header .menu-1hr-a.hdr-ttl h2 {
+    font-size: 26px !important;
+  }
+  .custom-home-header .site-header__icons-wrapper {
+    position: relative;
+    z-index: 4;
+  }
+}
+.pdp-benefits {
+  margin: 12px 0 16px;
+  padding-left: 1.1em;
+  text-transform: none;
+}
+.pdp-benefits li {
+  margin: 0 0 6px;
+  text-transform: none;
+}
+.pdp-accordion {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.pdp-accordion summary {
+  cursor: pointer;
+  padding: 12px 0;
+  font-weight: 600;
+}
+.both-balms {
+  margin: 12px 0 0;
+}
+.card-contents {
+  font-size: 12px;
+  line-height: 1.3;
+  margin: 4px 0 0;
+  text-transform: none;
+}
+.product-card .jdgm-prev-badge__text {
+  display: inline !important;
+}
+@media only screen and (max-width: 749px) {
+  .pdp-mobile-atc {
+    display: block;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    background: #fff;
+    padding: 8px 16px 12px;
+  }
+  .pdp-mobile-atc button {
+    width: 100%;
+  }
+}
 
 

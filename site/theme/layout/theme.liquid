@@ -132,7 +132,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {%- endcapture -%}
   <title>{% if collection.handle == 'all' %}All Post-Workout Body Care | 1HR-A{% elsif template contains "index" %}{{ page_title }}{% else %}{{ page_title }}{% if current_tags %} {{ 'general.meta.tagged_html' | t: tags: meta_tags }}{% endif %}{% if current_page != 1 %} {{ 'general.meta.page' | t: page_number: current_page }}{% endif %}{% endif %}</title>
 
-  {%- if collection.handle == 'all' -%}
+  {%- if template.name == 'index' -%}
+    <meta name="description" content="Post-workout body care for daily athletes. Anti-chafe balm, menthol muscle recovery balm, magnesium lotion, and cooling body wash from 1HR-A.">
+  {%- elsif collection.handle == 'all' -%}
     <meta name="description" content="Every 1Hour After product: recovery balm, anti-chafe balm, magnesium lotion, cooling body wash, protein shampoo and conditioner, race packs, and the athletic sampler pack.">
   {%- elsif page_description -%}
     <meta name="description" content="{{ page_description | escape }}">

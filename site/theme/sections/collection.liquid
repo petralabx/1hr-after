@@ -31,6 +31,23 @@
     {% else %}
      <ul class="grid grid--uniform grid--view-items product-list product-list-text">
         {% endif %}
+    {% if section.settings.collection == 'featured-collection' %}
+      {% comment %}
+        Homepage grid. Lotion and body wash are already in featured-collection;
+        the section limit was 4, so they never rendered. Order is the six products
+        the homepage should show. Conditioner stays in the collection, past this grid.
+      {% endcomment %}
+      {%- assign featured_handles = 'marathon-race-pack,anti-chafe-balm,muscle-recovery-balm,muscle-recovery-magnesium-body-lotion,cooling-menthol-body-wash,adaptogen-protein-strengthening-shampoo' | split: ',' -%}
+      {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+      {% for handle in featured_handles %}
+        {% assign product = all_products[handle] %}
+        {% if product != empty %}
+          <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
+            {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% else %}
     {% for product in collection.products limit: product_limit %}
       <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
         {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
@@ -53,6 +70,7 @@
         </li>
       {% endfor %}
     {% endfor %}
+    {% endif %}
   </ul>
 
   {% if section.settings.show_view_all %}
