@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-16T19:02:00Z] ship | Phase 3 remaining product copy
+
+- Replaced the approved lines on the lotion, body wash, shampoo, conditioner, and Marathon Pack. Lotion and wash SEO descriptions were set with their titles.
+- The bones, heart, and blood-pressure sentence on the lotion is gone. The inflammation bullet was removed.
+- Filed [`analyses/2026-10-16-claims-phase3.md`](analyses/2026-10-16-claims-phase3.md). Phase 4 has not started. `docs/compliance/claims.md` was not edited.
+
 ## [2026-10-16T18:29:00Z] ship | Phase 2 zinc copy and Phase 1 leftovers
 
 - Replaced the zinc ingredient sentences on the lotion, wash, shampoo, conditioner, and Marathon Pack. The extra Marathon Pack zinc line uses the nearest approved skin sentence.

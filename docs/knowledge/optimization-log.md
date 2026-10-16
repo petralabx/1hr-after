@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-16 (Phase 2 zinc copy)
+> **Last updated:** 2026-10-16 (Phase 3 remaining product copy)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-16 — catalog — Phase 3 remaining product copy
+
+- **Hypothesis:** The lotion, wash, shampoo, conditioner, and Marathon Pack still described inflammation, pain, conditions, bones, and heart health after Phase 2.
+- **Change:** Approved sentences on those five products, including the lotion and wash SEO descriptions. Prior copy is in [`../../sources/audits/2026-10-16-product-copy-before-phase3/README.md`](../../sources/audits/2026-10-16-product-copy-before-phase3/README.md). See [`analyses/2026-10-16-claims-phase3.md`](analyses/2026-10-16-claims-phase3.md).
+- **Result:** Those lines are on the live product records. A few lines outside the table, and the other FAQ snippets, are still in place. Rankings not promised.
+- **Source:** TASK-3129
 
 ## 2026-10-16 — catalog — Phase 2 zinc copy and leftovers
 
