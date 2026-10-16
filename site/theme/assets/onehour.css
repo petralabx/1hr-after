@@ -3925,6 +3925,7 @@ body .addly_widget_interact span.n9Currency {
 /* Homepage featured grid: six products, three per row. */
 #shopify-section-collection .product-list {
   flex-flow: row wrap;
+  align-items: flex-start;
 }
 #shopify-section-collection .grid__item--collection {
   width: 33.33%;
@@ -4001,7 +4002,7 @@ body .addly_widget_interact span.n9Currency {
   text-transform: none;
 }
 .product-card .jdgm-prev-badge__text {
-  display: inline !important;
+  display: block !important;
 }
 @media only screen and (max-width: 749px) {
   .pdp-mobile-atc {
@@ -4017,6 +4018,145 @@ body .addly_widget_interact span.n9Currency {
   .pdp-mobile-atc button {
     width: 100%;
   }
+}
+
+/* Race Day Essentials sits flush under the runner photo. The grey strip was index-section padding letting the page background through. */
+#shopify-section-custom_content_Bq8YWE {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  background-color: #1c1c1c;
+}
+#shopify-section-custom_content_Bq8YWE .custom-content {
+  margin-top: 0;
+}
+
+/* Add to Cart stays in the column under quantity, instead of covering the bullets. */
+.prod-template-new-nav .product-form__item.product-form__item--submit.product-form__item--no-variants {
+  position: static;
+  right: auto;
+  left: auto;
+  top: auto;
+  width: 100%;
+  max-width: none;
+}
+.prod-template-new-nav .product-form .product-form__controls-group {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+}
+.prod-template-new-nav .product-form .product-form__item {
+  flex-basis: auto;
+  width: 100%;
+  max-width: none;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+}
+.prod-template-new-nav .cart-amezon-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 100%;
+}
+.prod-template-new-nav .cart-amezon-wrap .product-form__cart-submit,
+.prod-template-new-nav .cart-amezon-wrap iframe {
+  margin: 8px 0 0 !important;
+  width: 100% !important;
+}
+.prod-template-new-nav .product-single__description {
+  margin-top: 16px !important;
+}
+.prod-template-new-nav .both-balms {
+  clear: both;
+  display: block;
+  width: 100%;
+  margin: 12px 0 0;
+}
+
+/* Reviews and pack contents stay in the top-left of the tile, off the product photo. */
+.product-list .card .product-name-price {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  justify-content: stretch;
+  column-gap: 10px;
+  row-gap: 2px;
+}
+.product-list .card .product-name-price > h3 {
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 12em;
+}
+.product-list .card .product-name-price > .jdgm-widget {
+  grid-column: 1;
+  grid-row: 2;
+  max-width: 10em;
+  position: relative;
+  z-index: 2;
+}
+.product-list .card .product-name-price > .card-contents {
+  grid-column: 1;
+  grid-row: 3;
+  max-width: 12em;
+  margin: 2px 0 0;
+}
+.product-list .card .product-name-price > .price,
+.product-list .card .product-name-price > .product-coming-soon {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  align-self: start;
+}
+.product-list .card .card-img--fit img {
+  object-fit: contain !important;
+  object-position: center center !important;
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+}
+/* Pack tiles: title, reviews, and contents sit above the photo so the product group fills the tile. */
+.product-list .product-card:has(.card-contents) {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  align-content: start;
+  background: #687b80;
+}
+.product-list .product-card:has(.card-contents) .card-body {
+  display: contents;
+}
+.product-list .product-card:has(.card-contents) .product-name-price {
+  grid-row: 1;
+  position: relative;
+  z-index: 2;
+  background: #687b80;
+  padding: 12px 14px 10px;
+}
+.product-list .product-card:has(.card-contents) .card-img {
+  grid-row: 2;
+  height: auto;
+  padding: 0 0 48px;
+  background: #687b80;
+}
+.product-list .product-card:has(.card-contents) .card-img img {
+  object-fit: contain !important;
+  object-position: center bottom !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  position: static !important;
+}
+.product-list .product-card:has(.card-contents) .product-but-now-view {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  width: auto;
 }
 
 

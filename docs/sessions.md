@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-16 — Tile and Add to Cart layout
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#33](https://github.com/petralabx/1hr-after/pull/33) (TASK-3137). CIP lands; agent cannot merge.
+- **Done:** Live Add to Cart no longer covers the bullets. Review counts and pack contents sit off the product photos. The grey strip above Race Day Essentials is closed. The Marathon Pack tile uses the square image. Write-up: [`docs/knowledge/analyses/2026-10-16-tile-atc-layout.md`](knowledge/analyses/2026-10-16-tile-atc-layout.md).
+- **Next:** Claims Phase 5 and the news-article titles are still waiting. Do not rename Muscle Recovery Balm.
+- **Watch:** Do not set `#shopify-section-custom_content_Bq8YWE` to `position: static` with `height: auto` on desktop. Do not point the Marathon Pack card back at `images[3]`.
+
 ## 2026-10-16 — Leftover claim lines and Phase 4
 
 - **Who:** Stephen Alton + Cursor cloud agent
