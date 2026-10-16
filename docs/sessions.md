@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-16 — Phase 1 claims copy
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#29](https://github.com/petralabx/1hr-after/pull/29) (TASK-3116). CIP lands; agent cannot merge.
+- **Done:** Live product copy on `1hourafter.myshopify.com` for the balm, the Race Day Kit, and the anti-chafe balm. The pre-change HTML and SEO for all eight products is in [`docs/sources/audits/2026-10-16-product-copy-before-claims/README.md`](sources/audits/2026-10-16-product-copy-before-claims/README.md). Write-up: [`docs/knowledge/analyses/2026-10-16-claims-phase1.md`](knowledge/analyses/2026-10-16-claims-phase1.md).
+- **Next:** Wait for a go-ahead before Phase 2 (the zinc lines). FAQ answers and the balm image alt still say pain relief. Do not rename Muscle Recovery Balm.
+- **Watch:** Do not call `1hours.myshopify.com`. A `productUpdate` that sends `seo` with only a description clears the SEO title; send the title in the same object. Do not edit the archived HTML after this commit.
+
 ## 2026-10-16 — Homepage grid, product page, and mobile Race Day
 
 - **Who:** Stephen Alton + Cursor cloud agent

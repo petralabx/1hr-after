@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-16T18:20:00Z] ship | Phase 1 claims copy on three products
+
+- Archived all eight product descriptions and SEO fields, then replaced the approved lines on Muscle Recovery Balm, Race Day Kit, and Anti Chafe Glide Balm.
+- Balm SEO description is the cooling-feel sentence. SEO title was restored to the endurance-athletes title. The other five products were not edited.
+- Filed [`analyses/2026-10-16-claims-phase1.md`](analyses/2026-10-16-claims-phase1.md). Phases 2–5 have not started.
+
 ## [2026-10-16T12:20:00Z] ship | Staged storefront fixes from homepage and PDP feedback
 
 - Homepage grid shows six products, including the lotion and the body wash. Cards show Judge.me counts. Race Day Kit and Marathon Pack cards name their contents.

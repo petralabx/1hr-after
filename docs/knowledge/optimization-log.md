@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-16 (homepage grid, PDP, mobile Race Day)
+> **Last updated:** 2026-10-16 (Phase 1 claims copy)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-16 — catalog — Phase 1 claims copy
+
+- **Hypothesis:** The three pages linked from Canada Meta ads still described pain relief, inflammation, cramps, and fungi.
+- **Change:** Approved sentences on Muscle Recovery Balm, Race Day Kit, and Anti Chafe Glide Balm, including the balm SEO description. Prior copy is in [`../../sources/audits/2026-10-16-product-copy-before-claims/README.md`](../../sources/audits/2026-10-16-product-copy-before-claims/README.md). See [`analyses/2026-10-16-claims-phase1.md`](analyses/2026-10-16-claims-phase1.md).
+- **Result:** Those lines are on the live product records. FAQ answers and one image alt on the balm still say pain relief. Rankings not promised.
+- **Source:** TASK-3116
 
 ## 2026-10-16 — storefront — homepage grid, cards, and product page
 
