@@ -7,6 +7,13 @@
 
 <!-- AUTO-APPEND:ships:START -->
 
+## 2026-10-16 — catalog — Tile and Add to Cart layout
+
+- **Hypothesis:** Overlapping Add to Cart, review text, the grey strip, and the wide Marathon Pack banner were hiding the products.
+- **Change:** Button returned to the column. Pack text sits above the photo. Marathon Pack uses the square image. Race Day Essentials padding-top is 0. See [`analyses/2026-10-16-tile-atc-layout.md`](analyses/2026-10-16-tile-atc-layout.md).
+- **Result:** Checked on the live theme at desktop and 390px. Rankings not promised.
+- **Source:** TASK-3137
+
 ## 2026-10-16 — catalog — Leftover claim lines and Phase 4
 
 - **Hypothesis:** Phase 3 left repair, dandruff, healing, and inflammation lines on the shampoo, the Marathon Pack, the FAQs, and the homepage.
