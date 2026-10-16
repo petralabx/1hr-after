@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-16 (Phase 4 keyword sweep)
+> **Last updated:** 2026-10-16 (Subscribe and Save)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-16 — storefront — Subscribe and Save
+
+- **Hypothesis:** The selling plan was on the products, and the vintage product form had no place for Shopify’s subscription widget.
+- **Change:** `subscriptions_app_embed_block` is inside the product form. A purchase-option group submits the selected selling plan and steps aside if the app embed fills the mount. See [`analyses/2026-10-16-subscribe-embed.md`](analyses/2026-10-16-subscribe-embed.md).
+- **Result:** The body wash page shows one-time purchase and the monthly plan. A cart add with that plan returned the plan name. Rankings not promised.
+- **Source:** TASK-3148
 
 ## 2026-10-16 — storefront — Grey first paint
 
