@@ -7,6 +7,13 @@
 
 <!-- AUTO-APPEND:ships:START -->
 
+## 2026-10-16 — storefront — Grey first paint
+
+- **Hypothesis:** The blank flash is the grey page color while `theme.css` and `onehour.css` block rendering.
+- **Change:** Those files now load without blocking paint. An inline ring covers the grey and leaves when both have applied. See [`analyses/2026-10-16-first-paint-spinner.md`](analyses/2026-10-16-first-paint-spinner.md).
+- **Result:** With the stylesheets held back, the ring is on screen. After they apply, the homepage hero and the body-wash Add to Cart are styled, and the ring is gone. Rankings not promised.
+- **Source:** TASK-3140
+
 ## 2026-10-16 — catalog — Tile and Add to Cart layout
 
 - **Hypothesis:** Overlapping Add to Cart, review text, the grey strip, and the wide Marathon Pack banner were hiding the products.

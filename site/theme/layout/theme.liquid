@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="{{ request.locale.iso_code }}">
+<html class="no-js booting" lang="{{ request.locale.iso_code }}">
 <head>
   <meta name="msvalidate.01" content="24AB067A2CFD5799328F024018DD4E92" />
 <script>
@@ -96,8 +96,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   {%- assign base_font_bold_italic = base_font_bold | font_modify: 'style', 'italic' -%}
 
   <link rel="preload" href="{{ 'theme.css' | asset_url }}" as="style">
-  
-  <!-- <link rel="preload" href="{{ 'onehour.css' | asset_url }}" as="style"> -->
+  <link rel="preload" href="{{ 'onehour.css' | asset_url }}" as="style">
+  <style>
+    html.booting::before{content:"";position:fixed;inset:0;z-index:2147483000;background:#C7C4C4}
+    html.booting::after{content:"";position:fixed;z-index:2147483001;left:50%;top:50%;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;border:4px solid rgba(28,28,28,.18);border-top-color:#fa5a16;animation:bootspin .7s linear infinite}
+    @keyframes bootspin{to{transform:rotate(360deg)}}
+    @media (prefers-reduced-motion:reduce){html.booting::after{animation:none}}
+  </style>
   
   <link rel="preload" as="font" href="{{ header_font | font_url }}" type="font/woff2" crossorigin>
   <link rel="preload" as="font" href="{{ base_font | font_url }}" type="font/woff2" crossorigin>
@@ -165,10 +170,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       link.loaded = true;
       link.dispatchEvent(new Event('load'));
     }
+
+    var bootSheetsLeft = 2;
+    function bootCssDone(link) {
+      if (link && link.getAttribute('data-boot-done')) return;
+      if (link) link.setAttribute('data-boot-done', '1');
+      bootSheetsLeft -= 1;
+      if (bootSheetsLeft > 0) return;
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          finishBoot();
+        });
+      });
+    }
+    function finishBoot() {
+      document.documentElement.classList.remove('booting');
+      var bootStatus = document.querySelector('[data-boot-status]');
+      if (bootStatus) bootStatus.remove();
+    }
+    setTimeout(finishBoot, 4000);
   </script>
 
-  <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}" type="text/css" onload="onLoadStylesheet()">
-  <link rel="stylesheet" href="{{ 'onehour.css' | asset_url }}" type="text/css">
+  <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}" media="print" onload="this.media='all';onLoadStylesheet();bootCssDone(this)">
+  <link rel="stylesheet" href="{{ 'onehour.css' | asset_url }}" media="print" onload="this.media='all';bootCssDone(this)">
+  <noscript>
+    <style>html.booting::before,html.booting::after{content:none !important;display:none !important;animation:none !important}</style>
+    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'onehour.css' | asset_url }}">
+  </noscript>
 
   <style>
     {{ header_font | font_face: font_display: 'swap' }}
@@ -269,6 +298,7 @@ window.supported_currencies = "{{ settings.mlvedaACS_supportedCurrencies }}";
  
   {% if page.title != 'Lab' or page.title != 'Sample Request' %}
 <body class="template-{{ request.page_type | handle }}">
+  <div class="visually-hidden" data-boot-status role="status" aria-live="polite">Loading</div>
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4LGTWV"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
