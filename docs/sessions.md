@@ -27,7 +27,7 @@ This is separate from:
 ## 2026-10-16 — Phase 3 remaining product copy
 
 - **Who:** Stephen Alton + Cursor cloud agent
-- **PR:** draft on `cursor/seo-aeo-claims-phase3-f8cc` (TASK-3129). CIP lands; agent cannot merge.
+- **PR:** [#31](https://github.com/petralabx/1hr-after/pull/31) (TASK-3129). CIP lands; agent cannot merge.
 - **Done:** Live copy on the lotion, body wash, shampoo, conditioner, and Marathon Pack. Lotion and wash SEO descriptions are the approved lines. Prior copy is in [`docs/sources/audits/2026-10-16-product-copy-before-phase3/README.md`](sources/audits/2026-10-16-product-copy-before-phase3/README.md). Write-up: [`docs/knowledge/analyses/2026-10-16-claims-phase3.md`](knowledge/analyses/2026-10-16-claims-phase3.md).
 - **Next:** Phase 4 is a keyword report only. Do not rename Muscle Recovery Balm.
 - **Watch:** Do not call `1hours.myshopify.com`. Send the SEO title in the same object as the description. Strip U+200B before restoring the phase-3 archive. The wash meta still ends with “Made clean in North America.”
