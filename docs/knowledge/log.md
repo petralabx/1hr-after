@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-16T20:45:00Z] ship | Grey first paint and Subscribe & Save
+
+- The blank flash is the `#C7C4C4` page color while `theme.css` and `onehour.css` block the first paint. An inline ring now covers that wait and leaves after both files apply.
+- Subscribe & Save was not removed. The shop and Cooling Menthol Body Wash have no selling plans, so the existing BSS block stays hidden.
+- Filed [`analyses/2026-10-16-first-paint-spinner.md`](analyses/2026-10-16-first-paint-spinner.md).
+
 ## [2026-10-16T19:24:00Z] ship | Leftover claim lines and Phase 4
 
 - Cleared the shampoo dandruff bullet, the shampoo and Marathon Pack repair lines, the Marathon Pack healing jojoba line, and the vitamin B5 anti-inflammatory line.
