@@ -41,6 +41,7 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
+- [Leftover claim lines and Phase 4](analyses/2026-10-16-claims-phase4.md) — filed 2026-10-16 as `ship` · Shampoo and Marathon Pack leftovers, product FAQs, and five homepage sentences; news articles left for a decision
 - [Phase 3 remaining product copy](analyses/2026-10-16-claims-phase3.md) — filed 2026-10-16 as `ship` · Lotion, wash, shampoo, conditioner, and Marathon Pack use the approved lines; SEO titles unchanged
 - [Phase 2 zinc copy and the Phase 1 leftovers](analyses/2026-10-16-claims-phase2.md) — filed 2026-10-16 as `ship` · Zinc ingredient sentences on five products, balm image alts, vitamin E, the anti-chafe painful line, and the balm FAQ
 - [Phase 1 claims copy on the three ad-linked products](analyses/2026-10-16-claims-phase1.md) — filed 2026-10-16 as `ship` · Balm, Race Day Kit, and anti-chafe descriptions and the balm SEO description use the approved lines; the other five products are unchanged

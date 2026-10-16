@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-16T19:24:00Z] ship | Leftover claim lines and Phase 4
+
+- Cleared the shampoo dandruff bullet, the shampoo and Marathon Pack repair lines, the Marathon Pack healing jojoba line, and the vitamin B5 anti-inflammatory line.
+- Rewrote the claim answers in the product FAQ snippets and five homepage sentences. News article titles were classified and left in place.
+- Filed [`analyses/2026-10-16-claims-phase4.md`](analyses/2026-10-16-claims-phase4.md). `docs/compliance/claims.md` was not edited.
+
 ## [2026-10-16T19:02:00Z] ship | Phase 3 remaining product copy
 
 - Replaced the approved lines on the lotion, body wash, shampoo, conditioner, and Marathon Pack. Lotion and wash SEO descriptions were set with their titles.
