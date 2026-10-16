@@ -41,6 +41,7 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
+- [Phase 3 remaining product copy](analyses/2026-10-16-claims-phase3.md) — filed 2026-10-16 as `ship` · Lotion, wash, shampoo, conditioner, and Marathon Pack use the approved lines; SEO titles unchanged
 - [Phase 2 zinc copy and the Phase 1 leftovers](analyses/2026-10-16-claims-phase2.md) — filed 2026-10-16 as `ship` · Zinc ingredient sentences on five products, balm image alts, vitamin E, the anti-chafe painful line, and the balm FAQ
 - [Phase 1 claims copy on the three ad-linked products](analyses/2026-10-16-claims-phase1.md) — filed 2026-10-16 as `ship` · Balm, Race Day Kit, and anti-chafe descriptions and the balm SEO description use the approved lines; the other five products are unchanged
 - [Staged storefront fixes from homepage and PDP feedback](analyses/2026-10-16-storefront-feedback.md) — filed 2026-10-16 as `ship` · Six-up homepage grid with lotion and body wash; card reviews and pack contents; PDP bullets, open ingredients, mobile Add to Cart; prices, rename, and a free-shipping bar left unchanged
