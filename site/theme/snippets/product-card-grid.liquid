@@ -31,17 +31,18 @@
 
   {% capture img_id %}ProductCardImage-{{ section.id }}-{{ product.id }}{% endcapture %}
   {% capture wrapper_id %}ProductCardImageWrapper-{{ section.id }}-{{ product.id }}{% endcapture %}
-{% if product.id == 7162482262189 %}
-  {%- assign preview_image =  product.images[3] -%}
-{% else %}
-  {%- assign preview_image = product.featured_media.preview_image -%}
-{% endif %}  {%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+{%- comment -%}
+  The Marathon Pack wide banner (images[3], 1920x800) crops inside the tile.
+  The featured image is the square bottle group and fills the card.
+{%- endcomment -%}
+{%- assign preview_image = product.featured_media.preview_image -%}
+{%- assign img_url = preview_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
   {% unless preview_image == blank %}
     {% include 'image-style', image: preview_image, height: max_height, wrapper_id: wrapper_id, img_id: img_id %}
   {% endunless %}
  
-  <div class="product-card__image-with-placeholder-wrapper card-img product-info-img" data-image-loading-animation>
+  <div class="product-card__image-with-placeholder-wrapper card-img product-info-img{% if product.id == 7162482262189 %} card-img--fit{% endif %}" data-image-loading-animation>
     
     <img id="{{ img_id }}"
               class="grid-view-item__image lazyload"
