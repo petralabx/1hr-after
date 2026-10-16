@@ -13,12 +13,12 @@
 | [backlinks.md](backlinks.md) | Incoming-link profile. Empty until a provider export is ingested. | Class B |
 | [brand-voice.md](brand-voice.md) | Voice rules, forbidden terms, tone. Unfilled. | **Class C (human-only)** |
 | [business-identity.md](business-identity.md) | Name, address, domain, email. Unfilled. Do not reuse another brand's identity. | **Class C (human-only)** |
-| [competitor-intel.md](competitor-intel.md) | Tracked competitors. Empty table. | Class B |
+| [competitor-intel.md](competitor-intel.md) | Tracked competitors. Canonical table empty; proposed Body Glide / SNB / Gold Bond / Chamois Butt’r rows 2026-10-07. | Class B |
 | [content-style-guide.md](content-style-guide.md) | Draft and Meta ad writing rules. Structure only. | **Class C (human-only)** |
 | [faq-corpus.md](faq-corpus.md) | Canonical Q&A. No questions yet. | Agent expands after voice exists |
 | [icp.md](icp.md) | Ideal customer. Unfilled. | **Class C (human-only)** |
-| [keyword-universe.md](keyword-universe.md) | Keyword table. Empty. | Class B |
-| [market-map.md](market-map.md) | Intent clusters and owning URLs. Empty. | Class B |
+| [keyword-universe.md](keyword-universe.md) | Keyword table. Canonical empty; proposed Body Glide vs / best anti-chafe rows 2026-10-07. | Class B |
+| [market-map.md](market-map.md) | Intent clusters and owning URLs. Canonical empty; proposed anti-chafe cluster 2026-10-07. | Class B |
 | [optimization-log.md](optimization-log.md) | Ship and test log. Header only. | Mixed |
 | [products.md](products.md) | Product roster. No SKUs until a human adds them. | Class B |
 | [schema-state.md](schema-state.md) | Deployed structured data in the live Debut export (`#122661372077`). | Agent, once a theme exists |
@@ -41,6 +41,14 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
+- [Hide the Try Free Sample button](analyses/2026-10-15-hide-try-sample.md) — filed 2026-10-15 as `ship` · Header sample button, homepage mobile bar, and scrolling sample line are commented in `header.liquid` while the Athletic Sampler stays draft
+- [Homepage taglines, Race Day buttons, and blog tiles](analyses/2026-10-14-tagline-buttons-blog.md) — filed 2026-10-14 as `ship` · Shop buttons share a baseline; taglines use MonoSpec; Body Recovery drops the em dash; the two October posts use different existing photos; Shop Pay stays on paid products
+- [Add to Cart alignment and the first paint](analyses/2026-10-14-atc-and-first-paint.md) — filed 2026-10-14 as `ship` · Title row grows with the kit price; body wash matches the balms; the page is no longer hidden until CSS arrives
+- [Add to Cart alignment, CAD switcher, first paint](analyses/2026-10-14-atc-markets-first-paint.md) — filed 2026-10-14 as `query` · Button mismatch is a fixed title row plus a body-wash rule; CAD is Mlveda; US and Canada markets already exist
+- [Page load and the Race Day Kit bundle](analyses/2026-10-14-page-load-review.md) — filed 2026-10-14 as `query` · Blank first paint, then Addly and CAD; keep the Race Day Kit as its own offer
+- [Visual fixes after the phased re-ship](analyses/2026-10-14-visual-fixes.md) — filed 2026-10-14 as `ship` · Full-bleed Body Recovery photo, kit button on the divider, affiliate label, one dollar sign in the bundle, blog tile images
+- [Phased Oct 8 re-ship](analyses/2026-10-14-phased-oct8-reship.md) — filed 2026-10-14 as `ship` · Copy, article links, menus, featured order, pack Add to Cart, sampler price; mobile Race Day CSS tried and rolled back; WebP skipped
+- [Body Glide comparison + anti-chafe roundup](analyses/2026-10-07-body-glide-comparison.md) — filed 2026-10-07 as `ship` · Evergreen vs post + runners roundup; proposed competitor rows; News publish + chafing cross-link
 - [SEO/AEO action-plan ship](analyses/2026-10-07-seo-aeo-action-plan.md) — filed 2026-10-07 as `ship` · Snippets matching live copy; hike structure; two 404→301s; Race Day Kit; collection H1 template; noindex featured/frontpage
 - [SEO/AEO hygiene + Organization](analyses/2026-10-06-seo-aeo-hygiene-org.md) — filed 2026-10-06 as `ship` · Archived gel; kept News blog; affiliate-signup canonical; Organization 1Hour After + Instagram; catalog hygiene; FAQ claims not rewritten
 - [SEO/AEO live fixes](analyses/2026-10-06-seo-aeo-live-fixes.md) — filed 2026-10-06 as `ship` · Duplicate PDPs drafted + redirected; collection SEO; theme canonicals/0562/FAQ heading; live theme `#122661372077`
