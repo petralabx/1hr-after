@@ -27,7 +27,7 @@ This is separate from:
 ## 2026-10-16 — Subscribe and Save on the product template
 
 - **Who:** Stephen Alton + Cursor cloud agent
-- **PR:** draft on `cursor/seo-aeo-subscribe-embed-f8cc` (TASK-3148). CIP lands; agent cannot merge.
+- **PR:** [#35](https://github.com/petralabx/1hr-after/pull/35) (TASK-3148). CIP lands; agent cannot merge.
 - **Done:** The product form has Shopify’s subscription mount and a one-time or monthly choice that submits the selling plan. Write-up: [`docs/knowledge/analyses/2026-10-16-subscribe-embed.md`](knowledge/analyses/2026-10-16-subscribe-embed.md).
 - **Next:** Turn on Theme editor → App embeds → Subscription widget if Shopify’s own widget should replace the theme group. Phase 5 is the consolidated claims check. News article titles are waiting on a decision.
 - **Watch:** Push only `sections/product-template.liquid` for this slice. Do not push `settings_data.json`.
