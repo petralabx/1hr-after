@@ -63,6 +63,13 @@
 - **Result:** Live 301s and JSON-LD verified this session. Rankings not promised.
 - **Source:** TASK-2459
 
+## 2026-10-06 — storefront — post-ship re-measure (no write)
+
+- **Hypothesis:** After the five-gap 301s, search would drop the mismatched lotion URL.
+- **Change:** None on the store this round. Re-ran the same four queries. See [`analyses/2026-10-06-seo-aeo-post-ship-review.md`](analyses/2026-10-06-seo-aeo-post-ship-review.md).
+- **Result:** Storefront 301s still hold. WebSearch still returns `/products/post-workout-body-care-set` for the lotion query (index lag). Highest leftover on-site: leftover `recovery-body-gel` PDP. Rankings not promised.
+- **Source:** TASK-2389 read-only review
+
 ## 2026-10-06 — storefront + Admin — SEO/AEO five-gap ship
 
 - **Hypothesis:** Duplicate live PDPs and forced collection canonicals were splitting query→page signals.
