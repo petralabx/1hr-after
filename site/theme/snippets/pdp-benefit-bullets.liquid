@@ -1,0 +1,53 @@
+{% comment %}
+  Three short lines under Add to Cart. Wording stays inside the product that is already on the page.
+{% endcomment %}
+{% case product.handle %}
+  {% when 'anti-chafe-balm' %}
+    <ul class="pdp-benefits">
+      <li>A balm for high-friction skin on long workouts.</li>
+      <li>Apply it before the start.</li>
+      <li>Also sold with the recovery balm in the Race Day Kit.</li>
+    </ul>
+  {% when 'muscle-recovery-balm' %}
+    <ul class="pdp-benefits">
+      <li>A menthol balm for the hour after training.</li>
+      <li>Magnesium and zinc are in the formula.</li>
+      <li>Also sold with the anti-chafe balm in the Race Day Kit.</li>
+    </ul>
+  {% when 'muscle-recovery-magnesium-body-lotion' %}
+    <ul class="pdp-benefits">
+      <li>A magnesium body lotion for after the shower.</li>
+      <li>Made to sink in after training.</li>
+      <li>Included in the Marathon Pack.</li>
+    </ul>
+  {% when 'cooling-menthol-body-wash' %}
+    <ul class="pdp-benefits">
+      <li>A cooling menthol body wash.</li>
+      <li>For the shower after training.</li>
+      <li>Included in the Marathon Pack.</li>
+    </ul>
+  {% when 'adaptogen-protein-strengthening-shampoo' %}
+    <ul class="pdp-benefits">
+      <li>A protein shampoo for after training.</li>
+      <li>For hair that has been sweated through.</li>
+      <li>Included in the Marathon Pack.</li>
+    </ul>
+  {% when 'strengthening-protein-conditioner' %}
+    <ul class="pdp-benefits">
+      <li>A protein conditioner to follow the shampoo.</li>
+      <li>For hair that has been sweated through.</li>
+      <li>Included in the Marathon Pack.</li>
+    </ul>
+  {% when 'marathon-race-pack' %}
+    <ul class="pdp-benefits">
+      <li>Anti-chafe balm for before the start.</li>
+      <li>Muscle recovery balm for after the finish.</li>
+      <li>The two balms, sold together.</li>
+    </ul>
+  {% when 'marathon-pack' %}
+    <ul class="pdp-benefits">
+      <li>Shampoo and conditioner.</li>
+      <li>Cooling body wash.</li>
+      <li>Magnesium body lotion.</li>
+    </ul>
+{% endcase %}

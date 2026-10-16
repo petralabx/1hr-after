@@ -8,6 +8,13 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-16T12:20:00Z] ship | Staged storefront fixes from homepage and PDP feedback
+
+- Homepage grid shows six products, including the lotion and the body wash. Cards show Judge.me counts. Race Day Kit and Marathon Pack cards name their contents.
+- Product pages: three bullets, quantity, kit link on the balms, long copy inside Benefits, Key Active Ingredients open, mobile Add to Cart on the viewport. Empty “What Athletes Are Saying?” block removed.
+- Race Day buttons sit under the photo on small screens. Footer says LASTS LONGER. Homepage meta replaced. Spelling on the lotion and seven articles is Refueling.
+- Prices were not changed. No “Save $52”. No free-shipping bar. Filed [`analyses/2026-10-16-storefront-feedback.md`](analyses/2026-10-16-storefront-feedback.md). Agents do not merge.
+
 ## [2026-10-15T21:05:00Z] ship | Hide the Try Free Sample button
 
 - The Athletic Sampler stays draft. The header “try free sample” button, the homepage mobile sample bar, and the scrolling sample line are Liquid comments in `sections/header.liquid`.

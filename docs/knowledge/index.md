@@ -41,6 +41,7 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
+- [Staged storefront fixes from homepage and PDP feedback](analyses/2026-10-16-storefront-feedback.md) — filed 2026-10-16 as `ship` · Six-up homepage grid with lotion and body wash; card reviews and pack contents; PDP bullets, open ingredients, mobile Add to Cart; prices, rename, and a free-shipping bar left unchanged
 - [Hide the Try Free Sample button](analyses/2026-10-15-hide-try-sample.md) — filed 2026-10-15 as `ship` · Header sample button, homepage mobile bar, and scrolling sample line are commented in `header.liquid` while the Athletic Sampler stays draft
 - [Homepage taglines, Race Day buttons, and blog tiles](analyses/2026-10-14-tagline-buttons-blog.md) — filed 2026-10-14 as `ship` · Shop buttons share a baseline; taglines use MonoSpec; Body Recovery drops the em dash; the two October posts use different existing photos; Shop Pay stays on paid products
 - [Add to Cart alignment and the first paint](analyses/2026-10-14-atc-and-first-paint.md) — filed 2026-10-14 as `ship` · Title row grows with the kit price; body wash matches the balms; the page is no longer hidden until CSS arrives
