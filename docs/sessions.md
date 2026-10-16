@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-16 — Phase 2 zinc copy and leftovers
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#30](https://github.com/petralabx/1hr-after/pull/30) (TASK-3120). CIP lands; agent cannot merge.
+- **Done:** Live zinc sentences on the lotion, wash, shampoo, conditioner, and Marathon Pack. Balm image alts, vitamin E, the anti-chafe painful word, and the balm FAQ are updated. Prior copy is in [`docs/sources/audits/2026-10-16-product-copy-before-phase2/README.md`](sources/audits/2026-10-16-product-copy-before-phase2/README.md). Write-up: [`docs/knowledge/analyses/2026-10-16-claims-phase2.md`](knowledge/analyses/2026-10-16-claims-phase2.md).
+- **Next:** Wait for a go-ahead before Phase 3. Do not rename Muscle Recovery Balm.
+- **Watch:** Do not call `1hours.myshopify.com`. Do not send `seo` with only a description. Strip U+200B before restoring the phase-2 archive. The third Marathon Pack zinc line was mapped to the skin-balanced sentence.
+
 ## 2026-10-16 — Phase 1 claims copy
 
 - **Who:** Stephen Alton + Cursor cloud agent

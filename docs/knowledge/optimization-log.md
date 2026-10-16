@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-16 (Phase 1 claims copy)
+> **Last updated:** 2026-10-16 (Phase 2 zinc copy)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-16 — catalog — Phase 2 zinc copy and leftovers
+
+- **Hypothesis:** Zinc blurbs and the leftover balm and anti-chafe lines still named conditions, pain, and repair after Phase 1.
+- **Change:** Approved zinc sentences on five products, two balm image alts, the vitamin E span, the anti-chafe painful word, and the balm FAQ. Prior copy is in [`../../sources/audits/2026-10-16-product-copy-before-phase2/README.md`](../../sources/audits/2026-10-16-product-copy-before-phase2/README.md). See [`analyses/2026-10-16-claims-phase2.md`](analyses/2026-10-16-claims-phase2.md).
+- **Result:** Those lines are on the live product records and the live theme FAQ. Phase 3 ingredient lines are still in place. Rankings not promised.
+- **Source:** TASK-3120
 
 ## 2026-10-16 — catalog — Phase 1 claims copy
 

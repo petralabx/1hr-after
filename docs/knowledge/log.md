@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-16T18:29:00Z] ship | Phase 2 zinc copy and Phase 1 leftovers
+
+- Replaced the zinc ingredient sentences on the lotion, wash, shampoo, conditioner, and Marathon Pack. The extra Marathon Pack zinc line uses the nearest approved skin sentence.
+- Cleared the balm image alts, the vitamin E repair line, “PAINFUL” on the anti-chafe balm, and the balm FAQ treatment answers. SEO titles were not sent, so they stayed put.
+- Filed [`analyses/2026-10-16-claims-phase2.md`](analyses/2026-10-16-claims-phase2.md). Phase 3 has not started. `docs/compliance/claims.md` was not edited.
+
 ## [2026-10-16T18:20:00Z] ship | Phase 1 claims copy on three products
 
 - Archived all eight product descriptions and SEO fields, then replaced the approved lines on Muscle Recovery Balm, Race Day Kit, and Anti Chafe Glide Balm.
