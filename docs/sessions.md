@@ -27,7 +27,7 @@ This is separate from:
 ## 2026-10-16 — Grey first paint and Subscribe & Save
 
 - **Who:** Stephen Alton + Cursor cloud agent
-- **PR:** draft on `cursor/seo-aeo-first-paint-f8cc` (TASK-3140). CIP lands; agent cannot merge.
+- **PR:** [#34](https://github.com/petralabx/1hr-after/pull/34) (TASK-3140). CIP lands; agent cannot merge.
 - **Done:** The grey first paint is an orange loading ring that leaves when `theme.css` and `onehour.css` apply. Subscribe & Save is still in the theme and stays hidden because the shop has no selling plans. Write-up: [`docs/knowledge/analyses/2026-10-16-first-paint-spinner.md`](knowledge/analyses/2026-10-16-first-paint-spinner.md).
 - **Next:** Reconnect the subscription app in Shopify admin and attach selling plans if Subscribe & Save should show. Phase 5 is the consolidated claims check. News article titles are waiting on a decision.
 - **Watch:** Push only `layout/theme.liquid` for this slice. Do not invent a subscription discount. Do not push `settings_data.json`.
