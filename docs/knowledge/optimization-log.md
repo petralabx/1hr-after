@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-16 (Phase 3 remaining product copy)
+> **Last updated:** 2026-10-16 (Phase 4 keyword sweep)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-16 — catalog — Leftover claim lines and Phase 4
+
+- **Hypothesis:** Phase 3 left repair, dandruff, healing, and inflammation lines on the shampoo, the Marathon Pack, the FAQs, and the homepage.
+- **Change:** Those lines now use skin and scalp wording. Homepage magnesium, zinc, vitamin, Race Day, and strengthening sentences were replaced. Prior copy is in [`../../sources/audits/2026-10-16-product-copy-before-phase4/README.md`](../../sources/audits/2026-10-16-product-copy-before-phase4/README.md). See [`analyses/2026-10-16-claims-phase4.md`](analyses/2026-10-16-claims-phase4.md).
+- **Result:** The product pages and homepage show the new sentences. News articles were not edited. Rankings not promised.
+- **Source:** TASK-3131
 
 ## 2026-10-16 — catalog — Phase 3 remaining product copy
 

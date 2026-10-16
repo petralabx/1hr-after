@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-16 — Leftover claim lines and Phase 4
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** draft on `cursor/seo-aeo-claims-phase4-f8cc` (TASK-3131). CIP lands; agent cannot merge.
+- **Done:** Live shampoo and Marathon Pack leftovers, product FAQ answers, and five homepage sentences. News articles were classified and left in place. Prior copy is in [`docs/sources/audits/2026-10-16-product-copy-before-phase4/README.md`](sources/audits/2026-10-16-product-copy-before-phase4/README.md). Write-up: [`docs/knowledge/analyses/2026-10-16-claims-phase4.md`](knowledge/analyses/2026-10-16-claims-phase4.md).
+- **Next:** Phase 5 is the consolidated check. News article titles are waiting on a decision. Do not rename Muscle Recovery Balm.
+- **Watch:** Do not push `settings_data.json` as a full theme replace. Do not call `1hours.myshopify.com`. Strip U+200B before restoring the phase-4 archive.
+
 ## 2026-10-16 — Phase 3 remaining product copy
 
 - **Who:** Stephen Alton + Cursor cloud agent

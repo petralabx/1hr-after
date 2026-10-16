@@ -156,7 +156,7 @@
           "efe369f0-31da-4618-8ec9-bde9ebc6ac07": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"our-power-item\">\n<br>\n<h2>Quality Ingredients You Can Feel\n</h2>\n<br>\n\n<h4 class=\"title\">MAGNESIUM</h4>\n<p>Powered by polymer technology, 1HR-A delivers magnesium directly through the skin to working muscles. This helps restore muscle and skin tissue for faster recovery.</p>\n</div>\n\n<div class=\"our-power-item\">\n<h4 class=\"title\">ZINC</h4>\n<p>Topical zinc has anti-inflammatory and healing properties. It also combats acne, eczema, rosacea, and dandruff thanks to its antifungal effects.</p>\n</div>",
+              "code": "<div class=\"our-power-item\">\n<br>\n<h2>Quality Ingredients You Can Feel\n</h2>\n<br>\n\n<h4 class=\"title\">MAGNESIUM</h4>\n<p>Magnesium is a mineral in our post-workout formula.</p>\n</div>\n\n<div class=\"our-power-item\">\n<h4 class=\"title\">ZINC</h4>\n<p>Zinc is a mineral that helps skin look and feel balanced.</p>\n</div>",
               "width": "33%"
             }
           },
@@ -171,7 +171,7 @@
           "989a5b0c-b479-4e4c-91a6-339ee8de9407": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"our-power-item\">\n<h4 class=\"title\">AMINO ACIDS</h4>\n<p>Sweating depletes moisture from skin and hair, but amino acids help restore it. These antioxidants support hydration, leaving hair soft and strong.\n</p>\n</div>\n<div class=\"our-power-item\">\n<h4 class=\"title\">vitamin e, b3, b5</h4>\n<p>This vitamin blend soothes inflammation while hydrating and strengthening skin and hair. The result: replenished, refueled, and rehydrated tissue.</p>\n</div>",
+              "code": "<div class=\"our-power-item\">\n<h4 class=\"title\">AMINO ACIDS</h4>\n<p>Sweating depletes moisture from skin and hair, but amino acids help restore it. These antioxidants support hydration, leaving hair soft and strong.\n</p>\n</div>\n<div class=\"our-power-item\">\n<h4 class=\"title\">vitamin e, b3, b5</h4>\n<p>This vitamin blend hydrates and strengthens skin and hair. The result: replenished, refueled, and rehydrated.</p>\n</div>",
               "width": "33%"
             }
           }
@@ -526,7 +526,7 @@
             "type": "text",
             "settings": {
               "title": "STRENGTHENING",
-              "text": "<p>repair the damage done to your hair & skin during exercise</p>",
+              "text": "<p>care for your hair and skin after exercise</p>",
               "width": "25%",
               "alignment": "top-middle",
               "align_text": "center"
@@ -807,7 +807,7 @@
           "html_Hma93k": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"designed-for-txt-wrap\">\n<h1 class=\"designed-for-daily\">RACE DAY ESSENTIALS</h1>\n<h2 class=\"designed-for-daily\">From Hyrox to Ironman, We'll Help You Recover After Any Marathon or Workout</h2>\n\n</div>\n<div class=\"prod-info\">\n    <div class=\"col50\">\n          <p>To be used before and during longer events to prevent chafing from skin friction and clothing. </p>\n           <div class=\"link-btn\">\n                <a href=\"https://1hourafter.com/products/anti-chafe-balm\" class=\"btn\" aria-label=\"Shop Anti Chafe Balm\">\n                  SHOP ANTI CHAFE BALM\n          \n                </a>\n              </div> \n    </div>\n    <div class=\"col50\">\n      <p>To be used during and after endurance events to assist with cramps, pain management and recovery.</p>\n      <div class=\"link-btn\">\n        <a href=\"https://1hourafter.com/products/muscle-recovery-balm\" class=\"btn\" aria-label=\"Shop Recovery Balm\">\n          SHOP RECOVERY BALM\n          \n        </a>\n      </div>\n    </div>\n</div>\n<div class=\"link-btn\" style=\"text-align:center;margin-top:1.25rem\">\n  <a href=\"https://1hourafter.com/products/marathon-race-pack\" class=\"btn\" aria-label=\"Shop the Race Day Kit\">SHOP THE RACE DAY KIT</a>\n</div>",
+              "code": "<div class=\"designed-for-txt-wrap\">\n<h1 class=\"designed-for-daily\">RACE DAY ESSENTIALS</h1>\n<h2 class=\"designed-for-daily\">From Hyrox to Ironman, We'll Help You Recover After Any Marathon or Workout</h2>\n\n</div>\n<div class=\"prod-info\">\n    <div class=\"col50\">\n          <p>To be used before and during longer events to prevent chafing from skin friction and clothing. </p>\n           <div class=\"link-btn\">\n                <a href=\"https://1hourafter.com/products/anti-chafe-balm\" class=\"btn\" aria-label=\"Shop Anti Chafe Balm\">\n                  SHOP ANTI CHAFE BALM\n          \n                </a>\n              </div> \n    </div>\n    <div class=\"col50\">\n      <p>To be used during and after endurance events for a cooling feel on the skin.</p>\n      <div class=\"link-btn\">\n        <a href=\"https://1hourafter.com/products/muscle-recovery-balm\" class=\"btn\" aria-label=\"Shop Recovery Balm\">\n          SHOP RECOVERY BALM\n          \n        </a>\n      </div>\n    </div>\n</div>\n<div class=\"link-btn\" style=\"text-align:center;margin-top:1.25rem\">\n  <a href=\"https://1hourafter.com/products/marathon-race-pack\" class=\"btn\" aria-label=\"Shop the Race Day Kit\">SHOP THE RACE DAY KIT</a>\n</div>",
               "width": "100%"
             }
           },
