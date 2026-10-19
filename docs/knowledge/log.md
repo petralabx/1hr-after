@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-19T18:10:00Z] ship | Product tile size and separation
+
+- Race Day Kit was taller than the row, so its photo met the Marathon Pack. Both pack cards are now the same square as the other products, and the lists have an 8px gap.
+- On the collection page all eight tiles are 475×475 at 1440px and 390×390 on a phone. No tile boxes overlap.
+- Filed [`analyses/2026-10-19-tile-separation.md`](analyses/2026-10-19-tile-separation.md).
+
 ## [2026-10-19T17:40:00Z] ship | Marathon Pack tile size
 
 - The Marathon Pack card is a square matching the other product tiles. The bottle-group photo scales into the space under the title.

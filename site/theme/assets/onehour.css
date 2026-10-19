@@ -3926,13 +3926,14 @@ body .addly_widget_interact span.n9Currency {
 #shopify-section-collection .product-list {
   flex-flow: row wrap;
   align-items: flex-start;
+  gap: 8px;
 }
 #shopify-section-collection .grid__item--collection {
-  width: 33.33%;
+  width: calc((100% - 16px) / 3);
 }
 @media only screen and (max-width: 749px) {
   #shopify-section-collection .product-list li {
-    width: 50%;
+    width: calc((100% - 8px) / 2);
   }
   /* Race Day shop buttons sit under the photo, not on the white sticks. */
   #shopify-section-custom_content_Bq8YWE {
@@ -4098,9 +4099,9 @@ body .addly_widget_interact span.n9Currency {
   z-index: 2;
 }
 .product-list .card .product-name-price > .card-contents {
-  grid-column: 1;
+  grid-column: 1 / -1;
   grid-row: 3;
-  max-width: 12em;
+  max-width: none;
   margin: 2px 0 0;
 }
 .product-list .card .product-name-price > .price,
@@ -4111,45 +4112,73 @@ body .addly_widget_interact span.n9Currency {
   align-self: start;
 }
 .product-list .card .card-img--fit img {
-  object-fit: contain !important;
+  object-fit: cover !important;
   object-position: center center !important;
   width: 100% !important;
-  height: auto !important;
+  height: 100% !important;
   max-height: none !important;
 }
-/* Pack tiles: title, reviews, and contents sit above the photo so the product group fills the tile. */
+
+/* Every product tile is the same square, with a gap so neighbouring photos do not run together. */
+ul.product-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  gap: 8px;
+}
+@media only screen and (min-width: 750px) {
+  ul.product-list.grid--view-items > .grid__item {
+    width: calc((100% - 16px) / 3);
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .template-collection ul.product-list.grid--view-items > .grid__item {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+/* Race Day Kit and Marathon Pack use that same square. The photo fills the tile, and the title sits on the photo. */
 .product-list .product-card:has(.card-contents) {
+  display: block;
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: auto auto;
-  align-content: start;
-  background: #687b80;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: transparent;
 }
 .product-list .product-card:has(.card-contents) .card-body {
-  display: contents;
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: transparent;
 }
 .product-list .product-card:has(.card-contents) .product-name-price {
-  grid-row: 1;
   position: relative;
   z-index: 2;
-  background: #687b80;
-  padding: 12px 14px 10px;
+  background: transparent;
 }
 .product-list .product-card:has(.card-contents) .card-img {
-  grid-row: 2;
-  height: auto;
-  padding: 0 0 48px;
-  background: #687b80;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: transparent;
 }
-.product-list .product-card:has(.card-contents) .card-img img {
-  object-fit: contain !important;
-  object-position: center bottom !important;
+.product-list .product-card:has(.card-contents) .card-img img,
+.product-list .card .card-img--fit img {
+  object-fit: cover !important;
+  object-position: center center !important;
   width: 100% !important;
-  height: auto !important;
+  height: 100% !important;
   max-width: none !important;
   max-height: none !important;
-  position: static !important;
+  position: absolute !important;
+  inset: 0;
 }
 .product-list .product-card:has(.card-contents) .product-but-now-view {
   position: absolute;
@@ -4157,51 +4186,6 @@ body .addly_widget_interact span.n9Currency {
   bottom: 0;
   left: auto;
   width: auto;
-}
-
-/* Marathon Pack uses the same square tile as the other products. The bottle group scales into the space under the title. */
-.product-list .product-card:has(.card-img--fit) {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: auto minmax(0, 1fr);
-  aspect-ratio: 1;
-  align-content: stretch;
-  position: relative;
-  overflow: hidden;
-  background: #687b80;
-}
-.product-list .product-card:has(.card-img--fit) .card-body {
-  display: contents;
-}
-.product-list .product-card:has(.card-img--fit) .product-name-price {
-  grid-row: 1;
-  position: relative;
-  z-index: 2;
-  background: #687b80;
-}
-.product-list .product-card:has(.card-img--fit) .card-img {
-  grid-row: 2;
-  height: 100%;
-  min-height: 0;
-  width: 100%;
-  padding: 0;
-  background: #687b80;
-}
-.product-list .product-card:has(.card-img--fit) .card-img img,
-.product-list .card .card-img--fit img {
-  object-fit: contain !important;
-  object-position: center bottom !important;
-  width: 100% !important;
-  height: 100% !important;
-  max-width: none !important;
-  max-height: none !important;
-  position: static !important;
-}
-.product-list .product-card:has(.card-img--fit) .product-but-now-view {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: auto;
   z-index: 3;
 }
 
