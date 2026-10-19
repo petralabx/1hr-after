@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-19 (Site QA preview)
+> **Last updated:** 2026-10-19 (QA theme published)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-19 — storefront — QA theme published and affiliate form
+
+- **Hypothesis:** The QA fixes were still on a preview theme, the balm still said "roll on", and the affiliate SIGN UP button had no form.
+- **Change:** Theme `#189469851821` is live. The approved balm lines are on the product HTML. The affiliate page posts a contact form to the shop. See [`analyses/2026-10-19-publish-affiliate.md`](analyses/2026-10-19-publish-affiliate.md).
+- **Result:** Chrome and Firefox show the form, a side-by-side desktop intro, and four steps in a row. Rankings not promised.
+- **Source:** TASK-3394
 
 ## 2026-10-19 — storefront — Site QA preview
 

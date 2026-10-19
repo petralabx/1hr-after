@@ -8,6 +8,13 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-19T23:35:00Z] ship | QA theme published and affiliate form
+
+- Theme `#189469851821` is the live theme. Theme `#122661372077` is unpublished.
+- Muscle Recovery Balm and the Race Day Kit use the approved twist-up and shower lines. SEO titles are unchanged.
+- `/pages/affiliate-signup` has a contact form, one brand name on the page, and a two-column desktop layout. The 20% lines are unchanged.
+- Filed [`analyses/2026-10-19-publish-affiliate.md`](analyses/2026-10-19-publish-affiliate.md).
+
 ## [2026-10-19T23:20:00Z] ship | Site QA fixes on a preview theme
 
 - FAQ answers are dark on the light panel and the FAQ row opens and closes. The footer Instagram link opens in a new tab.

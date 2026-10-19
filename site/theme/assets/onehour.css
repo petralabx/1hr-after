@@ -4261,4 +4261,99 @@ ul.product-list {
   }
 }
 
+/* Affiliate page. The original column rules sit inside a max-width 1200px query, so desktop stacked. */
+@media only screen and (min-width: 1201px) {
+  .affilate .first-sec .right {
+    width: 60%;
+    margin-top: 0;
+    padding-left: 24px;
+  }
+  .affilate .how-it-work .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .affilate .how-it-work .row .col {
+    width: calc(25% - 24px);
+    margin-bottom: 0;
+  }
+}
+
+.oha-affiliate-form {
+  margin: 0 0 48px;
+  max-width: 760px;
+  scroll-margin-top: 96px;
+}
+#affiliate-signup {
+  scroll-margin-top: 96px;
+}
+.oha-affiliate-form > p,
+.oha-affiliate-form .form-message {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0 0 16px;
+}
+.oha-affiliate-form .oha-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 16px;
+}
+.oha-affiliate-form .oha-field {
+  width: calc(50% - 12px);
+}
+.oha-affiliate-form .oha-field--full {
+  width: 100%;
+}
+.oha-affiliate-form label {
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 6px;
+}
+.oha-affiliate-form .oha-optional {
+  font-weight: 400;
+  opacity: 0.85;
+}
+.oha-affiliate-form input,
+.oha-affiliate-form textarea {
+  width: 100%;
+  color: #1c1c1c;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  font-size: 16px;
+  line-height: 1.3;
+  padding: 12px;
+}
+.oha-affiliate-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.oha-affiliate-form button.btn {
+  background: #fff;
+  color: #fa5a16;
+  -webkit-text-fill-color: #fa5a16;
+  border: 0;
+  padding: 12px 28px;
+  cursor: pointer;
+}
+.oha-affiliate-form .form-message--error {
+  background: #fff;
+  color: #1c1c1c;
+  padding: 12px;
+}
+.oha-affiliate-form .form-message--error,
+.oha-affiliate-form .form-message--error li {
+  color: #1c1c1c;
+}
+@media only screen and (max-width: 749px) {
+  .oha-affiliate-form .oha-field,
+  .oha-affiliate-form .oha-field--full {
+    width: 100%;
+  }
+}
+
 

@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-19 — Publish QA theme and affiliate form
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** draft on `cursor/seo-aeo-publish-affiliate-f8cc` (TASK-3394), stacked on [#38](https://github.com/petralabx/1hr-after/pull/38). CIP lands; agent cannot merge.
+- **Done:** Theme `#189469851821` is live. Balm and Race Day Kit use the approved wording. The affiliate page has a contact form. Write-up: [`docs/knowledge/analyses/2026-10-19-publish-affiliate.md`](knowledge/analyses/2026-10-19-publish-affiliate.md).
+- **Next:** Phase 5 is the consolidated claims check. News article titles are waiting on a decision. The collection description still names the athletic sampler pack.
+- **Watch:** Do not push `config/settings_data.json`. Republish `#122661372077` to roll the theme back. The affiliate form emails the shop. It does not create a tagged customer.
+
 ## 2026-10-19 — Site QA preview
 
 - **Who:** Stephen Alton + Cursor cloud agent
