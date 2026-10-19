@@ -27,7 +27,7 @@ This is separate from:
 ## 2026-10-19 — Marathon Pack tile size
 
 - **Who:** Stephen Alton + Cursor cloud agent
-- **PR:** draft on `cursor/seo-aeo-pack-tile-f8cc` (TASK-3358). CIP lands; agent cannot merge.
+- **PR:** [#36](https://github.com/petralabx/1hr-after/pull/36) (TASK-3358). CIP lands; agent cannot merge.
 - **Done:** The Marathon Pack tile is the same square as the other product tiles, and the bottle group scales inside it. Write-up: [`docs/knowledge/analyses/2026-10-19-marathon-pack-tile.md`](knowledge/analyses/2026-10-19-marathon-pack-tile.md).
 - **Next:** Phase 5 is the consolidated claims check. News article titles are waiting on a decision.
 - **Watch:** Push only `assets/onehour.css` for this slice. The Race Day Kit tile is still the taller text-above layout.
