@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-19 (Product tile separation)
+> **Last updated:** 2026-10-19 (Site QA preview)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-19 — storefront — Site QA preview
+
+- **Hypothesis:** White FAQ answers, a footer Instagram link that stays on-site, broken star glyphs, uneven card type, and two empty signup bars were theme issues.
+- **Change:** Those six items are fixed on unpublished theme `#189469851821`. See [`analyses/2026-10-19-site-qa-fixes.md`](analyses/2026-10-19-site-qa-fixes.md).
+- **Result:** Chrome and Firefox on the preview show a readable FAQ answer, dark stars, one signup bar on the homepage and on `/collections/all`, and an Instagram link with `target="_blank"`. The published theme was not changed. Rankings not promised.
+- **Source:** TASK-3392
 
 ## 2026-10-19 — storefront — Product tile size and separation
 

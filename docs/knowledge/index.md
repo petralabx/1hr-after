@@ -41,7 +41,7 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
-- [Product tile size and separation](analyses/2026-10-19-tile-separation.md) — filed 2026-10-19 as `ship` · Race Day Kit and Marathon Pack match the other squares, and an 8px gap keeps the photos from running together
+- [Site QA fixes](analyses/2026-10-19-site-qa-fixes.md) — filed 2026-10-19 as `ship` · FAQ contrast and toggle, Instagram new tab, star icons, card type, and one email signup bar, on an unpublished preview theme
 - [Marathon Pack tile size](analyses/2026-10-19-marathon-pack-tile.md) — filed 2026-10-19 as `ship` · The Marathon Pack card is the same square as the other product tiles, and the bottle group scales inside that frame
 - [Subscribe and Save on the product template](analyses/2026-10-16-subscribe-embed.md) — filed 2026-10-16 as `ship` · Shopify’s subscription mount is in the product form, with a one-time or monthly choice that submits the selling plan
 - [The grey first paint and Subscribe & Save](analyses/2026-10-16-first-paint-spinner.md) — filed 2026-10-16 as `ship` · Grey first paint is now an orange loading ring that leaves when the stylesheets apply; Subscribe & Save is still gated and the shop has no selling plans

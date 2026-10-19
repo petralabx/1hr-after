@@ -8,6 +8,13 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-19T23:20:00Z] ship | Site QA fixes on a preview theme
+
+- FAQ answers are dark on the light panel and the FAQ row opens and closes. The footer Instagram link opens in a new tab.
+- Product-tile stars use the Judge.me star font in dark grey, and review counts and pack subtitles share 12px.
+- Homepage and the collection page each have one email signup bar, with heading and body copy, on the lab-series photo.
+- Filed [`analyses/2026-10-19-site-qa-fixes.md`](analyses/2026-10-19-site-qa-fixes.md). Published theme `#122661372077` was not changed. Affiliate page and the balm "roll on" lines are waiting.
+
 ## [2026-10-19T18:10:00Z] ship | Product tile size and separation
 
 - Race Day Kit was taller than the row, so its photo met the Marathon Pack. Both pack cards are now the same square as the other products, and the lists have an 8px gap.
