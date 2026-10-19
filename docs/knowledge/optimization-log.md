@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-16 (Subscribe and Save)
+> **Last updated:** 2026-10-19 (Marathon Pack tile)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-19 — storefront — Marathon Pack tile size
+
+- **Hypothesis:** The Marathon Pack tile was taller than the other products because the photo kept its full height under a text band.
+- **Change:** The pack card is a square. The bottle group scales into the space under the title. See [`analyses/2026-10-19-marathon-pack-tile.md`](analyses/2026-10-19-marathon-pack-tile.md).
+- **Result:** On the collection page the pack matches the conditioner tile, 480×480 at desktop and 390×390 on a phone. Rankings not promised.
+- **Source:** TASK-3358
 
 ## 2026-10-16 — storefront — Subscribe and Save
 

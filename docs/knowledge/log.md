@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-19T17:40:00Z] ship | Marathon Pack tile size
+
+- The Marathon Pack card is a square matching the other product tiles. The bottle-group photo scales into the space under the title.
+- On the collection page the conditioner and the pack are both 480×480 at desktop and 390×390 on a phone.
+- Filed [`analyses/2026-10-19-marathon-pack-tile.md`](analyses/2026-10-19-marathon-pack-tile.md).
+
 ## [2026-10-16T21:05:00Z] ship | Subscribe and Save on the product template
 
 - The product form now has Shopify’s `subscriptions_app_embed_block` mount, plus a one-time or monthly choice that submits `selling_plan`.
