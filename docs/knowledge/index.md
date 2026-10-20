@@ -41,6 +41,7 @@
 
 <!-- AUTO-APPEND:analyses:START -->
 
+- [Session summary, October 6–20](analyses/2026-10-20-session-summary.md) — filed 2026-10-20 as `query` · Every storefront slice in this run, the live theme, and the order to merge PRs #36–#39
 - [Publish the QA theme and the affiliate form](analyses/2026-10-19-publish-affiliate.md) — filed 2026-10-19 as `ship` · Theme `#189469851821` is live, balm wording is updated, and the affiliate page has a contact form
 - [Site QA fixes](analyses/2026-10-19-site-qa-fixes.md) — filed 2026-10-19 as `ship` · FAQ contrast and toggle, Instagram new tab, star icons, card type, and one email signup bar, on an unpublished preview theme
 - [Marathon Pack tile size](analyses/2026-10-19-marathon-pack-tile.md) — filed 2026-10-19 as `ship` · The Marathon Pack card is the same square as the other product tiles, and the bottle group scales inside that frame

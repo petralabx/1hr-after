@@ -8,6 +8,12 @@
 
 <!-- AUTO-APPEND:timeline:START -->
 
+## [2026-10-20T15:30:00Z] query | Session summary and merge order
+
+- One summary of the October 6–20 storefront work. Theme `#189469851821` is live.
+- Open drafts #36, #37, #38, and #39 are stacked. Merge them in that order.
+- Filed [`analyses/2026-10-20-session-summary.md`](analyses/2026-10-20-session-summary.md).
+
 ## [2026-10-19T23:35:00Z] ship | QA theme published and affiliate form
 
 - Theme `#189469851821` is the live theme. Theme `#122661372077` is unpublished.
