@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-20 — Session summary and merge order
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#40](https://github.com/petralabx/1hr-after/pull/40) (TASK-3481), stacked on [#39](https://github.com/petralabx/1hr-after/pull/39). CIP lands; agent cannot merge.
+- **Done:** One summary of the October 6–20 work, in [`docs/knowledge/analyses/2026-10-20-session-summary.md`](knowledge/analyses/2026-10-20-session-summary.md).
+- **Next:** Merge #36, #37, #38, #39, then this PR, in that order. Claims Phase 5 and the news titles are still waiting.
+- **Watch:** Merges do not deploy the theme. Theme `#189469851821` is already live.
+
 ## 2026-10-19 — Publish QA theme and affiliate form
 
 - **Who:** Stephen Alton + Cursor cloud agent
