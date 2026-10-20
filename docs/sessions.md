@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-19 — Site QA preview
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#38](https://github.com/petralabx/1hr-after/pull/38) (TASK-3392), stacked on [#37](https://github.com/petralabx/1hr-after/pull/37). CIP lands; agent cannot merge.
+- **Done:** FAQ, Instagram, stars, card type, and the email signup bar are on unpublished theme `#189469851821`. The published theme was not changed. Write-up: [`docs/knowledge/analyses/2026-10-19-site-qa-fixes.md`](knowledge/analyses/2026-10-19-site-qa-fixes.md).
+- **Next:** Choose affiliate option A or B. Approve or skip the four Muscle Recovery Balm wording lines. Publish the preview theme when the preview looks right.
+- **Watch:** Do not push `config/settings_data.json`. Do not write product HTML until the balm lines are approved.
+
 ## 2026-10-19 — Product tile size and separation
 
 - **Who:** Stephen Alton + Cursor cloud agent

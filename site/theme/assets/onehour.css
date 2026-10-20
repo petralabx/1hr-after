@@ -3998,12 +3998,25 @@ body .addly_widget_interact span.n9Currency {
 }
 .card-contents {
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.3;
   margin: 4px 0 0;
+  color: #3a3a3a;
+  font-family: MonoSpec, sans-serif;
   text-transform: none;
 }
 .product-card .jdgm-prev-badge__text {
   display: block !important;
+  font-family: MonoSpec, sans-serif !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  line-height: 1.3 !important;
+  color: #3a3a3a !important;
+}
+.product-card .jdgm-star,
+.product-card .jdgm-star::before {
+  font-family: JudgemeStar !important;
+  color: #3a3a3a !important;
 }
 @media only screen and (max-width: 749px) {
   .pdp-mobile-atc {
@@ -4187,6 +4200,65 @@ ul.product-list {
   left: auto;
   width: auto;
   z-index: 3;
+}
+
+/* FAQ answers sit on the app's light panel. The product column sets white text, which hid the answer. */
+#myfaq .wk-product-faq-content,
+#myfaq .wk-product-faq-content p,
+#myfaq .wk-product-faq-content li,
+#myfaq .wk-product-faq-content span {
+  color: #1c1c1c;
+}
+#myfaq .wk-question {
+  color: #1443ba;
+}
+
+/* Email signup bar. Same photo on the homepage and the collection page. */
+.oha-signup {
+  background: #1c1c1c url(https://cdn.shopify.com/s/files/1/0561/0618/8973/files/LAB_SERIES_FOOTER_IMAGE.png?v=1702443859) center center / cover no-repeat;
+  padding: 48px 20px;
+}
+.oha-signup .lab-series .lab-subscribe {
+  align-items: center;
+  border-top: 0;
+  padding-top: 0;
+}
+.oha-signup .lab-subscribe .left h2,
+.oha-signup .lab-subscribe .left p {
+  color: #fff;
+  text-align: left;
+}
+.oha-signup .lab-subscribe .left h2 {
+  font-size: 22px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+.oha-signup .lab-subscribe .left p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.4;
+  margin: 0;
+  max-width: 36em;
+}
+.oha-signup .contact-form .input-group__field {
+  color: #1c1c1c;
+  background: #fff;
+}
+.oha-signup .contact-form .input-group__field::placeholder {
+  color: #5c5c5c;
+}
+@media only screen and (max-width: 749px) {
+  .oha-signup .lab-subscribe .left,
+  .oha-signup .lab-subscribe .right,
+  .oha-signup .lab-subscribe .contact-form .input-group {
+    width: 100%;
+    max-width: none;
+    float: none;
+  }
+  .oha-signup .lab-subscribe .left {
+    margin-bottom: 16px;
+  }
 }
 
 

@@ -56,31 +56,23 @@
     });
 }, 1000);
 
-    if($(".product-media-wrap .slick-slide div").css("height: 100%")){ alert('hii');}
+  $("div.set-prod > h2").on("click", function () {
+    $(this).siblings("a").trigger("click");
+  });
 
-  $("div.set-prod > a").on("click", function(){   
-    if ($(this).hasClass("active")) {
-      $(this).removeClass("active");
-      $(this)
-        .siblings("div.content-prod")
-        .slideUp(200);
-      $("div.set-prod > a svg")
-        .removeClass("fa-minus")
-        .addClass("fa-plus");
+  $("div.set-prod > a").on("click", function (event) {
+    event.preventDefault();
+    var link = $(this);
+    if (link.hasClass("active")) {
+      link.removeClass("active");
+      link.siblings("div.content-prod").slideUp(200);
+      link.find("svg").removeClass("fa-minus").addClass("fa-plus");
     } else {
-      $("div.set-prod > a svg")
-        .removeClass("fa-minus")
-        .addClass("fa-plus");
-      $(this)
-        .find("svg")
-        .removeClass("fa-plus")
-        .addClass("fa-minus");
-      $("div.set-prod > a").removeClass("active");      
-      $(this).addClass("active");
+      $("div.set-prod > a").removeClass("active").find("svg").removeClass("fa-minus").addClass("fa-plus");
       $("div.content-prod").slideUp(500);
-      $(this)
-        .siblings("div.content-prod")
-        .slideDown(500);
+      link.addClass("active");
+      link.find("svg").removeClass("fa-plus").addClass("fa-minus");
+      link.siblings("div.content-prod").slideDown(500);
     }
   });
 });
