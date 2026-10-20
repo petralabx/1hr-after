@@ -34,7 +34,7 @@ Four draft PRs are open, plus this summary. They are stacked, so merge them in t
 2. [#37](https://github.com/petralabx/1hr-after/pull/37) Tile separation → after #36
 3. [#38](https://github.com/petralabx/1hr-after/pull/38) Site QA fixes → after #37
 4. [#39](https://github.com/petralabx/1hr-after/pull/39) Publish and affiliate form → after #38
-5. The session summary PR → after #39
+5. [#40](https://github.com/petralabx/1hr-after/pull/40) Session summary → after #39
 
 After each merge, set the next PR's base to `main` if GitHub does not do it. All five touch `docs/sessions.md` and the wiki logs, so merging out of order will cause conflicts in those files.
 
