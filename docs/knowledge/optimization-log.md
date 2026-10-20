@@ -3,9 +3,16 @@
 > Ship log for organic pages and Meta tests. Newest first.
 > Auto-generated metric blocks, if a steward is pointed here later, stay inside the markers.
 >
-> **Last updated:** 2026-10-19 (Marathon Pack tile)
+> **Last updated:** 2026-10-19 (Product tile separation)
 
 <!-- AUTO-APPEND:ships:START -->
+
+## 2026-10-19 — storefront — Product tile size and separation
+
+- **Hypothesis:** The Race Day Kit tile was taller than the row, so its grey photo ran into the Marathon Pack, and the pack photo was cropped to the pump tops.
+- **Change:** Both pack cards are the same square as the other products. The photo fills the tile. Product lists have an 8px gap. See [`analyses/2026-10-19-tile-separation.md`](analyses/2026-10-19-tile-separation.md).
+- **Result:** Collection tiles are 475×475 at desktop and 390×390 on a phone, with no overlapping boxes. Homepage featured tiles match once the photos load. Rankings not promised.
+- **Source:** TASK-3368
 
 ## 2026-10-19 — storefront — Marathon Pack tile size
 

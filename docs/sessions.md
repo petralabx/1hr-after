@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-19 — Product tile size and separation
+
+- **Who:** Stephen Alton + Cursor cloud agent
+- **PR:** [#37](https://github.com/petralabx/1hr-after/pull/37) (TASK-3368), stacked on [#36](https://github.com/petralabx/1hr-after/pull/36). CIP lands; agent cannot merge.
+- **Done:** Race Day Kit and The Marathon Pack are the same square as the other product tiles, with an 8px gap so the photos no longer run together. Write-up: [`docs/knowledge/analyses/2026-10-19-tile-separation.md`](knowledge/analyses/2026-10-19-tile-separation.md).
+- **Next:** Phase 5 is the consolidated claims check. News article titles are waiting on a decision.
+- **Watch:** Push only `assets/onehour.css` for this slice. Prices and names were not changed. The earlier note that Race Day stays on the taller text-above layout is superseded here.
+
 ## 2026-10-19 — Marathon Pack tile size
 
 - **Who:** Stephen Alton + Cursor cloud agent
