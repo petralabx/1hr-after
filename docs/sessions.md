@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-26 — AGENTS.md names the current CI
+
+- **Who:** Vince + Claude Code
+- **PR:** this PR (TASK-3911)
+- **Done:** `AGENTS.md` now names the current CI: the `ci` roll-up in `ci.yml`, `ai-review-verdict.yml`, and the org-required PLX_MC `compliance` gate. PR [#42](https://github.com/petralabx/1hr-after/pull/42) (TASK-3902) deleted the local compliance copy and the drift check but left the old text.
+- **Next:** None.
+- **Watch:** `CONTRIBUTING.md` §5 lists "PLX MC Compliance Gate". That is the org-required PLX_MC workflow, not a local file.
+
 ## 2026-10-26 — Merge path in the MC handshake
 
 - **Who:** Vince + Claude Code

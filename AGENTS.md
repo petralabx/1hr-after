@@ -110,6 +110,6 @@ There is **no** web app, build step, package manager, or dependency file — not
   For `brand.slug` `1hr-after` it also requires the wiki, Meta ads playbook, and copy archive.
 - **Token prefix:** `--1hr-` is valid. The prefix regex allows a leading digit.
 - **Lint/test/build:** the structure script is the check (see `CONTRIBUTING.md` §5). CI is
-  governance-only: `.github/workflows/plx-mc-compliance.yml` (skips unless the
-  `PLX_MC_BASE_URL` secret is set) and `compliance-gate-drift.yml` (needs network to fetch the
-  pinned PLX_MC generator).
+  governance-only: `.github/workflows/ci.yml` parses every workflow file and reports the `ci`
+  roll-up, `ai-review-verdict.yml` posts `ai-review/verdict`, and the org-required PLX_MC gate
+  reports `compliance`.
