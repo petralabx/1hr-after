@@ -24,6 +24,14 @@ This is separate from:
 
 ---
 
+## 2026-10-26 — Merge path in the MC handshake
+
+- **Who:** Vince + Claude Code
+- **PR:** this PR (TASK-3941)
+- **Done:** Step 5 of the MC handshake in `AGENTS.md` and `CLAUDE.md` now carries the 2026-10-25 merge path (TASK-3901). Anyone with write access lands a green PR with a merge commit. A PR that touches money, migrations or workflows needs a signed MC merge approval of its head. Older entries below say "CIP lands", which was the rule then.
+- **Next:** None.
+- **Watch:** A change under `.github/workflows/` needs that MC approval before it lands.
+
 ## 2026-10-19 — Marathon Pack tile size
 
 - **Who:** Stephen Alton + Cursor cloud agent
